@@ -1,75 +1,169 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
+/* 
+  STYLE GUIDE STYLING CSS
+ */
+
+/* Default Styling For All Sections */
 body {
-  font-family: sans-serif;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #EFE6D5;
 }
 
-.element {
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: black;
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: Oswald;
 }
 
 h2 {
-  margin-top: 6rem;
+  font-family: Oswald;
 }
 
 h3 {
-  font-style: italic;
-  margin-top: 1rem;
+  font-family: Roboto;
 }
 
-h4 {
-  margin-bottom: 0.25rem;
+h4{
+  font-family: Roboto;
 }
 
 p {
-  margin-top: 0;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
+  font-family: Roboto;
 }
 
 code {
-  background-color: #EEE;
-  padding: 0.5rem;
+  background-color: #ddd;
+  padding: 1rem;
   display: block;
 }
 
+.element {
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color:#7c7d80;
+}
 
-/* 
-  INTERACTIVE ELEMENTS -------------------
-*/
+/* Header Styling */
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: #9DBEB7;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
 
-/* Styling for the navigation button */
+/* Page Navigation Styling */
+/* Source for underline effect: https://codepen.io/maheshambure21/pen/QwXaRw */
+#page-nav {
+  width: 20%;
+  height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+  padding-top: 3.8rem;
+  /* box-sizing: border-box; */
+  border: 10px solid #9DBEB7;
+  left: 0.01rem;
+}
+
+#page-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#page-nav ul li {
+  padding: 1rem;
+  font-family: Roboto;
+  text-align: left;
+  position: relative;
+}
+
+#page-nav ul li a {
+  color:cadetblue;
+  text-decoration: none;
+  position: relative;
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+#page-nav ul li a:after {
+  content: '.';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+  transition: all 0.5s; /* Adjust the transition duration */
+}
+
+#page-nav ul li a:hover:after {
+  width: 100%;
+}
+
+#page-nav ul li a:hover {
+  color: darkgreen;
+}
+
+/* Main Sections Styling */
+.main-sections {
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 20%;
+  margin-top: 1%;
+  padding: 5rem;
+  padding-bottom: 0;
+}
+
+#interactive_elements,
+#combined_elements,
+#brand_ideas,
+#brand_components {
+  padding-top: 1rem;
+  margin-top: 4rem; 
+  scroll-margin-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+/* In-text Link Styling */
+.in-text-link {
+  color:cadetblue;
+}
+
+/* Button Styling */
 .button-nav {
+  color: white;
+  background-color: #648abd;
+  text-decoration: none;
   display: inline-block;
   padding: 0.5rem;
-  color: white;
-  background-color: rgb(50,50,50);
-  text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+  color: #2b2b2b;
+  background-color: #b0c7dd;
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 400px) {
+  #page-nav {
+    width: 100%;
+    position: static;
+  }
 
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-
-
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
+  .main-sections {
+    margin-left: 0;
+    padding-top: 5rem; 
+  }
+}
