@@ -1,143 +1,313 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P02 Styleguide</title>
 
-    <meta charset="utf-8">
-    <title>P01 - Style Guide Template</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
 
-    <link href="css/main.css" rel="stylesheet">
+<body>
+  <header>
+    <h1>COMPANY STYLEGUIDE</h1>
 
-  </head>
+    <!----- PAGE NAVIGATION ----->
+    <nav id="page-nav">
+      <ul>
+        <li><a href="#interactive_elements">INTERACTIVE ELEMENTS</a></li>
+        <li><a href="#text_elements">TEXT ELEMENTS</a></li>
+        <li><a href="#combined_elements">COMBINED ELEMENTS</a></li>
+        <li><a href="#brand_ideas">BRAND IDEAS</a></li>
+        <li><a href="#brand_components">BRAND COMPONENTS</a></li>
+        <li><a href="#citations">CITATIONS</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
-<!--   testing commit here -->
-    <header>
-      <h1>P01 - Style Guide Template</h1>
-
-      <p>A template you can use to start building out your own style guides with.</p>
-
-
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product_listing.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#citations">Citations</a>
-      </nav>
-
-
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
+  
+  <!----- INTERACTIVE ELEMENTS SECTION ----->
+  <section class="main-sections">
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
-
-
+        
+      <!-- In-text Link Sub-Section -->
       <section class="element">
         <h3>In-text link</h3>
+  
+        <h4>CSS Selector:</h4>
+        <p>.in-text-link</p>
+  
+        <h4>Sample Code:</h4>
+        <code>&lt;a class="in-text-link" href="#"&gt;Home&lt;/a&gt;</code>
+
+        <h4>Rendered Element:</h4>
+        <a class="in-text-link" href="#">Home</a>
       </section>
 
-
-      <!-- Default Button styling section -->
+        <!-- Navigation Link Sub-Section -->
       <section class="element">
-
-        <h3>Navigation Link</h3>
-
-        <h4>CSS selector:</h4>
+        <h3>Navigation link</h3>
+  
+        <h4>CSS Selector:</h4>
         <p>.button-nav</p>
+  
+        <h4>Sample Code:</h4>
+        <code>&lt;a class="button" href="#"&gt; Default Button &lt;/a&gt;</code>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
+        <h4>Rendered Element:</h4>
         <a class="button-nav" href="#">Default Button</a>
-
       </section>
 
-
+      <!-- Submit/ Reset Buttons Sub-Section -->
       <section class="element">
-        <h3>Submit/Reset Buttons</h3>
+        <h3>Submit & Reset Buttons</h3>
+  
+        <h4>CSS Selector:</h4>
+        <p>input</p>
+  
+        <h4>Sample Code:</h4>
+        <code> &lt;input type = "submit" value = "Submit" /&gt;</code>
+        <code> &lt;input type = "reset" value = "Reset" /&gt;</code>
+
+        <h4>Rendered Element:</h4>
+        <input type = "submit" value ="Submit" />
+			  <input type = "reset" value = "Reset" />
       </section>
 
-
+      <!-- Text Input Field Sub-Section -->
       <section class="element">
         <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector: </h4>
+        <p> label, input </p>
+    
+        <h4>Sample code: </h4>
+        <code> &lt;label for = "Input"&gt; Input: &lt;/label&gt; </code>
+        <code> &lt;input type = "text" id = "Input" input = "Input"&gt; </code>
+    
+        <h4>Rendered element: </h4>
+        <div class="text-input-container">
+          <label for="Input"> Text input: </label>
+          <input type="text" id="Input" name="Input">
+        </div>
       </section>
 
-
+      <!-- Radio Buttons w/ Label Sub-Section -->
       <section class="element">
-        <h3>Radio Button with Label</h3>
+        <h3>Radio Buttons with Label</h3>
+
+        <h4>CSS selector: </h4>
+        <p></p>
+    
+        <h4>Sample code: </h4>
+        <code></code>
+    
+        <h4>Rendered element: </h4>
+
       </section>
 
-
+      <!-- Image as a Link Sub-Section -->
       <section class="element">
         <h3>Image as a Link</h3>
+
+        <h4>CSS selector: </h4>
+        <p></p>
+    
+        <h4>Sample code: </h4>
+        <code></code>
+    
+        <h4>Rendered element: </h4>
+
       </section>
 
-
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+  </section>
 
+  <!------ END OF INTERACTIVE ELEMENTS SECTION ------>
 
-
-    <!-- TEXT ELEMENTS SECTION // -->
+  <!----------- TEXT ELEMENTS SECTION --------------->
+  <section class="main-sections">
     <section id="text_elements">
       <h2>Text Elements</h2>
 
+      <!-- Headings Sub-Section -->
       <section class="element">
         <h3>Headings</h3>
+
+        <h4>CSS selector: </h4>
+        <p></p>
+    
+        <h4>Sample code: </h4>
+        <code></code>
+    
+        <h4>Rendered element: </h4>
+
       </section>
 
+      <!-- Paragraphs Sub-Section -->
       <section class="element">
         <h3>Paragraphs</h3>
+
+        <h4>CSS selector: </h4>
+        <p></p>
+    
+        <h4>Sample code: </h4>
+        <code></code>
+    
+        <h4>Rendered element: </h4>
+
       </section>
 
+      <!-- Numbered Lists -->
       <section class="element">
         <h3>Numbered Lists</h3>
+
+        <h4>CSS selector: </h4>
+        <p></p>
+    
+        <h4>Sample code: </h4>
+        <code></code>
+    
+        <h4>Rendered element: </h4>
+
       </section>
 
     </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
+  </section>
+  <!----- END OF TEXT ELEMENTS SECTION ----->
+    
+  <!------ COMBINED ELEMENTS SECTION ------->
+  <section class="main-sections">
     <section id="combined_elements">
       <h2>Combined Elements</h2>
-
+      
+      <!-- Product Listing Sub-Section -->
       <section class="element">
-        <h3>Main Navigation</h3>
+        <h3>Product Listing</h3>
+  
+        <h4>CSS Selector:</h4>
+        <p>.in-text-link</p>
+  
+        <h4>Sample Code:</h4>
+        <code></code>
+  
+        <h4>Rendered Element:</h4>
       </section>
 
+      <!-- Payment Method Sub-Section -->
       <section class="element">
-        <h3>Product/Service Listing</h3>
+        <h3>Payment Type</h3>
+  
+        <h4>CSS Selector:</h4>
+        <p>.in-text-link</p>
+  
+        <h4>Sample Code:</h4>
+        <code></code>
+  
+        <h4>Rendered Element:</h4>
       </section>
 
-      <section class="element">
-        <h3>Payment Form</h3>
-      </section>
-
+      <!-- Checkout Cart Sub-Section -->
       <section class="element">
         <h3>Checkout Cart</h3>
+  
+        <h4>CSS Selector:</h4>
+        <p>.in-text-link</p>
+  
+        <h4>Sample Code:</h4>
+        <code></code>
+  
+        <h4>Rendered Element:</h4>
+      </section>
+
+    </section>  
+  </section>
+
+  <!-- END OF COMBINED ELEMENTS SECTION -->
+
+  <!------------ BRAND IDEAS ------------->
+  <section class="main-sections">
+    <section id="brand_ideas">
+      <h2>Brand Ideas</h2>
+      
+      <!-- General Brand Info Sub-Section -->
+      <section class="element">
+          <h3>What does the company do or offer?</h3>
+          <p></p>
+
+          <h3>Who is the company to potential customer?</h3>
+          <p></p>
+
+          <h3>Why might this company entice someone to purchase a product?</h3>
+          <p></p>
+      </section>
+
+      <!-- Company Updates & Events Sub-Section -->
+      <section class="element">
+        <h3>Company Updates & Events</h3>
+      </section>
+
+      <!-- Feedback Sub-Section -->
+      <section class="element">
+        <h3>User Feedback Forum</h3>
       </section>
 
     </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+  </section>
+  
+  <!----- END OF BRAND IDEAS SECTION ----->
+    
+  <!---------- BRAND COMPONENTS ---------->
+  <section class="main-sections">
+    <section id="brand_components">
+      <h2>Brand Components</h2>
+      
+      <!-- Font Sub-Section -->
+      <section class="element">
+        <h3>Fonts Selection</h3>
+      </section>
 
+      <!-- Colour Palette Sub-Section -->
+      <section class="element">
+        <h3>Colour Palette</h3>
+      </section>
 
+      <!-- Art Direction Sub-Section -->
+      <section class="element">
+        <h3>Art Direction</h3>
+      </section>
 
-    <section id="citations">
-      <h2>Citations</h2>
+      <!-- Icons -->
+      <section class="element">
+        <h3>Colour Palette</h3>
+      </section>
 
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-      </ul>
+      <!-- Imagery Sub-Section -->
+      <section class="element">
+        <h3>Potential Imagery</h3>
+      </section>
 
     </section>
+  </section>
 
+  <!-- END OF BRAND COMPONENTS SECTION -->
 
+  <!-------------- CITATIONS ------------>
+  <section class="main-sections">
+    <footer>
+      <section id="citations">
+        <h2>Citations</h2>
+        <!-- citations do later -->
+      </section>
+    </footer>
+  
+  </section>
+    
+ 
+</body>
 
-  </body>
 </html>
