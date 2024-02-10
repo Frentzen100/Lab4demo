@@ -20,6 +20,7 @@
     --maize: #E8C242;
     --spanish-grey: #9E9E9E;
     --green: #008000;
+    --black: #000000;
  }
 /* Default Styling For All Sections */
 body {
@@ -57,12 +58,18 @@ h3 {
 h4{
   font-family: Oswal, sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--granite-gray);
+  line-height: 1.6rem;
 }
 
 p {
   font-family: Source Sans Pro, sans-serif;
+}
+
+h1,h2,h3,h4, p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 code {
@@ -271,10 +278,21 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 
 }
 
-/*Color Palette*/
+/*Typography Style*/
+.typography{
+  width: 100%;
+}
+
+.typography td{
+  border-bottom: 0.1rem solid var(--gray);
+  font-size: 1.25rem;
+  padding: 0.75rem 0.5rem 0.75rem 0.25rem
+}
+
+/*Color Palette Style*/
 .rect{
   width: 100%;
-  height: 2rem;
+  height: 6rem;
 }
 
 .rect1{
@@ -297,9 +315,47 @@ input[type="submit"]:hover, input[type="reset"]:hover{
   background-color: var(--harvest-gold);
 }
 
+.rect6{
+  background-color: var(--candlelight-ivory);
+  border: 0.5px solid var(--black)
+}
+
+.color-palette td,.color-palette th{
+  width: 33%;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid var(--gray);
+}
+
+.color-palette{
+  border-collapse: collapse;
+}
+
+.color-palette th{
+  font-size: 1.2rem;
+}
+
+/*Icon Style*/
+.icon-image{
+  width: 50px;
+  height: 50px;
+  padding-right: 2.3rem;
+}
+
+/*Potential Imagery Style*/
+.product-image{
+    width: 150px;
+    height: 200px;
+    padding-right: 2.3rem;
+}
+
 /*Other Element*/
 .bold{
   font-weight:700
+}
+
+.black{
+  color: var(--black);
 }
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 400px) {
