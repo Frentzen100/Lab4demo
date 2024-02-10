@@ -8,12 +8,12 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
 </head>
 
 <body>
   <header>
-    <h1>COMPANY STYLEGUIDE</h1>
+    <h1>COMPANY STYLE GUIDE</h1>
 
     <!----- PAGE NAVIGATION ----->
     <nav id="page-nav">
@@ -53,13 +53,13 @@
         <h3>Navigation link</h3>
   
         <h4>CSS Selector:</h4>
-        <p>.button-nav</p>
+        <p>.button</p>
   
         <h4>Sample Code:</h4>
         <code>&lt;a class="button" href="#"&gt; Default Button &lt;/a&gt;</code>
 
         <h4>Rendered Element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
+        <button class="button">Click Me</button>
       </section>
 
       <!-- Submit/ Reset Buttons Sub-Section -->
@@ -90,9 +90,9 @@
         <code> &lt;input type = "text" id = "Input" input = "Input"&gt; </code>
     
         <h4>Rendered element: </h4>
-        <div class="text-input-container">
-          <label for="Input"> Text input: </label>
-          <input type="text" id="Input" name="Input">
+        <div class="form-group">
+          <input type="text" required />
+          <label>Username</label>
         </div>
       </section>
 
@@ -269,11 +269,48 @@
       <!-- Font Sub-Section -->
       <section class="element">
         <h3>Fonts Selection</h3>
+        
+        <h1 class="bold">Heading 1</h1>
+        <p> 44px Futura Bold</p> <br>
+
+        <h2>Heading 2</h2>
+        <p> 36px Futura Regular</p><br>
+
+        <h3>Heading 3</h3>
+        <p> 28px Helvetica Regular</p><br>
+
+        <h4>Heading 4</h4>
+        <p> 20px Helvetica Regular</p><br>
+
+        <p class="bold"> Body Bold</p>
+        <p> 16px Helvetica Bold</p><br>
+
+        <p>Body</p>
+        <p> 16px Helvetica Regular</p><br>
+
+        <p>Button</p>
+        <p> 14px Helvetica Regular</p><br>
       </section>
 
       <!-- Colour Palette Sub-Section -->
       <section class="element">
         <h3>Colour Palette</h3>
+        
+        <h4> Moody Indigo - #368AFF</h4>
+        <div class="rect rect1"></div>
+
+        <h4> Chestnut - #A44F32</h4>
+        <div class="rect rect2"></div>
+
+        <h4> Granite Gray - #636363</h4>
+        <div class="rect rect3"></div>
+
+        <h4> Xanthous - #E5BC30</h4>
+        <div class="rect rect4"></div>
+
+        <h4> Harvest-gold - #E39600</h4>
+        <div class="rect rect5"></div>
+        
       </section>
 
       <!-- Art Direction Sub-Section -->
@@ -283,7 +320,7 @@
 
       <!-- Icons -->
       <section class="element">
-        <h3>Colour Palette</h3>
+        <h3>Icons</h3>
       </section>
 
       <!-- Imagery Sub-Section -->

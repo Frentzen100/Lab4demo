@@ -2,12 +2,31 @@
   STYLE GUIDE STYLING CSS
  */
 
+ /* Colours for reference */
+ :root{
+    --moody-indigo: #6387A9;
+    --candlelight-ivory: #FBF4E1;
+    --granite-gray: #636363;
+    --gainsboro: #DDDDDD;
+    --gray: #7c7d80;
+    --cambridge-blue: #9DBEB7;
+    --chestnut: #A44F32;
+    --silver-clarice: #AAAAAA;
+    --dark-green: #006400;
+    --cadetblue: #5F9EA0;
+    --white: #FFFFFF;
+    --xanthous: #E5BC30;
+    --harvest-gold: #E39600;
+    --maize: #E8C242;
+    --spanish-grey: #9E9E9E;
+    --green: #008000;
+ }
 /* Default Styling For All Sections */
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: #EFE6D5;
+  background: var(--moody-indigo);
 }
 
 html {
@@ -15,27 +34,39 @@ html {
 }
 
 h1 {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: var(--candlelight-ivory);
 }
 
 h2 {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--chestnut);
 }
 
 h3 {
-  font-family: Roboto;
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--moody-indigo);
 }
 
 h4{
-  font-family: Roboto;
+  font-family: Oswal, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--granite-gray);
 }
 
 p {
-  font-family: Roboto;
+  font-family: Source Sans Pro, sans-serif;
 }
 
 code {
-  background-color: #ddd;
+  background-color: var(--gainsboro);
   padding: 1rem;
   display: block;
 }
@@ -45,19 +76,20 @@ code {
   padding-top: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color:#7c7d80;
+  border-top-color: var(--gray);
 }
 
 /* Header Styling */
 header {
   padding: 1rem;
+  background-color: var(--moody-indigo);
   text-align: center;
-  background-color: #9DBEB7;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
 }
+
 
 /* Page Navigation Styling */
 /* Source for underline effect: https://codepen.io/maheshambure21/pen/QwXaRw */
@@ -67,10 +99,14 @@ header {
   overflow-y: auto;
   position: fixed;
   padding-top: 3.8rem;
-  /* box-sizing: border-box; */
-  border: 10px solid #9DBEB7;
+  /*border: 10px solid var(--cambridge-blue);*/
   left: 0.01rem;
+  background: var(--candlelight-ivory);
+  border-radius: 1rem;
+  margin-top: 1.2%;
+  margin-left: 1%;
 }
+
 
 #page-nav ul {
   list-style: none;
@@ -79,13 +115,16 @@ header {
 
 #page-nav ul li {
   padding: 1rem;
-  font-family: Roboto;
+  font-family: Oswald, sans-serif;
+  font-weight: 500; 
+  font-size: 1rem;
   text-align: left;
   position: relative;
+  color:var(--chestnut);
 }
 
 #page-nav ul li a {
-  color:cadetblue;
+  color:var(--chestnut);
   text-decoration: none;
   position: relative;
   transition-property: color; 
@@ -101,7 +140,7 @@ header {
   margin: auto;
   width: 0%;
   color: transparent;
-  background: #aaa;
+  background: var(--silver-clarice);
   height: 1px;
   transition: all 0.5s; /* Adjust the transition duration */
 }
@@ -111,50 +150,157 @@ header {
 }
 
 #page-nav ul li a:hover {
-  color: darkgreen;
+  color: var(--dark-green);
 }
 
 /* Main Sections Styling */
 .main-sections {
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 20%;
-  margin-top: 1%;
+  margin-left: 25%;
+  margin-top: 20%;
   padding: 5rem;
   padding-bottom: 0;
+  background-color: var(--candlelight-ivory);
+  border-radius: 1rem;
+  width: 56%;
 }
 
 #interactive_elements,
-#combined_elements,
+#combined_elements,å
 #brand_ideas,
 #brand_components {
   padding-top: 1rem;
-  margin-top: 4rem; 
+  /*margin-top: 2rem; */
   scroll-margin-top: 10rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
+
 
 /* In-text Link Styling */
 .in-text-link {
-  color:cadetblue;
+  color: var(--cadetblue);
 }
 
 /* Button Styling */
-.button-nav {
-  color: white;
-  background-color: #648abd;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.5rem;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+/* Source for "pressed" effect of buttons: https://www.w3schools.com/howto/howto_css_animate_buttons.asp */
+.button {
+  padding: 10px 40px;
+  font-family: Oswald;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--white);
+  background-color: var(--xanthous);
+  color: var(--chestnut);
+  border: none;
+  border-radius: 60px;
+  box-shadow: 0 5px var(--harvest-gold);
 }
 
-.button-nav:hover, .button-nav:focus {
-  color: #2b2b2b;
-  background-color: #b0c7dd;
+.button:hover {background-color: var(--maize);}
+
+.button:active {
+  background-color: var(--harvest-gold);
+  box-shadow: 0 5px var(--harvest-gold);
+  transform: translateY(4px);
 }
 
+/* Input Label Styling */
+.form-group {
+  position: relative;
+  padding: 20px 0;
+  width: 300px;
+  max-width: 100%;
+}
+
+.form-group input {
+  border: none;
+  border-bottom: 2px solid #A44F32;
+  background-color: #FBF4E1;
+  color: #333;
+  display: block;
+  font-size: 16px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.form-group label {
+  color: #A44F32;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translateY(30px);
+}
+
+.form-group input:valid,
+.form-group input:focus {
+  border-bottom-color: #ee6e73;
+  outline: none;
+}
+
+.form-group input:valid + label,
+.form-group input:focus + label {
+  color: #ee6e73;
+  font-size: 14px;
+  transform: translateY(0);
+}
+
+.form-group label {
+  transition: all 0.2s ease-in-out;
+}
+
+/*Submit and Reset button*/
+
+input[type="submit"], input[type="reset"]{
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+  color: var(--white);
+  background-color: var(--dark-green);
+
+}
+
+/*Color Palette*/
+.rect{
+  width: 100%;
+  height: 2rem;
+}
+
+.rect1{
+  background-color: var(--moody-indigo);
+}
+
+.rect2{
+  background-color: var(--chestnut);
+}
+
+.rect3{
+  background-color: var(--granite-gray);
+}
+
+.rect4{
+  background-color: var(--xanthous);
+}
+
+.rect5{
+  background-color: var(--harvest-gold);
+}
+
+/*Other Element*/
+.bold{
+  font-weight:700
+}
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 400px) {
   #page-nav {
