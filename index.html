@@ -100,13 +100,20 @@
       <section class="element">
         <h3>Radio Buttons with Label</h3>
 
-        <h4>CSS selector: </h4>
-        <p></p>
-    
-        <h4>Sample code: </h4>
-        <code></code>
-    
-        <h4>Rendered element: </h4>
+        <h4>CSS selector:</h4>
+        <p>input[type="radio"], .programming-language</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;input type="radio" id="html" name="language" value="html" class="radio-button"&gt;</code>
+        <code>&lt;label for="html" class="programming-language" &gt;HTML&lt;/label&gt;</code>
+        <code>&lt;input type="radio" id="css" name="language" value="css" class="radio-button"&gt;</code>
+        <code>&lt;label for="css" class="programming-language" &gt;CSS&lt;/label&gt;</code>
+        
+        <h4>Rendered element:</h4>
+        <input type="radio" id="html" name="language" value="html" class="radio-button">
+        <label for="html"  class="programming-language">HTML</label><br>
+        <input type="radio" id="css" name="language" value="css" class="radio-button">
+        <label for="css" class="programming-language">CSS</label>
 
       </section>
 
@@ -114,13 +121,15 @@
       <section class="element">
         <h3>Image as a Link</h3>
 
-        <h4>CSS selector: </h4>
-        <p></p>
-    
-        <h4>Sample code: </h4>
-        <code></code>
-    
-        <h4>Rendered element: </h4>
+        <h4>CSS selector:</h4>
+        <p>.image-nav, image-nav:hover</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="https://ure.pia.co.jp/articles/-/443232?cx_recsClicked=true&cx_recsPosition=sp_photogallery&cx_wid=d6faf3ba962ed798af91b166f41d56e882c0fa74&cx_recsSegment=all&cx_recsMode=contextual&cx_recsSrc=auto"&gt;&lt;img src="image/creambun.jpg" alt="Cream bun" class="image-nav"&gt;&lt;/a&gt;</code>
+        
+        <h4>Rendered element:</h4>
+        <a href="https://ure.pia.co.jp/articles/-/443232?cx_recsClicked=true&cx_recsPosition=sp_photogallery&cx_wid=d6faf3ba962ed798af91b166f41d56e882c0fa74&cx_recsSegment=all&cx_recsMode=contextual&cx_recsSrc=auto"><img src="image/creambun.svg" alt="Cream bun" class="image-nav"></a>
+
 
       </section>
 
@@ -138,13 +147,20 @@
       <section class="element">
         <h3>Headings</h3>
 
-        <h4>CSS selector: </h4>
-        <p></p>
-    
-        <h4>Sample code: </h4>
-        <code></code>
-    
-        <h4>Rendered element: </h4>
+        <h4> CSS Selector </h4>
+        <p> h1, h2 ,h3 ,h4 </p>
+
+        <h4> Sample Code </h4>
+        <code>&lt;h1&gt;Signature Whole Cake&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;Now available for pre-order&lt;/h2&gt;</code>
+        <code>&lt;h3&gt;Matcha Roll Cake&lt;/h3&gt;</code>
+        <code>&lt;h4&gt;$7.99&lt;/h4&gt;</code>
+
+        <h4> Rendered Elements </h4>
+        <h1 class="chestnut"> Signature Whole Cake</h1>
+        <h2> Now available for pre-order</h2>
+        <h3> Matcha Roll Cake</h3>
+        <h4> $7.99</h4>
 
       </section>
 
@@ -153,12 +169,19 @@
         <h3>Paragraphs</h3>
 
         <h4>CSS selector: </h4>
-        <p></p>
+        <p>p</p>
     
         <h4>Sample code: </h4>
-        <code></code>
+        <code>&lt;p&gt;Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
+          Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
+          All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
+          With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".&lt;/p&gt;</code>
     
         <h4>Rendered element: </h4>
+        <p>Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
+           Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
+           All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
+           With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".</p>
 
       </section>
 
@@ -166,13 +189,19 @@
       <section class="element">
         <h3>Numbered Lists</h3>
 
-        <h4>CSS selector: </h4>
-        <p></p>
-    
-        <h4>Sample code: </h4>
-        <code></code>
-    
-        <h4>Rendered element: </h4>
+        <h4>CSS selector:</h4>
+        <p>.number, .number::before </p>
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;
+          <code>&lt;li class="number"&gt;Cake&lt;/li&gt;</code>
+          <code>&lt;li class="number"&gt;Pastries&lt;/li&gt;</code>
+        &lt;/ol&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li class="number">Cake</li>
+          <li class="number">Pastries</li>
+        </ol>
 
       </section>
 

@@ -72,10 +72,12 @@ h1,h2,h3,h4, p{
   margin-bottom: 1rem;
 }
 
+/*Sourxe for overflow-wrap effect: https://www.linkedin.com/pulse/4-ways-deal-overflowing-text-css-youssef-hafnawy#:~:text=In%20conclusion%2C%20CSS%20provides%20several,content%20remains%20visible%20and%20readable.*/
 code {
   background-color: var(--gainsboro);
   padding: 1rem;
   display: block;
+  overflow-wrap: break-word;
 }
 
 .element {
@@ -96,7 +98,6 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 
 /* Page Navigation Styling */
 /* Source for underline effect: https://codepen.io/maheshambure21/pen/QwXaRw */
@@ -278,6 +279,52 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 
 }
 
+/*Radio Button*/
+input[type="radio"]{
+  margin-bottom: 20px;
+  width: 20px;
+  height: 20px;
+  accent-color: var(--chestnut);
+  transform: translateY(2px);
+}
+
+.programming-language{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+/*Image as a link Style*/
+.image-nav{
+  width: 150px;
+  height: 200px;
+}
+
+.image-nav:hover{
+  opacity: 50%;
+}
+
+/*Number Style*/
+
+.number::before{
+  content: counter(li);
+  color: var(--chestnut);
+  margin-left: -16px;
+  display: inline-block;
+  width: 32px;
+  font-size: 1.5rem;
+ }
+
+ .number{
+  counter-increment: li;
+  margin-bottom: 16px;
+  list-style-type: none;
+  font-size: 1.5rem;
+
+ }
+
+
+
 /*Typography Style*/
 .typography{
   width: 100%;
@@ -356,6 +403,10 @@ input[type="submit"]:hover, input[type="reset"]:hover{
 
 .black{
   color: var(--black);
+}
+
+.chestnut{
+  color: var(--chestnut);
 }
 /* Media Queries for Responsiveness */
 @media screen and (max-width: 400px) {
