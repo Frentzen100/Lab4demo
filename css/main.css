@@ -222,47 +222,52 @@ header {
 }
 
 /* Input Label Styling */
+
+
 .form-group {
   position: relative;
   padding: 20px 0;
   width: 300px;
   max-width: 100%;
+  display: inline-block;
 }
 
 .form-group input {
   border: none;
   border-bottom: 2px solid #A44F32;
-  background-color: #FBF4E1;
+  background-color: var(--candlelight-ivory);
   color: #333;
   display: block;
   font-size: 16px;
   padding: 10px 0;
   width: 100%;
+  margin-bottom: 2rem;
+
 }
 
 .form-group label {
-  color: #A44F32;
-  font-family: Oswald;
+  color: var(--chestnut);
+  font-family: Oswald, sans-serif;
   font-size: 16px;
   font-weight: 100;
-  position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;
   transform: translateY(30px);
+  position: absolute;
 }
 
 .form-group input:valid,
 .form-group input:focus {
-  border-bottom-color: #ee6e73;
   outline: none;
+  border-bottom-color: #ee6e73;
 }
 
 .form-group input:valid + label,
 .form-group input:focus + label {
-  color: #ee6e73;
   font-size: 14px;
   transform: translateY(0);
+  color: #ee6e73;
 }
 
 .form-group label {
@@ -270,6 +275,9 @@ header {
 }
 
 /*Submit and Reset button*/
+.submit-button{
+  margin-left: 5%;
+}
 
 input[type="submit"], input[type="reset"]{
   color: var(--white);
@@ -277,6 +285,9 @@ input[type="submit"], input[type="reset"]{
   border: none;
   padding: 10px 40px;
   font-size: 1.1rem;
+  width: 90%;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 input[type="submit"]:hover, input[type="reset"]:hover{
@@ -391,6 +402,32 @@ input[type="radio"]{
   text-decoration: underline;
 }
 
+/*Payment Style*/
+/*Resource: https://stackoverflow.com/questions/13935064/css-target-label-based-on-for-attribute*/
+
+label[for="card-number"]{
+  transform: translateY(100px);
+}
+
+label[for="expiry-date"]{
+  transform: translateY(170px);
+}
+
+label[for="cvv"]{
+  transform: translateY(245px);
+}
+
+.form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] {
+  margin-top: 4.5rem;
+}
+
+.form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"] {
+  margin-top: 9rem;
+}
+
+.form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"] {
+  margin-top: 13.5rem;
+}
 
 /*Typography Style*/
 .typography{

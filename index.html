@@ -67,33 +67,36 @@
         <h3>Submit & Reset Buttons</h3>
   
         <h4>CSS Selector:</h4>
-        <p>input</p>
+        <p>input[type="submit"], input[type="reset"], input[type="submit"]:hover, input[type="reset"]:hover, .submit-button</p>
   
         <h4>Sample Code:</h4>
-        <code> &lt;input type = "submit" value = "Submit" /&gt;</code>
-        <code> &lt;input type = "reset" value = "Reset" /&gt;</code>
+        <code> &lt;input type = "submit" value = "Submit" class="submit-button"/&gt;</code>
+        <code> &lt;input type = "reset" value = "Reset" class="submit-button"/&gt;</code>
 
         <h4>Rendered Element:</h4>
-        <input type = "submit" value ="Submit" />
-			  <input type = "reset" value = "Reset" />
+        <input type = "submit" value ="Submit" class="submit-button" />
+			  <input type = "reset" value = "Reset" class="submit-button" />
       </section>
 
       <!-- Text Input Field Sub-Section -->
       <section class="element">
+        
         <h3>Text Input Field with Label</h3>
 
         <h4>CSS selector: </h4>
         <p> label, input </p>
     
         <h4>Sample code: </h4>
-        <code> &lt;label for = "Input"&gt; Input: &lt;/label&gt; </code>
-        <code> &lt;input type = "text" id = "Input" input = "Input"&gt; </code>
+        <code> &lt;div class="form-group"&gt; </code>
+        <code> &lt;input type = "text" required&gt; </code>
+        <code> &lt;/div&gt; </code>
     
         <h4>Rendered element: </h4>
         <div class="form-group">
           <input type="text" required />
           <label>Username</label>
         </div>
+      
       </section>
 
       <!-- Radio Buttons w/ Label Sub-Section -->
@@ -280,13 +283,39 @@
       <section class="element">
         <h3>Payment Type</h3>
   
-        <h4>CSS Selector:</h4>
-        <p>.in-text-link</p>
-  
-        <h4>Sample Code:</h4>
-        <code></code>
-  
-        <h4>Rendered Element:</h4>
+        <h4>CSS selector:</h4>
+        <p>.submit-button, input[type="submit"],input[type="submit"]:hover, input[type="text"], label[for="card-number"], label[for="expiry-date"],
+          label[for="cvv"],.form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] ,
+          .form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"],
+          .form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"], .form-group input:valid,
+          .form-group input:valid + label, .form-group input:focus + label, .form-group input:focus, .form-group label, .form-group input, .form-group 
+        </p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;div class="form-group"&gt;</code>
+        <code>&lt;input type="text" required&gt;</code>
+        <code>&lt;label for="card-holdername"&gt;Cardholder Name&lt;/label&gt;</code>
+        <code>&lt;input type="text" required&gt;</code>
+        <code>&lt;label for="card-number"&gt;Card Number&lt;/label&gt;</code>
+        <code>&lt;input type="text" required&gt;</code>
+        <code>&lt;label for="expiry-date"&gt;Expire Date&lt;/label&gt;</code>
+        <code>&lt;input type="text" required&gt;</code>
+        <code>&lt;label for="cvv"&gt;CVV&lt;/label&gt;</code>
+        <code>&lt;input type="submit" value="Proceed to checkout" class="submit-button" &gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h4>Rendered element:</h4>
+          <div class="form-group">
+            <input type="text" required />
+            <label for="cardholder-name">Cardholder Name</label>
+            <input type="text" required />
+            <label for="card-number">Card Number</label>
+            <input type="text" required />
+            <label for="expiry-date">Expiry Date (MM/YY)</label>
+            <input type="text" required />
+            <label for="cvv">CVV</label>
+            <input type="submit" value="Pay now" class="submit-button">
+          </div>
       </section>
 
       <!-- Checkout Cart Sub-Section -->
