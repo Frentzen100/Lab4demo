@@ -323,7 +323,32 @@ input[type="radio"]{
 
  }
 
+/*Main navigation Style*/
+.navbar{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  background-color: var(--candlelight-ivory);
+  margin-top: 
+}
 
+.navbar a{
+  text-decoration: none;
+  text-align: center;
+  color: var(--chestnut);
+  float: left;
+  background-color: var(--burnt-orange);
+  padding: 14px 16px;
+  width: 25%;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+}
+
+.navbar a.active{
+  background-color: var(--harvest-gold);
+}
 
 /*Typography Style*/
 .typography{
