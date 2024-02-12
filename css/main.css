@@ -21,7 +21,6 @@
     --spanish-grey: #9E9E9E;
     --green: #008000;
     --black: #000000;
-    --matcha: #74A12E;
  }
 /* Default Styling For All Sections */
 body {
@@ -73,7 +72,7 @@ h1,h2,h3,h4, p{
   margin-bottom: 1rem;
 }
 
-/*Sourxe for overflow-wrap effect: https://www.linkedin.com/pulse/4-ways-deal-overflowing-text-css-youssef-hafnawy#:~:text=In%20conclusion%2C%20CSS%20provides%20several,content%20remains%20visible%20and%20readable.*/
+/*Source for overflow-wrap effect: https://www.linkedin.com/pulse/4-ways-deal-overflowing-text-css-youssef-hafnawy#:~:text=In%20conclusion%2C%20CSS%20provides%20several,content%20remains%20visible%20and%20readable.*/
 code {
   background-color: var(--gainsboro);
   padding: 1rem;
@@ -190,10 +189,17 @@ header {
   padding-bottom: 2rem;
 }
 
-
 /* In-text Link Styling */
 .in-text-link {
-  color: var(--cadetblue);
+  font-family: Oswald;
+  font-size: 1.3rem;
+  color: var(--chestnut);
+  text-decoration: none;
+}
+
+.in-text-link:hover {
+  color: #78260b;
+  text-decoration: underline;
 }
 
 /* Button Styling */
@@ -221,111 +227,171 @@ header {
   transform: translateY(4px);
 }
 
-/* Input Label Styling */
-
-
-.form-group {
+/* Submit and Reset Buttons Styling */
+input[type="reset"] {
+  font-family: Oswald;
+  font-size: 0.7rem;
+  background-color: var(--chestnut);
+  box-shadow: 1px 4px 00 darkred;
+  border-radius: 10rem;
+  color: white;
+  padding: 1em 2em;
   position: relative;
-  padding: 20px 0;
-  width: 300px;
-  max-width: 100%;
-  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none; 
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  font-family: Oswald;
+  font-size: 0.7rem;
+  background-color: #627C39;
+  box-shadow: 1px 4px 0 #3A4A21;
+  border-radius: 4rem;
+  color: white;
+  padding: 1em 2em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none; 
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #9E3410;
+}
+
+input[type="submit"]:hover {
+  background-color: #4b5f2a;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+/* Input Label Styling */
+/* Source for floating label: <!-- https://www.florin-pop.com/blog/2017/08/css3-floating-label/ --> */
+.form-group {
+position: relative;
+padding: 20px 0;
+width: 300px;
+max-width: 100%;
 }
 
 .form-group input {
-  border: none;
-  border-bottom: 2px solid #A44F32;
-  background-color: var(--candlelight-ivory);
-  color: #333;
-  display: block;
-  font-size: 16px;
-  padding: 10px 0;
-  width: 100%;
-  margin-bottom: 2rem;
-
+border: none;
+border-bottom: 2px solid #A44F32;
+background-color: #FBF4E1;
+color: #333;
+display: block;
+font-size: 16px;
+padding: 10px 0;
+width: 100%;
 }
 
 .form-group label {
-  color: var(--chestnut);
-  font-family: Oswald, sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transform: translateY(30px);
-  position: absolute;
+color: #A44F32;
+opacity: 0.6;
+font-family: Oswald;
+font-size: 16px;
+font-weight: 100;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+transform: translateY(30px);
 }
 
 .form-group input:valid,
 .form-group input:focus {
-  outline: none;
-  border-bottom-color: #ee6e73;
+outline: none;
 }
 
 .form-group input:valid + label,
 .form-group input:focus + label {
-  font-size: 14px;
-  transform: translateY(0);
-  color: #ee6e73;
+color: #A44F32;
+opacity: 1;
+font-size: 14px;
+transform: translateY(0);
 }
 
 .form-group label {
-  transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
 }
 
-/*Submit and Reset button*/
-.submit-button{
-  margin-left: 5%;
+/* Radio Buttons Styling */
+/* Source for hover effect on radio buttons: https://briantree.se/styling-html-radio-buttons-a-step-by-step-guide/ */
+.radio-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-input[type="submit"], input[type="reset"]{
-  color: var(--white);
-  background-color: var(--green);
-  border: none;
-  padding: 10px 40px;
-  font-size: 1.1rem;
-  width: 90%;
-  margin-bottom: 1rem;
-  text-align: center;
+.radio-group li {
+  margin: 0.5em 0;  
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover{
-  color: var(--white);
-  background-color: var(--dark-green);
-
+.radio-group input[type="radio"] {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  overflow: hidden;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
 }
 
-/*Radio Button*/
-input[type="radio"]{
-  margin-bottom: 20px;
-  width: 20px;
-  height: 20px;
-  accent-color: var(--chestnut);
-  transform: translateY(2px);
+.radio-group label {
+  color: var(--gray);
+  font-family: Oswald;
+  display: inline-flex;
+  align-items: center;
 }
 
-.programming-language{
-  font-size: 20px;
-  padding-left: 20px;
-  padding-top: 3px;
+.radio-group label::before {
+  content: '';
+  display: block;
+  height: 1.25em;
+  width: 1.25em;
+  border: solid 1px #ccc;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  transition: border ease-in 150ms, box-shadow ease-in 150ms;
+}
+
+.radio-group input[type="radio"]:checked + label,
+.radio-group input[type="radio"]:focus + label {
+  color: var(--moody-indigo);
+}
+
+.radio-group input[type="radio"]:checked + label::before {
+  background: radial-gradient(0.75em circle at center, currentColor 50%, transparent 55%);
+  box-shadow: 0 0 1em 0 val(--moody-indigo);
+  border-color: currentColor;
+}
+
+.radio-group input[type="radio"]:focus + label::before {
+  box-shadow: 0 0 1em 0 rgba(10, 150, 255, 0.75);
+  border-color: currentColor;
 }
 
 /*Image as a link Style*/
-.image-nav{
-  width: 150px;
-  height: 200px;
+.image-nav {
+  transition: opacity 0.3s ease-in-out;
 }
 
-.image-nav:hover{
-  opacity: 50%;
+.image-nav:hover {
+  opacity: 0.5;
 }
 
 /*Number Style*/
-
 .number::before{
   content: counter(li);
   color: var(--chestnut);
+  font-family: Oswald;
   margin-left: -16px;
   display: inline-block;
   width: 32px;
@@ -335,10 +401,17 @@ input[type="radio"]{
  .number{
   counter-increment: li;
   margin-bottom: 16px;
+  font-family: Source Sans Pro;
   list-style-type: none;
   font-size: 1.5rem;
 
  }
+
+ /* Text Styling */
+#text_elements h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 /*Main navigation Style*/
 .navbar{
@@ -353,6 +426,7 @@ input[type="radio"]{
   text-align: center;
   color: var(--chestnut);
   float: left;
+  background-color: var(--burnt-orange);
   padding: 14px 16px;
   width: 25%;
 }
@@ -368,8 +442,63 @@ input[type="radio"]{
   background-color: var(--harvest-gold);
 }
 
-/*Product Listing Style*/
+/* Text Styling */
+#text_elements h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
+/* Company News & Updates Styling */
+/* Layout for News & Updates:  */
+.image-left, .image-right
+{
+  margin: 1em 0;
+}
+
+
+/* Feeback Form Styling */
+/* Source for feedback form: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+.feedback_container [type=text], select, textarea{
+  width: 100%;
+  font-family: Source Sans Pro;
+  padding: 12px;
+  border: 1px solid var(--moody-indigo);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.feedback_container label {
+  font-family: Oswald;
+  color: var(--moody-indigo);
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.feedback_container {
+  border-radius: 5px;
+  background-color: var(--candlelight-ivory);
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Product Listing Style*/
 .product {
   border: 2px solid var(--harvest-gold);
   display: inline-block;
@@ -404,7 +533,6 @@ input[type="radio"]{
 
 /*Payment Style*/
 /*Resource: https://stackoverflow.com/questions/13935064/css-target-label-based-on-for-attribute*/
-
 label[for="card-number"]{
   transform: translateY(100px);
 }
@@ -509,18 +637,51 @@ label[for="cvv"]{
   color: var(--black);
 }
 
-.chestnut{
-  color: var(--chestnut);
-}
+
 /* Media Queries for Responsiveness */
-@media screen and (max-width: 400px) {
-  #page-nav {
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
     width: 100%;
-    position: static;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+#page-nav {
+  width: 100%;
+  position: static;
+}
+
+.main-sections {
+  margin-left: 0;
+  padding-top: 5rem; 
+}
+}
+
+@media screen and (min-width: 320px)
+{
+  .image-left, .image-right
+  {
+    display: flex;
+    align-items: center;
   }
 
-  .main-sections {
-    margin-left: 0;
-    padding-top: 5rem; 
+  .image-left img
+  {
+
+    margin-right: 1em;
+    float: left;
   }
+
+  .image-right img
+  {
+    order: 1;
+    margin-left: 1em;
+    float: right; 
+  }
+
 }
+
+
+
+
