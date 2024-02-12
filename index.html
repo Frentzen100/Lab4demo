@@ -244,12 +244,36 @@
         <h3>Product Listing</h3>
   
         <h4>CSS Selector:</h4>
-        <p>.in-text-link</p>
-  
-        <h4>Sample Code:</h4>
-        <code></code>
-  
-        <h4>Rendered Element:</h4>
+        <p>.product, .product-description a, .product-price a, .product-description a:hover,  .product-price a:hover,
+           .product-description a:focus,  .product-price a:focus</p>
+
+        <h4>CSS Selector:</h4>
+        <code>&lt;div class="product"&gt;</code>
+        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/creambun.svg.svg" class="image-nav" alt="Cream bun" &gt;&lt;/a&gt;</code>
+        <code>&lt;h3 class="product-description"&gt;&lt;a href ="https://mdpr.jp/gourmet/detail/1676903"&gt; Cream Bun &lt;/a&gt;&lt;/h3&gt;</code>
+        <code>&lt;h4 class="product-price"&gt;&lt;a href ="https://mdpr.jp/gourmet/detail/1676903"&gt; $6.99&lt;/a&gt;&lt;/h4&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <code>&lt;div class="product"&gt;</code>
+        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/mochidonuts.svg" class="image-nav" alt="Mochi donut" &gt;&lt;/a&gt;</code>
+        <code>&lt;h3 class="product-description"&gt;&lt;a href =https://mdpr.jp/gourmet/detail/1676903"&gt;Mochi Donut &lt;/a&gt;&lt;/h3&gt;</code>
+        <code>&lt;h4 class="product-price"&gt;&lt;a href ="https://mdpr.jp/gourmet/detail/1676903"&gt; $6.99&lt;/a&gt;&lt;/h4&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <h4>Rendered element:</h4>
+        
+        <div class="product">
+            <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
+            <h3 class="product-description"><a href="https://mdpr.jp/gourmet/detail/1676903"> Cream Bun</a></h3>
+            <h4 class="product-price"><a href="https://mdpr.jp/gourmet/detail/1676903">$6.99</a></h4>
+        </div>
+
+        <div class="product">
+            <a href ="https://mdpr.jp/gourmet/detail/167690"><img src="image/mochidonuts.svg" class="image-nav" alt="Mochi donut"></a>
+            <h3 class="product-description"> <a href ="https://mdpr.jp/gourmet/detail/1676903">Mochi Donut</a></h3>
+            <h4 class="product-price"> <a href ="https://mdpr.jp/gourmet/detail/1676903">$6.99</a></h4>
+        </div>
+
       </section>
 
       <!-- Payment Method Sub-Section -->

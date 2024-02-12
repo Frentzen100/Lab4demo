@@ -21,6 +21,7 @@
     --spanish-grey: #9E9E9E;
     --green: #008000;
     --black: #000000;
+    --matcha: #74A12E;
  }
 /* Default Styling For All Sections */
 body {
@@ -341,7 +342,6 @@ input[type="radio"]{
   text-align: center;
   color: var(--chestnut);
   float: left;
-  background-color: var(--burnt-orange);
   padding: 14px 16px;
   width: 25%;
 }
@@ -356,6 +356,41 @@ input[type="radio"]{
 .navbar a.active{
   background-color: var(--harvest-gold);
 }
+
+/*Product Listing Style*/
+
+.product {
+  border: 2px solid var(--harvest-gold);
+  display: inline-block;
+  padding: 20px 40px 0px;
+  padding-right: 3rem;
+  padding-left: 2.5rem;
+  border-radius: 16px;
+  margin-right: 30px;
+  margin-bottom: 2rem;
+  width: 23%;  
+  text-align: center;
+}
+
+.product-description a{
+  font-weight: 700;
+}
+
+.product-price a, .product-description a{
+  text-decoration: none;
+  color: var(--cadetblue);
+}
+
+.product-price a:hover, .product-description a:hover{
+  color: var(--dark-green);
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+.product-description a:focus,  .product-price a:focus{
+  text-decoration: underline;
+}
+
 
 /*Typography Style*/
 .typography{
