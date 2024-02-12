@@ -30,6 +30,7 @@
 
   
   <!----- INTERACTIVE ELEMENTS SECTION ----->
+
   <section class="main-sections">
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
@@ -101,10 +102,25 @@
         <h3>Radio Buttons with Label</h3>
 
         <h4>CSS selector:</h4>
-        <p>input[type="radio"], .programming-language</p>
+        <p>input[type="radio"]</p>
 
         <h4>Sample code:</h4>
-        <code></code>
+        <code> &lt; div class="radio-group" &gt;</code>
+        <code> &lt; ul &gt;</code>
+        <code> &lt; li &gt;</code>
+        <code> &lt;input type = "radio" value="small" name="option" id="small"&gt; </code>
+        <code> &lt;label for = "small"&gt; Small &lt;/label&gt; </code>
+        <code> &lt; /li &gt;</code>
+        <code> &lt; li /&gt;</code>
+        <code> &lt;input type = "radio" value="medium" name="option" id="medium"&gt; </code>
+        <code> &lt;label for = "medium"&gt; Medium &lt;/label&gt; </code>
+        <code> &lt; /li &gt;</code>
+        <code> &lt; li /&gt;</code>
+        <code> &lt;input type = "radio" value="large" name="option" id="large"&gt; </code>
+        <code> &lt;label for = "large"&gt; Large &lt;/label&gt; </code>
+        <code> &lt; /li &gt;</code>
+        <code> &lt; /ul &gt;</code>
+        <code> &lt; /div &gt;</code>
         
         <h4>Rendered element:</h4>
         <div class="radio-group">
@@ -405,7 +421,7 @@
       <!-- Company Updates & Events Sub-Section -->
       <section class="element">
         <h3>Company Updates & Events</h3>
-
+        
         <div class="image-left">
           <img src="image/updatesimg1.png" alt="First Image Event" style="width: 25%">
           <div>
@@ -413,15 +429,16 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu, massa scelerisque ac, cursus et, sollicitudin a, orci.</p>
           </div>
         </div>
+        <!-- Source of image: https://gigazine.net/news/20140703-yukinosita-kyoto/ -->
         
         <div class="image-right">
-          <img src="image/updatesimg2.png" alt="Second Image Event" style="width: 25%">
+          <img src="image/updatesimg2.png"  alt="Second Image Event" style="width: 25%">
           <div>
         <h2>Up to 50% on Cake Orders</h2>
             <p>Praesent in mauris eu tortor porttitor accumsan. Duis bibendum. Morbi non erat non ipsum pharetra tempus. Du is iaculis laoreet odio. Vestibulum id ligula porta felis euismod semper. Sed euismod. Maecenas id ante. Nunc pellentesque. Sed vestibulum. Integer in ante. Nunc elementum.</p>
-        
           </div>
         </div>
+        <!-- Source of image: https://menu.starbucks.co.jp/4524785488816 -->
 
       </section>
 
@@ -457,7 +474,7 @@
             <div class="col-75">
               <select id="country" name="country">
                 <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+                <option value="uk">USA</option>
                 <option value="usa">UK</option>
               </select>
             </div>
@@ -509,39 +526,39 @@
 
         <table class="typography">
           <tr>
-            <td><h1 class="black">Heading 1</h1></td>
+            <td><h1>Heading 1</h1></td>
             <td> 40 px<td>
             <td> Oswald - Bold </td>
           </tr>
 
           <tr>
-            <td><h2 class="black">Heading 2</h2></td>
+            <td><h2>Heading 2</h2></td>
             <td> 32 px<td>
-            <td> Oswald - Regular </td>
+            <td> Oswald - SemiBold </td>
           </tr>
 
           <tr>
-            <td><h3 class="black">Heading 3</h3></td>
+            <td><h3>Heading 3</h3></td>
             <td> 24 px<td>
-            <td> Roboto - Regular </td>
+            <td> Oswald — Regular </td>
           </tr>
 
           <tr>
-            <td><h4 class="black">Heading 4</h4></td>
+            <td><h4>Heading 4</h4></td>
             <td> 20 px<td>
-            <td> Roboto - Regular </td>
+            <td> Oswald — Regular </td>
           </tr>
 
           <tr>
             <td><p class="bold">Body Bold</p></td>
             <td> 16 px<td>
-            <td> Roboto - Bold </td>
+            <td> Source Sans Pro — Bold </td>
           </tr>
 
           <tr>
             <td><p>Body</p></td>
             <td> 16 px<td>
-            <td> Roboto - Regular </td>
+            <td> Source Sans pro — Regular </td>
             </tr>
         </table>
         
@@ -564,7 +581,7 @@
           </tr>
 
           <tr>
-            <td><h4> Chestnut     #A44F32</h4></td>
+            <td><h4> Chestnut  #A44F32</h4></td>
             <td> <div class="rect rect2"></div> </td>
             <td> Navigational Text</td>
           </tr>
@@ -623,7 +640,15 @@
     <footer>
       <section id="citations">
         <h2>Citations</h2>
-        <!-- citations do later -->
+        
+        <ul>
+          <li>Image of cream bun: https://macaro-ni.jp/88223 </li>
+          <li>Image of mochi donut: https://macaro-ni.jp/88223 </li>
+          <li>Image 1 in updates section: https://gigazine.net/news/20140703-yukinosita-kyoto/</li>
+          <li>Image 2 in updates section: https://menu.starbucks.co.jp/4524785488816</li>
+          <li>Facebook icon: https://icons8.com/icons/set/facebook</li>
+          <li>Instagram icon: https://icons8.com/icons/set/instagram</li>
+          <li>Image of matcha croffle: https://chiveburger.tumblr.com/post/121245482590/krispy-kreme-waffnuts-%E3%83%AF%E3%83%95%E3%83%8A%E3%83%83%E3%83%84%E5%AE%87%E6%B2%BB%E6%8A%B9%E8%8C%B6-%E3%83%AF%E3%83%95%E3%83%8A%E3%83%83%E3%83%84%E3%82%A2%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%89</li>
       </section>
     </footer>
   
