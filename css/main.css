@@ -229,7 +229,7 @@ header {
 
 /* Submit and Reset Buttons Styling */
 input[type="reset"] {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 0.7rem;
   background-color: var(--chestnut);
   box-shadow: 1px 4px 00 darkred;
@@ -557,6 +557,64 @@ label[for="cvv"]{
   margin-top: 13.5rem;
 }
 
+.submit-button{
+  margin-top: 3rem;
+}
+
+/*Checkout Style*/
+#cart{
+  padding-right: 2rem;
+}
+.cart-image-nav{
+  width: 150px;
+  height: 150px;
+}
+
+.checkout-item{
+  display: flex;
+  position: relative;
+  border-bottom-style: solid;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-color: var(--granite-gray);
+  border-width: 0.1rem;
+}
+
+.checkout-item-text{
+  margin-left: 20px;
+}
+
+.checkout-item-price, .checkout-item-quantity, .checkout-item-total{
+  font-weight: 100;
+}
+
+.checkout-item-price, .checkout-item-quantity, .checkout-item-description{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.checkout-item-total{
+  text-align: right;
+  width: 97%;
+  margin-left: 20px;
+  margin-top:  60px;
+  position: absolute;
+}
+
+.checkout-total {
+  text-align: right;
+  padding-right: 10px;
+  font-size: 2rem;
+}
+
+.checkout-button{
+  float: right;
+}
+
+.checkout-item-image{
+  margin-top: 1.75rem;
+}
+
 /*Typography Style*/
 .typography{
   width: 100%;
@@ -635,6 +693,15 @@ label[for="cvv"]{
 
 .black{
   color: var(--black);
+}
+
+.spacing{
+  margin-bottom: 2rem;
+  transform: translateY(32px);
+}
+
+.regular{
+  font-weight: 100;
 }
 
 

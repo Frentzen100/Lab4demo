@@ -303,18 +303,18 @@
         <code>&lt;label for="expiry-date"&gt;Expire Date&lt;/label&gt;</code>
         <code>&lt;input type="text" required&gt;</code>
         <code>&lt;label for="cvv"&gt;CVV&lt;/label&gt;</code>
-        <code>&lt;input type="submit" value="Proceed to checkout" class="submit-button" &gt;</code>
+        <code>&lt;input type="submit" value="Pay now" class="submit-button" &gt;</code>
         <code>&lt;/div&gt;</code>
   
         <h4>Rendered Element:</h4>
         <div class="form-group">
             <input type="text" required />
             <label for="cardholder-name">Cardholder Name</label>
-            <input type="text" required />
+            <input type="text" class="spacing"  required />
             <label for="card-number">Card Number</label>
-            <input type="text" required />
+            <input type="text" class="spacing" required />
             <label for="expiry-date">Expiry Date (MM/YY)</label>
-            <input type="text" required />
+            <input type="text" class="spacing" required />
             <label for="cvv">CVV</label>
             <input type="submit" value="Pay now" class="submit-button">
         </div>
@@ -324,13 +324,60 @@
       <section class="element">
         <h3>Checkout Cart</h3>
   
-        <h4>CSS Selector:</h4>
-        <p>.in-text-link</p>
-  
-        <h4>Sample Code:</h4>
-        <code></code>
-  
-        <h4>Rendered Element:</h4>
+        <h4>CSS selector:</h4>
+        <p> .image-nav, .submit-button, .checkout-item, .checkout-item-text, .checkout-item-description,
+            .checkout-item-price, .checkout-item-quanitity, .checkout-item-total, .checkout-total, .regular,
+            .checkout-button, .checkout-button:hover
+        </p>
+
+        <h4>Sample code:</h4>
+
+        <code>&lt;div class="checkout-item"&gt;</code>
+        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/creambun.svg.svg" class="image-nav" alt="Cream bun" &gt;&lt;/a&gt;</code>
+        <code>&lt;div class="checkout-item-text"&gt;</code>
+        <code>&lt;h4 class="checkout-item-description&gt; Cream Bun&lt;/h4&gt;</code>
+        <code>&lt;h4 class="checkout-item-price&gt; $6.99&lt;/h4&gt;</code>
+        <code>&lt;h4 class="checkout-item-quantity&gt; Quantity: 2&lt;/h4&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;h3 class="checkout-item-total"&gt; $13.98&lt;/h3&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <code>&lt;div class="checkout-item"&gt;</code>
+        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/mochidonuts.svg" class="image-nav" alt="Mochi donut" &gt;&lt;/a&gt;</code>
+        <code>&lt;div class="checkout-item-text"&gt;</code>
+        <code>&lt;h4 class="checkout-item-description"&gt; Mochi Donut&lt;/h4&gt;</code>
+        <code>&lt;h4 class="checkout-item-price"&gt; $6.99&lt;/h4&gt;</code>
+        <code>&lt;h4 class="checkout-item-quantity"&gt; Quantity: 1&lt;/h4&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;h3 class="checkout-item-total"&gt; $6.99&gt;&lt;/h3&gt;</code>
+        <code>&lt;/div&gt;</code>
+
+        <code>&lt;h3 class="checkout-total"&gt; &lt;span class="regular"&gt; Total &lt;/span&gt; $20.97&gt;&lt;/h3&gt;</code>
+        <code>&lt;input type="submit" value="Checkout" class="checkout-button" &gt;</code>
+
+        <h4>Rendered element:</h4>
+        <div class="checkout-item">
+          <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/creambun.svg" class="checkout-item-image image-nav" alt="Cream bun" style="width: 100px"></a>
+          <div class="checkout-item-text">
+            <h4 class="checkout-item-description"> Cream Bun </h4>
+            <h4 class="checkout-item-price"> $6.99</h4> 
+            <h4 class="checkout-item-quantity"> Quantity: 2</h4> 
+          </div>
+          <h3 class="checkout-item-total"> $13.98</h3>
+        </div>
+
+        <div class="checkout-item">
+          <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/mochidonuts.svg" class="checkout-item-image image-nav" alt="Mochi donut" style="width: 100px" ></a>
+          <div class="checkout-item-text">
+            <h4 class="checkout-item-description"> Mochi Donut </h4>
+            <h4 class="checkout-item-price"> $6.99</h4> 
+            <h4 class="checkout-item-quantity"> Quantity: 1</h4> 
+          </div>
+          <h3 class="checkout-item-total">$6.99</h3>
+        </div>
+
+        <h3 class="checkout-total"> <span class="regular">Total</span> $20.97</h3>
+        <input type="submit" value="Checkout" class="checkout-button">
       </section>
 
     </section>  
