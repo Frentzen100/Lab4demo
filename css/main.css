@@ -139,17 +139,17 @@ header {
   transition-duration: 0.5s;
 }
 
-#page-nav ul li a:after {
+#page-nav ul li a::after {
   content: '.';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  width: 0%;
   color: transparent;
   background: var(--silver-clarice);
   height: 1px;
+  width: 0%;
   transition: all 0.5s; /* Adjust the transition duration */
 }
 
@@ -166,12 +166,17 @@ header {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 25%;
-  margin-top: 20%;
   padding: 5rem;
   padding-bottom: 0;
   background-color: var(--candlelight-ivory);
   border-radius: 1rem;
   width: 56%;
+  margin-bottom: 2rem;
+}
+
+/*Resource: https://css-tricks.com/almanac/selectors/f/first-of-type/*/
+.main-sections:first-of-type{
+   padding-top: 15%;
 }
 
 #interactive_elements,
@@ -329,7 +334,6 @@ input[type="radio"]{
   overflow: hidden;
   display: flex;
   background-color: var(--candlelight-ivory);
-  margin-top: 
 }
 
 .navbar a{
@@ -343,6 +347,9 @@ input[type="radio"]{
 }
 
 .navbar a:hover{
+  color: var(--dark-green);
+  transition-property: color; 
+  transition-duration: 0.5s;
   text-decoration: underline;
 }
 
@@ -358,7 +365,7 @@ input[type="radio"]{
 .typography td{
   border-bottom: 0.1rem solid var(--gray);
   font-size: 1.25rem;
-  padding: 0.75rem 0.5rem 0.75rem 0.25rem
+  padding: 0.75rem 0.5rem 0.75rem 0.25rem;
 }
 
 /*Color Palette Style*/
