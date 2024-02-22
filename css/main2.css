@@ -1,0 +1,30 @@
+:root{
+  --moody-indigo: #6387A9;
+  --candlelight-ivory: #FBF4E1;
+  --granite-gray: #636363;
+  --gainsboro: #DDDDDD;
+  --gray: #7c7d80;
+  --cambridge-blue: #9DBEB7;
+  --chestnut: #A44F32;
+  --silver-clarice: #AAAAAA;
+  --dark-green: #006400;
+  --cadetblue: #5F9EA0;
+  --white: #FFFFFF;
+  --xanthous: #E5BC30;
+  --harvest-gold: #E39600;
+  --maize: #E8C242;
+  --spanish-grey: #9E9E9E;
+  --green: #008000;
+  --black: #000000;
+  --maximum-green: #627C39;
+
+}
+
+.about-us-page, .about-us-page header{
+  background-color: var(--candlelight-ivory);
+}
+
+.about-us-page h1{
+  background-color: var(--candlelight-ivory);
+}
+
