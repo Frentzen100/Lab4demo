@@ -20,11 +20,70 @@
 
 }
 
-.about-us-page, .about-us-page header{
-  background-color: var(--candlelight-ivory);
+/*Filter effect: https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/*/
+
+.hero-container{
+  position: relative;
 }
 
-.about-us-page h1{
-  background-color: var(--candlelight-ivory);
+.hero-image{
+  height: auto;
+  width: 100%;
+  filter: brightness(50%);
+  transform: translateY(-1.4rem);
 }
+
+blockquote{
+    position: absolute;
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    margin-left: -1rem;
+    margin-top: -1rem;
+}
+
+.about-us-page header{
+  padding-bottom: 0;
+}
+
+.about-us-page, .about-us-page header{
+background-color: var(--candlelight-ivory);
+}
+
+.about-us-page .navbar{
+  margin-top: -1rem;
+  margin-left: -1rem;
+  }
+
+.about-us-page h1{
+background-color: var(--candlelight-ivory);
+}
+
+.about-detail{
+  padding: 0 5rem;
+}
+
+.about-company, .about-quality{
+  display: flex;
+}
+
+.about-company-detail, .about-quality-detail{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about-company-detail{
+   margin-right: 2rem;
+}
+
+.about-quality-detail{
+   margin-left: 2rem;
+}
+
+
+
+
 
