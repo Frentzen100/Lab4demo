@@ -31,6 +31,7 @@
   width: 100%;
   filter: brightness(50%);
   transform: translateY(-1.4rem);
+  margin-top: -1rem;
 }
 
 blockquote{
