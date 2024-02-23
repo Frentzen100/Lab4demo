@@ -17,22 +17,9 @@
   --green: #008000;
   --black: #000000;
   --maximum-green: #627C39;
-
 }
 
-/*Filter effect: https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/*/
-
-.hero-container{
-  position: relative;
-}
-
-.hero-image{
-  height: auto;
-  width: 100%;
-  filter: brightness(50%);
-  transform: translateY(-1.4rem);
-  margin-top: -1rem;
-}
+/*********** Beginning - Overall Website ***********/
 
 blockquote{
     position: absolute;
@@ -46,22 +33,36 @@ blockquote{
     margin-top: -1rem;
 }
 
-.about-us-page header{
+.hero-container{
+  position: relative;
+}
+
+.hero-image{
+  height: auto;
+  width: 100%;
+  filter: brightness(50%);
+  transform: translateY(-1.4rem);
+  margin-top: -1rem;
+}
+
+.matcha-munchies-page header{
   padding-bottom: 0;
 }
 
-.about-us-page, .about-us-page header{
+.matcha-munchies-page, .matcha-munchies-page header{
 background-color: var(--candlelight-ivory);
 }
 
-.about-us-page .navbar{
+.matcha-munchies-page .navbar{
   margin-top: -1rem;
   margin-left: -1rem;
-  }
-
-.about-us-page h1{
-background-color: var(--candlelight-ivory);
 }
+
+/*********** Ending - Overall Website ***********/
+
+
+/*********** Beginning - About Us Section ***********/
+/*Filter effect: https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/*/
 
 .about-detail{
   padding: 0 5rem;
@@ -84,7 +85,29 @@ background-color: var(--candlelight-ivory);
    margin-left: 2rem;
 }
 
+/*********** Ending - About Us Section ***********/
 
+
+
+/*********** Beginning - Menu Section ***********/
+
+.menu-product .product{
+  margin-left: 5vw;
+  overflow: hidden;
+}
+
+.menu-product img{
+  transition: transform 0.3s ease;
+  transform: scale(0.8);
+}
+
+.menu-product img:hover{
+  transform: scale(0.85);
+  opacity: 1;
+}
+
+
+/*********** Ending - Menu Section ***********/
 
 
 
