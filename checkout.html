@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout and Payment</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+</head>
+
+<!-- 	Feedback -->
+<!-- nav links/ buttons size bigger -->
+<!-- 	button for checkout/ or make the product listing more detailed -->
+<!-- 	pay now button is hard to see -->
+<!-- 	citations clearer + with links -->
+
+<body class="matcha-munchies-page">
+  <header class="checkout-navbar">
+    <div class="navbar2">
+      <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/cart.png" class="icon-image" alt="Cart"></a>
+    </div>
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+       <a href="menu.html">Menu</a>
+       <a href="about-us.html">About Us</a>
+       <a href="contact.html">Contact</a>
+     </div>
+  </header>
+  <br><br><br><br><br><br><br>
+
+  <section class="cart-and-payment">
+    <div class="cart">
+      <h2> Your Cart</h2>
+
+      <div class="checkout-item">
+        <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/creambun.svg" class="checkout-item-image image-nav" alt="Cream bun" style="width: 100px"></a>
+        <div class="checkout-item-text">
+          <h3 class="checkout-item-description bold"> Cream Bun </h3>
+          <h4 class="checkout-item-price regular "> $6.99</h4> 
+          <h4 class="checkout-item-quantity regular "> Quantity: 2</h4> 
+        </div>
+        <h3 class="checkout-item-total"> $13.98</h3>
+      </div>
+
+      <h3 class="checkout-total"> <span class="regular">Total</span> $13.98</h3>
+      <input type="submit" value="Checkout" class="checkout-button">
+    </div>
+
+    <div class="vertical-line"></div>
+    <div class="payment">
+      <h2> Your Payment</h2>
+
+      <div class="form-group">
+        <input type="text" required />
+        <label for="cardholder-name">Cardholder Name</label>
+        <input type="text" class="spacing"  required />
+        <label for="card-number">Card Number</label>
+        <input type="text" class="spacing" required />
+        <label for="expiry-date">Expiry Date (MM/YY)</label>
+        <input type="text" class="spacing" required />
+        <label for="cvv">CVV</label>
+        <input type="submit" value="Pay now" class="submit-button">
+      </div>
+    </div>
+  </section>
+  
+
+
+   
+  
+
+  
+ 
+</body>
+
+</html>

@@ -58,6 +58,13 @@ background-color: var(--candlelight-ivory);
   margin-left: -1rem;
 }
 
+.matcha-munchies-page .navbar2{
+  height: 3.8rem;
+}
+
+.matcha-munchies-page .icon-image{
+  margin-bottom: 0.5rem;
+}
 /*********** Ending - Overall Website ***********/
 
 
@@ -90,6 +97,13 @@ background-color: var(--candlelight-ivory);
 
 
 /*********** Beginning - Menu Section ***********/
+.add-button{
+  margin-bottom: 1rem;
+}
+.navbar2 img{
+  float: right;
+  margin-right: 1rem;
+}
 
 .menu-product .product{
   margin-left: 5vw;
@@ -106,8 +120,50 @@ background-color: var(--candlelight-ivory);
   opacity: 1;
 }
 
-
 /*********** Ending - Menu Section ***********/
 
 
 
+/*********** Beginning - Product Section ***********/
+.menu-hero-product img{
+  transform: scale(2);
+  border: solid 5px red;
+
+}
+/*********** Ending - Product Section ***********/
+
+
+
+/*********** Beginning - Checkout Section ***********/
+
+.vertical-line{
+  width: 1px;
+  margin-left: 5rem;
+  background-color: var(--gray);
+  margin-top: 1rem;
+}
+.cart-and-payment{
+  display: flex;
+}
+
+.cart{
+  width: 40%;
+  margin-left: 2rem;
+}
+
+.checkout-navbar{
+  border: solid 1px var(--granite-gray);
+}
+
+.cart img:hover{
+  transform: scale(0.85);
+  opacity: 1;
+}
+
+.payment{
+  width: 40%;
+  margin-left: 5rem;
+}
+
+
+/*********** Ending - Checkout Section ***********/
