@@ -34,41 +34,45 @@ html {
 }
 
 h1 {
-    font-family: Oswald, sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
-    color: var(--candlelight-ivory);
+  font-family: Oswald, sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  color: var(--candlelight-ivory);
 }
   
 h2 {
-    font-family: Oswald, sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: var(--chestnut);
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--chestnut);
 }
   
 h3 {
-    font-family: Oswald, sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--moody-indigo);
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--moody-indigo);
 }
   
 h4{
-    font-family: Oswald, sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: var(--granite-gray);
-    line-height: 1.6rem;
+  font-family: Oswald, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--granite-gray);
+  line-height: 1.6rem;
 }
   
 p {
-    font-family: Source Sans Pro, sans-serif;
+  font-family: Source Sans Pro, sans-serif;
 }
 
 .element {
-    margin-top: 2rem;
-    padding: 30px;
+  margin-top: 2rem;
+  padding: 30px;
+}
+
+.homepage, .about-us-page, .contact-page, .menu-page {
+  background-color: var(--candlelight-ivory);
 }
 
 /* ---------- HOME PAGE ----------*/
@@ -201,6 +205,84 @@ header .navbar {
   margin: 1em 0;
 }
 
+/* ---------- MENU PAGE ----------*/
+/* .menu-product .product{
+  margin-left: 5vw;
+  overflow: hidden;
+}
+
+.menu-product img{
+  transition: transform 0.3s ease;
+  transform: scale(.85);
+}
+
+.menu-product img:hover{
+  transform: scale(0.85);
+  opacity: 1;
+} */
+
+.menu-page .element {
+  margin-top: 10rem;
+}
+
+.product {
+  display: inline-block;
+  padding: 20px 40px 0px;
+  padding-right: 3rem;
+  padding-left: 2.5rem;
+  border-radius: 16px;
+  margin-right: 30px;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 23%;  
+  text-align: center;
+}
+
+.product-description a{
+  font-weight: 700;
+}
+
+.product-price a, .product-description a{
+  text-decoration: none;
+  color: var(--cadetblue);
+}
+
+.product-price a:hover, .product-description a:hover{
+  color: var(--dark-green);
+  transition-property: color; 
+  transition-duration: 0.5s;
+}
+
+.product-description a:focus,  .product-price a:focus{
+  text-decoration: underline;
+}
+
+.product input[type="submit"] {
+  font-family: Oswald;
+  font-size: .8rem;
+  background-color: var(--maximum-green);
+  box-shadow: 1px 4px 0 #3A4A21;
+  border-radius: 4rem;
+  color: white;
+  padding: 1em 1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none; 
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.product input[type="submit"]:hover {
+  background-color: #4b5f2a;
+}
+
+.product input[type="submit"]:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+
 /* ---------- ABOUT US PAGE ----------*/
 
 /* Hero Section Styling */
@@ -256,6 +338,77 @@ blockquote {
   .about-quality-detail{
      margin-left: 2rem;
   }
+
+/* ---------- CONTACT PAGE ---------- */
+
+.feedback_container {
+  border-radius: 5px;
+  background-color: var(--candlelight-ivory);
+  padding: 20px;
+  margin-top: 8rem;
+}
+
+.feedback_container [type=text], select, textarea{
+  width: 100%;
+  font-family: Source Sans Pro, sans-serif;
+  padding: 12px;
+  border: 1px solid var(--moody-indigo);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.feedback_container label {
+  font-family: Oswald, sans-serif;
+  color: var(--moody-indigo);
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.feedback_container input[type="submit"] {
+  font-family: Oswald;
+  font-size: 1rem;
+  background-color: var(--maximum-green);
+  box-shadow: 1px 4px 0 #3A4A21;
+  border-radius: 4rem;
+  color: white;
+  padding: 1em 2em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none; 
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.feedback_container input[type="submit"]:hover {
+  background-color: #4b5f2a;
+}
+
+.feedback_container input[type="submit"]:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+
 
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
