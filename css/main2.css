@@ -45,6 +45,10 @@ blockquote{
   margin-top: -1rem;
 }
 
+.chestnut{
+  color: var(--chestnut);
+}
+
 .matcha-munchies-page header{
   padding-bottom: 0;
 }
@@ -125,11 +129,50 @@ background-color: var(--candlelight-ivory);
 
 
 /*********** Beginning - Product Section ***********/
-.menu-hero-product img{
-  transform: scale(2);
-  border: solid 5px red;
+.menu-hero-product{
+
+  display: flex;
 
 }
+
+.menu-hero-product h2{
+  font-size: 5rem;
+}
+
+
+.menu-hero-product .product-image{
+  width: 500px;
+  height: 500px;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.menu-hero-product .product-image img:hover{
+  opacity: 1;
+}
+.menu-hero-product .product-description{
+  width: 45%;
+  margin-left: 2rem;
+  padding-top: 1rem;
+}
+
+.fullscreen{
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 57vw;
+  background-color: rgba(0,0,0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  /*
+  left: 35%;
+  top: 28%;
+  */
+}
+
 /*********** Ending - Product Section ***********/
 
 
