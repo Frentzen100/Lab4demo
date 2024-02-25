@@ -66,6 +66,11 @@ p {
     font-family: Source Sans Pro, sans-serif;
 }
 
+.element {
+    margin-top: 2rem;
+    padding: 30px;
+}
+
 /* Header Styling */
 header {
     position: fixed;
@@ -73,6 +78,7 @@ header {
     left: 0;
     width: 100%;
     padding: 30px;
+    background-color: var(--moody-indigo);
 }
 
 header .navbar {
@@ -114,7 +120,7 @@ header .navbar {
 
 /* Hero Section Styling */
 .hero-section {
-    height: 100vh;
+    height: 80vh;
     background-color: var(--moody-indigo);
     background-position: center;
     background-size: cover;
@@ -122,6 +128,7 @@ header .navbar {
     align-items: center;
     justify-content: center; 
     padding: 0 30px;
+    margin-bottom: 2rem;
 }
 
 .hero-section .content {
@@ -183,6 +190,12 @@ header .navbar {
     color: var(--candlelight-ivory);
   cursor: pointer;
   display: none;
+}
+
+/* Layout for News & Updates:  */
+.image-left, .image-right
+{
+  margin: 1em 0;
 }
 
 /* Media Queries */
@@ -253,4 +266,28 @@ header .navbar {
   .hero-section .content button {
     padding: 15px 20px;
   }
+}
+
+@media screen and (min-width: 320px)
+{
+  .image-left, .image-right
+  {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-left img
+  {
+
+    margin-right: 1em;
+    float: left;
+  }
+
+  .image-right img
+  {
+    order: 1;
+    margin-left: 1em;
+    float: right; 
+  }
+
 }
