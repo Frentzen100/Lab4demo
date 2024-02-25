@@ -71,6 +71,8 @@ p {
     padding: 30px;
 }
 
+/* ---------- HOME PAGE ----------*/
+
 /* Header Styling */
 header {
     position: fixed;
@@ -95,6 +97,7 @@ header .navbar {
     font-weight: 600;
     font-size: 3rem;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .navbar .logo span {
@@ -179,17 +182,17 @@ header .navbar {
 
 /* Styling for the hamburger navigation */
 #close-menu-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-  display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 #hamburger-btn {
     color: var(--candlelight-ivory);
-  cursor: pointer;
-  display: none;
+    cursor: pointer;
+    display: none;
 }
 
 /* Layout for News & Updates:  */
@@ -197,6 +200,62 @@ header .navbar {
 {
   margin: 1em 0;
 }
+
+/* ---------- ABOUT US PAGE ----------*/
+
+/* Hero Section Styling */
+.hero-container{
+    margin-top: 1.3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    background-size: cover;
+}
+
+.hero-container img {
+    width: 100%;
+}
+/* .hero-image{
+    height: auto;
+    width: 100%;
+    filter: brightness(50%);
+    opacity: 0.8;
+} */
+
+blockquote {
+    position: absolute;
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 70%; 
+    left: 50%;
+    margin-left: -1rem;
+    width: 100%;
+}
+
+
+/* About Section Styling */
+
+.about-detail{
+    padding: 0 5rem;
+  }
+  
+  .about-company, .about-quality{
+    display: flex;
+  }
+  
+  .about-company-detail, .about-quality-detail{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .about-company-detail{
+     margin-right: 2rem;
+  }
+  
+  .about-quality-detail{
+     margin-left: 2rem;
+  }
 
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
