@@ -1,442 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
 
-/* Colours for reference */
-:root{
-    --moody-indigo: #6387A9;
-    --candlelight-ivory: #FBF4E1;
-    --granite-gray: #636363;
-    --gainsboro: #DDDDDD;
-    --gray: #7c7d80;
-    --cambridge-blue: #9DBEB7;
-    --chestnut: #A44F32;
-    --silver-clarice: #AAAAAA;
-    --dark-green: #006400;
-    --cadetblue: #5F9EA0;
-    --white: #FFFFFF;
-    --xanthous: #E5BC30;
-    --harvest-gold: #E39600;
-    --maize: #E8C242;
-    --spanish-grey: #9E9E9E;
-    --green: #008000;
-    --black: #000000;
-    --maximum-green: #627C39;
-}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+ 
+  <link rel="stylesheet" href="css/main3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <!-- Hamburger icon from https://fonts.google.com/icons -->
+</head>
 
-/* General Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Oswald, sans-serif;
-}
+<body>
+    <!-- Header source from https://www.codingnepalweb.com/create-responsive-coffee-website-html-css/ -->
+  <header>
+    <nav class="navbar">
+        <a class="logo" href="#">MatchaMunchies<span>.</span></a>
+        <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href='home.html'>Home</a></li>
+            <li><a href='menu.html'>Menu</a></li>
+            <li><a href='about-us.html'>About Us</a></li>
+            <li><a href='contact.html'>Contact Us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header> 
 
-html {
-    scroll-behavior: smooth;
-}
+  <section class="hero-section">
+    <div class="content">
+        <h2>Fill Your Matcha Cravings!</h2>
+        <p>
+            Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.
+        </p>
+        <a href="menu.html" class="button-link">
+            <button class="button">View Menu</button>
+        </a>
+    </div>
+  </section>
 
-h1 {
-    font-family: Oswald, sans-serif;
-    font-weight: 900;
-    font-size: 4rem;
-    color: var(--candlelight-ivory);
-}
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    <!-- for mobile -->
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+ 
+  </script>
   
-h2 {
-    font-family: Oswald, sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color: var(--chestnut);
-}
-  
-h3 {
-    font-family: Oswald, sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--moody-indigo);
-}
-  
-h4{
-    font-family: Oswald, sans-serif;
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: var(--granite-gray);
-    line-height: 1.6rem;
-}
-  
-p {
-    font-family: Source Sans Pro, sans-serif;
-}
-
-.element {
-    margin-top: 2rem;
-    padding: 30px;
-}
-
-/* Header Styling */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px;
-    background-color: var(--moody-indigo);
-}
-
-header .navbar {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1300px;
-    margin: 0 auto;
-    align-items: center;
-}
-
-/* Navbar Styling */
-.navbar .logo {
-    color: var(--candlelight-ivory);
-    font-weight: 600;
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-.navbar .logo span {
-    color: var(--chestnut);
-}
-
-.navbar .menu-links {
-    display: flex;
-    list-style: none;
-    gap: 50px;
-}
-
-.navbar a {
-    color: var(--candlelight-ivory);
-    text-decoration: none;
-    transition: 0.2s ease;
-    font-size: 1.2rem;
-}
-
-.navbar a:hover {
-    color: var(--chestnut);
-}
-
-/* Hero Section Styling */
-.hero-section {
-    height: 80vh;
-    background-color: var(--moody-indigo);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    padding: 0 30px;
-    margin-bottom: 2rem;
-}
-
-.hero-section .content {
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
-    color: var(--candlelight-ivory);
-    text-align: center; 
-}
-
-.hero-section .content h2 {
-    font-size: 3rem;
-    line-height: 70px;
-    color: var(--candlelight-ivory);
-}
-
-.hero-section .content p {
-    font-weight: 300;
-    margin-top: 15px;
-}
-
-.hero-section .content button {
-    padding: 10px 40px;
-    font-family: Oswald;
-    font-size: 1rem;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: var(--white);
-    background-color: var(--xanthous);
-    color: var(--chestnut);
-    border: none;
-    border-radius: 60px;
-    box-shadow: 0 5px var(--harvest-gold);
-    margin-top: 2rem;
-}
-
-.hero-section .content button:hover {
-    background-color: var(--maize);
-    color: var(--candlelight-ivory); 
-}
-
-.hero-section .content .button:active {
-    background-color: var(--harvest-gold);
-    box-shadow: 0 5px var(--harvest-gold);
-    transform: translateY(4px);
-}
-
-/* Styling for the hamburger navigation */
-#close-menu-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
-  display: none;
-}
-
-#hamburger-btn {
-    color: var(--candlelight-ivory);
-  cursor: pointer;
-  display: none;
-}
-
-/* Layout for News & Updates:  */
-.image-left, .image-right
-{
-  margin: 1em 0;
-}
-
-/* Footer Styling */
-/* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
-
-.footer {
-  position: absolute;
-  background: var(--moody-indigo);
-  margin-top: 2rem;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-}
-
-.footer .logo {
-    color: var(--candlelight-ivory);
-    font-weight: 600;
-    font-size: 3rem;
-    text-decoration: none;
-    margin-top: 2rem;
-}
-
-.footer .logo span {
-    color: var(--chestnut);
-}
-
-.footer .footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3.5rem;
-    padding: 60px;
-}
-
-.footer-row .footer-col h4 {
-    color: var(--candlelight-ivory);
-    font-size: 1.5rem;
-}
-
-.footer-col .footer-links { 
-    margin-top: 30px;
-}
-
-.footer-col .footer-links li {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.footer-col .footer-links li a {
-    text-decoration: none;
-    color: var(--maize);
-    transition: color 0.3s ease;
-}
-
-.footer-col .footer-links li a:hover {
-  color: var(--chestnut);
-}
-
-.footer-col p {
-  margin: 20px 0;
-  color: var(--maize);
-  max-width: 300px;
-}
-
-.footer .form-group {
-    position: relative;
-    padding: 20px 0;
-    width: 300px;
-    max-width: 100%;
-}
+  <section class="element">
+    <div class="image-left">
+        <img src="image/updatesimg1.png" alt="First Image Event" style="width: 25%">
+        <div>
+      <h2>New Product Release: Mochi Donuts</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu, massa scelerisque ac, cursus et, sollicitudin a, orci.</p>
+        </div>
+      </div>
+      <!-- Source of image: https://gigazine.net/news/20140703-yukinosita-kyoto/ -->
+      
+      <div class="image-right">
+        <img src="image/updatesimg2.png"  alt="Second Image Event" style="width: 25%">
+        <div>
+      <h2>Up to 50% on Cake Orders</h2>
+          <p>Praesent in mauris eu tortor porttitor accumsan. Duis bibendum. Morbi non erat non ipsum pharetra tempus. Du is iaculis laoreet odio. Vestibulum id ligula porta felis euismod semper. Sed euismod. Maecenas id ante. Nunc pellentesque. Sed vestibulum. Integer in ante. Nunc elementum.</p>
+        </div>
+      </div>
+      <!-- Source of image: https://menu.starbucks.co.jp/4524785488816 -->
+  </section>
     
-.footer .form-group input {
-    border: none;
-    border-bottom: 2px solid var(--maize);
-    background-color: var(--moody-indigo);
-    color: #333;
-    display: block;
-    font-size: 16px;
-    padding: 10px 0;
-    padding-top: 20px;
-    width: 100%;
-}
+  </section>
+  <section class="footer">
+    <div class="footer-row">
+        <a class="logo">MatchaMunchies<span>.</span></a>
 
-.footer .form-group label {
-    color: var(--candlelight-ivory);
-    opacity: 0.6;
-    font-family: Oswald;
-    font-size: 1rem;
-    font-weight: 100;
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    transform: translateY(30px);
-}
-    
-.footer .form-group input:valid,
-    .form-group input:focus {
-    outline: none;
-}
-    
-.footer .form-group input:valid + label, 
-.footer .form-group input:focus + label {
-    color: var(--candlelight-ivory);
-    opacity: 1;
-    font-size: 1.5rem;
-    transform: translateY(0);
-}
-    
-.footer .form-group label {
-    transition: all 0.2s ease-in-out;
-}
+      <div class="footer-col">
+        <h4>MatchaMunchies</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Style Guide</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Citations</a></li>
+        </ul>
+      </div>
 
-.footer input[type="submit"] {
-    font-family: Oswald;
-    font-size: 1rem;
-    background-color: var(--maximum-green);
-    box-shadow: 1px 4px 0 #3A4A21;
-    border-radius: 4rem;
-    color: white;
-    padding: 1em 1em;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none; 
-    cursor: pointer;
-    margin-top: 2rem;
-  }
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
 
-.footer input[type="submit"]:hover {
-    background-color: #4b5f2a;
-}
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for more updates, events and exclusive deals!
+        </p>
+        <div class="form-group">
+            <input type="text" required />
+            <label>Username</label>
+            <input type = "submit" value ="Submit" />
+        </div>
+      </div>
+    </div>
+  </section>
+   
+
+
   
-.footer input[type="submit"]:active {
-    box-shadow: none;
-    top: 5px;
-}
 
-/* Media Queries */
 
-@media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
 
-  header.show-mobile-menu::before {
-    content: "";
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
-  }
-
-  .navbar .logo {
-    font-size: 1.7rem;
-  }
-  #hamburger-btn {
-    display: block;
-    color: var(--candlelight-ivory);
-  }
-
-    
-#close-menu-btn {
-    display: block;
-    color: var(--chestnut);
-    background-color: var(--maize);
-    border-radius: 20%;
-  }
-
-  .navbar .menu-links {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100vh;
-    background: var(--candlelight-ivory);
-    flex-direction: column;
-    padding: 70px 40px 0;
-    transition: left 0.2s ease;
-  }
-
-  header.show-mobile-menu .navbar .menu-links {
-    left: 0;
-  }
-
-  .navbar a {
-    color: var(--chestnut);
-  }
-
-  .hero-section .content {
-    text-align: center;
-  }
-
-  .hero-section .content :is(h2, p) {
-    max-width: 100%;
-  }
-
-  .hero-section .content h2 {
-    font-size: 2.3rem;
-    line-height: 60px;
-  }
   
-  .hero-section .content button {
-    padding: 15px 20px;
-  }
+ 
+</body>
 
-  .footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    transform: none;
-    width: 100%;
-  }
-
-  .footer .footer-row {
-    padding: 20px;
-    gap: 1rem;
-  }
-}
-
-@media screen and (min-width: 320px)
-{
-  .image-left, .image-right
-  {
-    display: flex;
-    align-items: center;
-  }
-
-  .image-left img
-  {
-    margin-right: 1em;
-    float: left;
-  }
-
-  .image-right img
-  {
-    order: 1;
-    margin-left: 1em;
-    float: right; 
-  }
-
-}
+</html>
