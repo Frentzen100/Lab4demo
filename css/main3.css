@@ -75,6 +75,32 @@ p {
   background-color: var(--candlelight-ivory);
 }
 
+/* Button Styling */
+.button {
+  padding: 10px 40px;
+  font-family: Oswald;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--white);
+  background-color: var(--xanthous);
+  color: var(--chestnut);
+  border: none;
+  border-radius: 60px;
+  box-shadow: 0 5px var(--harvest-gold);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button:hover {background-color: var(--maize);}
+
+.button:active {
+  background-color: var(--harvest-gold);
+  box-shadow: 0 5px var(--harvest-gold);
+}
+
 /* ---------- HOME PAGE ----------*/
 
 /* Header Styling */
@@ -85,6 +111,7 @@ header {
     width: 100%;
     padding: 30px;
     background-color: var(--moody-indigo);
+    z-index: 9999;
 }
 
 header .navbar {
@@ -206,20 +233,34 @@ header .navbar {
 }
 
 /* ---------- MENU PAGE ----------*/
-/* .menu-product .product{
+
+
+.navbar2 img{
+  float: right;
+  margin-right: 1rem;
+}
+
+.menu-product .product{
   margin-left: 5vw;
   overflow: hidden;
 }
 
-.menu-product img{
-  transition: transform 0.3s ease;
-  transform: scale(.85);
+.product{
+   border: solid 1px var(--chestnut);
+   height: 26rem;
+   margin-left: 2rem;
 }
 
-.menu-product img:hover{
-  transform: scale(0.85);
+.product img{
+  transition: transform 0.3s ease;
+
+}
+
+.product img:hover{
+  transition: transform 0.3s ease;
+  transform: scale(0.9);
   opacity: 1;
-} */
+}
 
 .menu-page .element {
   margin-top: 10rem;
@@ -281,6 +322,57 @@ header .navbar {
   box-shadow: none;
   top: 5px;
 }
+
+/* ---------- PRODUCT PAGE ----------*/
+
+.menu-hero-product{
+
+  display: flex;
+
+}
+
+.menu-hero-product h2{
+  font-size: 5rem;
+}
+
+
+.menu-hero-product .product-image{
+  width: 500px;
+  height: 500px;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.menu-hero-product .product-image img:hover{
+  opacity: 1;
+}
+.menu-hero-product .product-description{
+  width: 45%;
+  margin-left: 5rem;
+  padding-top: 1rem;
+  spacing: 3rem;
+
+}
+
+.fullscreen{
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 57vw;
+  background-color: rgba(0,0,0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  /*
+  left: 35%;
+  top: 28%;
+  */
+}
+
+
+
 
 
 /* ---------- ABOUT US PAGE ----------*/
@@ -409,6 +501,203 @@ blockquote {
 }
 
 
+/*--------------------CHECKOUT PAGE----------------------*/
+
+.cart-and-payment{
+  display: flex;
+}
+
+/*Part 1: Checkout Form */
+
+
+.cart{
+  width: 40%;
+  margin-left: 2rem;
+}
+
+.checkout-navbar{
+  border: solid 1px var(--granite-gray);
+}
+
+.cart img:hover{
+  transform: scale(0.85);
+  opacity: 1;
+}
+
+#cart{
+  padding-right: 2rem;
+}
+.cart-image-nav{
+  width: 150px;
+  height: 150px;
+}
+
+.checkout-item{
+  display: flex;
+  position: relative;
+  border-bottom-style: solid;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-color: var(--granite-gray);
+  border-width: 0.1rem;
+}
+
+.checkout-item-text{
+  margin-left: 20px;
+}
+
+.checkout-item-price, .checkout-item-quantity, .checkout-item-total{
+  font-weight: 100;
+}
+
+.checkout-item-price, .checkout-item-quantity, .checkout-item-description{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.checkout-item-total{
+  text-align: right;
+  width: 97%;
+  margin-left: 20px;
+  margin-top:  60px;
+  position: absolute;
+}
+
+.checkout-total {
+  text-align: right;
+  padding-right: 10px;
+  font-size: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.checkout-button{
+  float: right;
+}
+
+.checkout-item-image{
+  margin-top: 1.75rem;
+}
+
+.vertical-line{
+  width: 1px;
+  margin-left: 5rem;
+  background-color: var(--gray);
+  margin-top: 1rem;
+}
+
+
+/*Part 2: Payment Form */
+
+.payment{
+  width: 40%;
+  margin-left: 5rem;
+}
+
+.form-group {
+  position: relative;
+  padding: 20px 0;
+  width: 300px;
+  max-width: 100%;
+  }
+  
+  .form-group input {
+  border: none;
+  border-bottom: 2px solid var(--chestnut);
+  background-color: #FBF4E1;
+  color: #333;
+  display: block;
+  font-size: 16px;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  
+  }
+  
+  .form-group label {
+  color: #A44F32;
+  opacity: 0.6;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translateY(30px);
+  }
+  
+  .form-group input:valid,
+  .form-group input:focus {
+  outline: none;
+  }
+  
+  .form-group input:valid + label,
+  .form-group input:focus + label {
+  color: #A44F32;
+  opacity: 1;
+  font-size: 14px;
+  transform: translateY(0);
+  }
+  
+  .form-group label {
+  transition: all 0.2s ease-in-out;
+  }
+
+  
+label[for="card-number"]{
+  transform: translateY(100px);
+}
+
+label[for="expiry-date"]{
+  transform: translateY(170px);
+}
+
+label[for="cvv"]{
+  transform: translateY(245px);
+}
+
+.form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] {
+  margin-top: 4.5rem;
+}
+
+.form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"] {
+  margin-top: 9rem;
+}
+
+.form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"] {
+  margin-top: 13.5rem;
+}
+
+.submit-button{
+  margin-top: 3rem;
+}
+
+input[type="submit"] {
+  font-family: Oswald;
+  font-size: 0.7rem;
+  background-color: var(--maximum-green);
+  box-shadow: 1px 4px 0 #3A4A21;
+  border-radius: 4rem;
+  color: white;
+  padding: 1em 2em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none; 
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #4b5f2a;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active {
+  box-shadow: none;
+  top: 5px;
+}
+
 
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
@@ -440,6 +729,7 @@ blockquote {
     justify-content: space-between;
     gap: 3.5rem;
     padding: 60px;
+    padding-bottom: 20rem;
 }
 
 .footer-row .footer-col h4 {

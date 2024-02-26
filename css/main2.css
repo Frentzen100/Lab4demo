@@ -101,9 +101,7 @@ background-color: var(--candlelight-ivory);
 
 
 /*********** Beginning - Menu Section ***********/
-.add-button{
-  margin-bottom: 1rem;
-}
+
 .navbar2 img{
   float: right;
   margin-right: 1rem;
@@ -122,6 +120,10 @@ background-color: var(--candlelight-ivory);
 .menu-product img:hover{
   transform: scale(0.85);
   opacity: 1;
+}
+
+.go-to-checkout-button{
+  border: solid 1px red;
 }
 
 /*********** Ending - Menu Section ***********/
