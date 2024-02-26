@@ -8,24 +8,20 @@
 
   <link rel="stylesheet" href="css/main3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
 	  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
 </head>
 
-<!-- 	Feedback -->
-<!-- nav links/ buttons size bigger -->
-<!-- 	button for checkout/ or make the product listing more detailed -->
-<!-- 	pay now button is hard to see -->
-<!-- 	citations clearer + with links -->
 
 <body class="about-us-page">
+
   <header>
     <nav class="navbar">
-        <a class="logo" href="home.html">MatchaMunchies<span>.</span></a>
+        <a class="logo" href="index.html">MatchaMunchies<span>.</span></a>
         <ul class="menu-links">
-            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-            <li><a href='home.html'>Home</a></li>
+          <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
+            <li><a href='index.html'>Home</a></li>
             <li><a href='menu.html'>Menu</a></li>
             <li><a href='about-us.html'>About Us</a></li>
             <li><a href='contact.html'>Contact Us</a></li>
@@ -34,39 +30,64 @@
     </nav>
   </header> 
 
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    <!-- for mobile -->
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+ 
+  </script>
+  
+
     <!-- Matcha restaurant: https://www.chiangmaicitylife.com/clg/food-drink/coffeeshops-tearooms/magokoro-teahouse-and-matcha-cafe/-->
     <!-- About Us Hero Image: https://chef.studio/matcha-choux-au-craquelin/-->
 
     <br><br><br><br>
+    <!--
     <div class="hero-container">
       <img src="image/pastries.png" alt="Pastry" class="hero-image image-right">
       <blockquote>Treat yourself to our delicious matcha pastries, blending the best matcha with our homemade baking skills!</blockquote>
     </div>
+  -->
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Created With High-Quality Matcha Powder!</h2>
+          <p>Treat yourself to our delicious matcha pastries, blending the best matcha with our homemade baking skills!</p>
+      </div>
+    </section>
     
     <section class="about-detail">
       <div class="about-company">
         <div class="about-company-detail">
           <h2 class="about-company-title">About Matcha Munchies</h2>
-          <p class="about-company-description">Matcha Munchies is a popular restaurant where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. 
+            <p class="about-company-description">Matcha Munchies is a popular restaurant where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. 
             Known for its vibrant color, distinctive flavor, and health benefits, Matcha brings a touch of Japanese elegance to every bite of your favourite sweet treats. 
             At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.</p>
         </div>
-        <img src="image/cafe.png" alt="Matcha Munchies Cafe" class="about-company-cafe-image" width="570" height="300">
-      </div>
-
-      <div class="spacing"></div>
-
-      <div class="about-quality">
-        <img src="image/updatesimg2.png" alt="Matcha Cake" class="about-quality-cake-image image-left" width="300" height="300">
-        <div class="about-quality-detail">
-          <h2 class="about-quality-title">Quality</h2>
-          <p class="about-quality-description">Since 2013, our focus has been on providing the utmost quality pastries, carefully selecting only those that meet our personal standards of excellence. 
-            We're committed to offering pastries made from single ingredients and sourced from a single origin, ensuring authenticity in every bite.
-            Our dedication to quality extends to sourcing non-GMO, preservative-free, and heavy metal-free ingredients from our JAS-organic certified farm and our family's long-standing pastry manufacturing facility, ensuring that each pastry delivers unparalleled flavor and quality.
-          </p>
+        <div class="about-company-image">
+          <img src="image/cafe.png" alt="Matcha Munchies Cafe" class="about-company-cafe-image" width="570" height="300">
         </div>
       </div>
     </section>
+
+      <div class="spacing"></div>
+
+      <section class="about-quality">
+        <div class="about-quality-image">
+          <img src="image/updatesimg2.png" alt="Matcha Cake" class="about-quality-cake-image image-left" width="300" height="300">
+        </div>
+        <div class="about-quality-detail">
+          <h2 class="about-quality-title">Quality</h2>
+            <p class="about-quality-description">Since 2013, our focus has been on providing the utmost quality pastries, carefully selecting only those that meet our personal standards of excellence. 
+            We're committed to offering pastries made from single ingredients and sourced from a single origin, ensuring authenticity in every bite.
+            Our dedication to quality extends to sourcing non-GMO, preservative-free, and heavy metal-free ingredients from our JAS-organic certified farm and our family's long-standing pastry manufacturing facility, ensuring that each pastry delivers unparalleled flavor and quality.</p>
+        </div>
+      </section>
 
     <section class="footer">
       <div class="footer-row">
@@ -85,7 +106,7 @@
           <h4>MatchaMunchies</h4>
           <ul class="footer-links">
             <li><a href="about-us.html">About Us</a></li>
-            <li><a href="index.html">Style Guide</a></li>
+            <li><a href="style-guide.html">Style Guide</a></li>
             <li><a href="https://github.com/Frentzen100/P02---Style-Guide">Github</a></li>
             <li><a href="#">Citations</a></li>
           </ul>

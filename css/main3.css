@@ -92,6 +92,8 @@ p {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-decoration: none;
+  margin-top: 2rem
 }
 
 .button:hover {background-color: var(--maize);}
@@ -243,9 +245,7 @@ header .navbar {
   font-size: 3rem;
 }
 
-.featured-product-subtitle{
-  font-size: 2rem;
-}
+
 /* ---------- MENU PAGE ----------*/
 
 
@@ -726,7 +726,7 @@ input[type="reset"]:active {
   margin-top: 2rem;
   left: 50%;
   transform: translate(-50%);
-  width: 100%;
+  width: 100%;  
 }
 
 .footer .logo {
@@ -747,7 +747,6 @@ input[type="reset"]:active {
     justify-content: space-between;
     gap: 3.5rem;
     padding: 60px;
-    padding-bottom: 20rem;
 }
 
 .footer-row .footer-col h4 {
@@ -943,6 +942,29 @@ input[type="reset"]:active {
   .footer .footer-row {
     padding: 20px;
     gap: 1rem;
+  }
+
+  .cart-and-payment{
+    display: block;
+  }
+
+  .cart, .payment{
+    width: 80%;
+  }
+
+  .payment{
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .product, .featured-product{
+    width: 90%;
+    margin-left: 0.75rem;
+    height: 30rem;
+  }
+
+  .about-company, .about-quality{
+    display: block;
   }
 }
 
