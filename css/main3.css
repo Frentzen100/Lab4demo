@@ -737,13 +737,21 @@ input[type="reset"]:active {
     font-size: 1.5rem;
 }
 
+.footer-col{
+  padding-top: 2rem;
+}
+
 .footer-col .footer-links { 
     margin-top: 30px;
 }
 
-.footer-col .footer-links li {
+.footer-col .footer-links li, .footer-contact-information li{
     list-style: none;
     margin-bottom: 10px;
+}
+
+.footer-contact-information li{
+  color: var(--candlelight-ivory);
 }
 
 .footer-col .footer-links li a {
