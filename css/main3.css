@@ -232,6 +232,20 @@ header .navbar {
   margin: 1em 0;
 }
 
+/*Featured Product Styling*/
+.featured-product-title, .featured-product-subtitle{
+   width: 100%;
+   text-align: center;
+   
+}
+
+.featured-product-title{
+  font-size: 3rem;
+}
+
+.featured-product-subtitle{
+  font-size: 2rem;
+}
 /* ---------- MENU PAGE ----------*/
 
 
@@ -246,17 +260,15 @@ header .navbar {
 }
 
 .product{
-   border: solid 1px var(--chestnut);
-   height: 26rem;
-   margin-left: 2rem;
+  border: solid 1px var(--chestnut);
 }
 
-.product img{
+.product img, .featured-product img{
   transition: transform 0.3s ease;
 
 }
 
-.product img:hover{
+.product img:hover , .featured-product img:hover{
   transition: transform 0.3s ease;
   transform: scale(0.9);
   opacity: 1;
@@ -266,7 +278,7 @@ header .navbar {
   margin-top: 10rem;
 }
 
-.product {
+.product, .featured-product {
   display: inline-block;
   padding: 20px 40px 0px;
   padding-right: 3rem;
@@ -277,11 +289,17 @@ header .navbar {
   margin-bottom: 2rem;
   width: 23%;  
   text-align: center;
+  height: 26rem;
+  margin-left: 6rem;
+}
+
+.product-description{
+  margin-top: 1rem;
 }
 
 .product-description a{
   font-weight: 700;
-}
+ }
 
 .product-price a, .product-description a{
   text-decoration: none;
