@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+  Feedback:
+  (DONE)        1) Fix the style guide link
+  (DONE)        2) Remove 'Proceed to checkout' and use it as add to cart OR add a cart icon
+  (DONE)        3) Make the submit in contact us back to home page
+  (DONE)        4) Make the contact us from footer to 'contact us' page
+  5) Separate payment and form and use button to link them together (In other word, all buttons must be interactive)
+  6) More margin between button and text in hero section for home page
+  7) Put the featured product at the bottom
+  8) Make the payment form to "Thank you for ordering"
+  (DONE)   9) "Add to cart" in the product.html
+  10) Add a copyright (Although it is not a feedback from the TA)
+  11) Maybe carousal images for featured products
+  12) Make a footer tag
+--> 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
- 
   <link rel="stylesheet" href="css/main3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
@@ -27,42 +41,19 @@
         </ul>
         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
     </nav>
-  </header> 
+  </header>
 
   <section class="hero-section">
     <div class="content">
         <h2>Fill Your Matcha Cravings!</h2>
           <p> Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.</p>
-        <a href="menu.html" class="button-link">
+          <br><br>
+          <a href="menu.html" class="button-link">
             <button class="button">View Menu</button>
         </a>
     </div>
   </section>
 
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
-
-    function goToTop() {
-            window.scrollTo(0, 0);
-    }
-
-    <!-- for mobile -->
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
- 
-  </script>
-
-<h2 class="featured-product-title">Featured Matcha</h2>
-  <p class="featured-product-subtitle"> Explore the Irresistible Matcha Delights That Have Everyone Talking.</p>
-<div class="featured-product">
-  <a href ="product.html"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
-  <h3 class="product-description"><a href="product.html"> Cream Bun</a></h3>
-    <h4 class="product-price"><a href="product.html">$6.99</a></h4>
-</div>
-  
   <section class="element">
     <div class="image-left">
         <img src="image/updatesimg1.png" alt="First Image Event" style="width: 25%">
@@ -85,6 +76,30 @@
       </div>
       <!-- Source of image: https://menu.starbucks.co.jp/4524785488816 -->
   </section>
+
+  <h2 class="featured-product-title">Featured Matcha</h2>
+    <p class="featured-product-subtitle"> Explore the Irresistible Matcha Delights That Have Everyone Talking.</p>
+  <div class="featured-product">
+    <a href ="product.html"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
+    <h3 class="product-description"><a href="product.html"> Cream Bun</a></h3>
+      <h4 class="product-price"><a href="product.html">$6.99</a></h4>
+  </div>
+
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    function goToTop() {
+            window.scrollTo(0, 0);
+    }
+
+    <!-- for mobile -->
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+ 
+  </script>
     
   <section class="footer">
     <div class="footer-row">
@@ -103,7 +118,7 @@
         <h4>MatchaMunchies</h4>
         <ul class="footer-links">
           <li><a href="about-us.html">About Us</a></li>
-          <li><a href="index.html">Style Guide</a></li>
+          <li><a href="style-guide.html">Style Guide</a></li>
           <li><a href="https://github.com/Frentzen100/P02---Style-Guide">Github</a></li>
           <li><a href="#">Citations</a></li>
         </ul>
@@ -115,7 +130,7 @@
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms of Services</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </div>

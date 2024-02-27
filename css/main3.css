@@ -40,7 +40,7 @@ h1 {
   color: var(--candlelight-ivory);
 }
   
-h2 {
+h2 { 
   font-family: Oswald, sans-serif;
   font-weight: 600;
   font-size: 2rem;
@@ -93,7 +93,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
-  margin-top: 2rem
 }
 
 .button:hover {background-color: var(--maize);}
@@ -102,7 +101,6 @@ p {
   background-color: var(--harvest-gold);
   box-shadow: 0 5px var(--harvest-gold);
 }
-
 /* ---------- HOME PAGE ----------*/
 
 /* Header Styling */
