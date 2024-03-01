@@ -718,7 +718,7 @@ input[type="reset"]:active {
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
 
-.footer {
+footer {
   position: absolute;
   background: var(--moody-indigo);
   margin-top: 2rem;
@@ -727,7 +727,7 @@ input[type="reset"]:active {
   width: 100%;  
 }
 
-.footer .logo {
+footer .logo {
     color: var(--candlelight-ivory);
     font-weight: 600;
     font-size: 3rem;
@@ -735,11 +735,11 @@ input[type="reset"]:active {
     margin-top: 2rem;
 }
 
-.footer .logo span {
+footer .logo span {
     color: var(--chestnut);
 }
 
-.footer .footer-row {
+footer .footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -792,7 +792,7 @@ input[type="reset"]:active {
     max-width: 100%;
 }
     
-.footer .form-group input {
+footer .form-group input {
     border: none;
     border-bottom: 2px solid var(--maize);
     background-color: var(--moody-indigo);
@@ -804,7 +804,7 @@ input[type="reset"]:active {
     width: 100%;
 }
 
-.footer .form-group label {
+footer .form-group label {
     color: var(--candlelight-ivory);
     opacity: 0.6;
     font-family: Oswald;
@@ -817,24 +817,24 @@ input[type="reset"]:active {
     transform: translateY(30px);
 }
     
-.footer .form-group input:valid,
+footer .form-group input:valid,
     .form-group input:focus {
     outline: none;
 }
     
-.footer .form-group input:valid + label, 
-.footer .form-group input:focus + label {
+footer .form-group input:valid + label, 
+footer .form-group input:focus + label {
     color: var(--candlelight-ivory);
     opacity: 1;
     font-size: 1.5rem;
     transform: translateY(0);
 }
     
-.footer .form-group label {
+footer .form-group label {
     transition: all 0.2s ease-in-out;
 }
 
-.footer input[type="submit"] {
+footer input[type="submit"] {
     font-family: Oswald;
     font-size: 1rem;
     background-color: var(--maximum-green);
@@ -850,15 +850,22 @@ input[type="reset"]:active {
     margin-top: 2rem;
   }
 
-.footer input[type="submit"]:hover {
+footer input[type="submit"]:hover {
     background-color: #4b5f2a;
 }
   
-.footer input[type="submit"]:active {
+footer input[type="submit"]:active {
     box-shadow: none;
     top: 5px;
 }
 
+.copyright{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: -4rem;
+  color: var(--candlelight-ivory);
+}
 /* Media Queries */
 
 @media (max-width: 768px) {

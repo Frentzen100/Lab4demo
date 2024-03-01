@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
 
-  <!-- <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main2.css"> -->
   <link rel="stylesheet" href="css/main3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
@@ -16,7 +14,7 @@
 </head>
 
 <body class="menu-page">
-
+ 
   <header>
     <nav class="navbar">
         <a class="logo" href="index.html">MatchaMunchies<span>.</span></a>
@@ -42,29 +40,32 @@
     closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
  
   </script>
-  
-  <br><br><br>
 
-    <div class="product">
-      <a href ="product.html"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
-      <h3 class="product-description"><a href="product.html"> Cream Bun</a></h3>
-        <h4 class="product-price"><a href="product.html">$6.99</a></h4>
-      <a href="checkout.html"> 
-        <input type="submit" value="Add to cart"> 
-      </a>
+  <br><br><br><br><br><br><br><br>
+
+  <section class="cart-and-payment">
+    <div class="payment">
+      <h2> Your Payment</h2>
+
+      <div class="form-group">
+        <input type="text" id="cardholder-name" required />
+        <label for="cardholder-name">Cardholder Name</label>
+        <input type="text" class="spacing" id="card-number" required />
+        <label for="card-number">Card Number</label>
+        <input type="text" class="spacing" id="expiry-date" required />
+        <label for="expiry-date">Expiry Date (MM/YY)</label>
+        <input type="text" class="spacing" id="cvv" required />
+        <label for="cvv">CVV</label>
+        <input type="submit" value="Pay now" class="submit-button">
+      </div>
     </div>
-
-    <!--
-  <div class="go-to-checkout-button">
-    <a class="button" href="checkout.html"> Proceed to Checkout </a>
-  </div>-->
-  <br><br>
+  </section>
 
   <footer>
     <div class="footer-row">
 
        <div class="footer-contact-information">
-        <a class="logo" href="home.html">MatchaMunchies<span>.</span></a>
+        <a class="logo">MatchaMunchies<span>.</span></a>
           <ul class="footer-link">
             <li>Location: Vancouver, BC</li>
             <li>Email: MatchaMochi@gmail.com</li>
@@ -108,11 +109,7 @@
     </div>
     <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
   </footer>
-   
-  
-
-  
- 
 </body>
 
 </html>
+
