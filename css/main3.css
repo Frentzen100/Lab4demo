@@ -159,18 +159,21 @@ header .navbar {
     background-position: center;
     background-size: cover;
     display: flex;
+    
     align-items: center;
+    /*
     justify-content: center; 
+    */
     padding: 0 30px;
     margin-bottom: 2rem;
 }
 
 .hero-section .content {
     max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
+    margin: 0 8rem;
+    width: 40%;
     color: var(--candlelight-ivory);
-    text-align: center; 
+    text-align: left; 
 }
 
 .hero-section .content h2 {
@@ -184,7 +187,24 @@ header .navbar {
     margin-top: 15px;
 }
 
+.hero-section .button {
+  padding: 10px 50px;
+  font-family: Oswald;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--xanthous);
+  color: var(--chestnut);
+  border: none;
+  border-radius: 60px;
+  box-shadow: 0 5px var(--harvest-gold);
+  margin-top: 2rem;
+  margin-left: -30.25rem;
+}
+
+/*
 .hero-section .content button {
+
     padding: 10px 40px;
     font-family: Oswald;
     font-size: 1rem;
@@ -199,6 +219,7 @@ header .navbar {
     box-shadow: 0 5px var(--harvest-gold);
     margin-top: 2rem;
 }
+*/
 
 .hero-section .content button:hover {
     background-color: var(--maize);
@@ -209,6 +230,27 @@ header .navbar {
     background-color: var(--harvest-gold);
     box-shadow: 0 5px var(--harvest-gold);
     transform: translateY(4px);
+}
+
+.cart-icon{
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translate(-1rem,-1rem);
+  border-radius: 50%;
+  border: 2px solid var(--chestnut);
+  padding: 0.25rem;
+  z-index: 100;
+  background-color: var(--candlelight-ivory)
+}
+
+.featured-button{
+  position: none;
+  margin: -1rem auto;
+  text-decoration: none;
+  display: block;
 }
 
 /* Styling for the hamburger navigation */
@@ -284,7 +326,7 @@ header .navbar {
   border-radius: 16px;
   margin-right: 30px;
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
   width: 23%;  
   text-align: center;
   height: 26rem;
@@ -890,8 +932,7 @@ footer input[type="submit"]:active {
     display: block;
     color: var(--candlelight-ivory);
   }
-
-    
+ 
 #close-menu-btn {
     display: block;
     color: var(--chestnut);
@@ -970,6 +1011,34 @@ footer input[type="submit"]:active {
 
   .about-company, .about-quality{
     display: block;
+  }
+
+  .about-us-page .hero-section{
+    margin-top: -2.2rem;
+  }
+
+  .about-quality{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-quality-detail, .about-company-detail{
+    text-align: center;
+    order: 1;
+  }
+
+  .about-quality-title, .about-company-title{
+    margin-bottom: 1rem;
+  }
+
+  .about-quality-detail{
+    order: 1;
+    width: 100%;
+  }
+
+  .about-quality-image{
+    order: 2;
+
   }
 }
 

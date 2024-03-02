@@ -15,6 +15,7 @@
   (DONE)        10) Add a copyright (Although it is not a feedback from the TA)
   11) Maybe carousal images for featured products
   (DONE)        12) Make a footer tag
+  13) Add a cart icon
 --> 
 <head>
   <meta charset="utf-8" />
@@ -47,7 +48,7 @@
     <div class="content">
         <h2>Fill Your Matcha Cravings!</h2>
           <p> Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.</p>
-          <br><br>
+          <br>
           <a href="menu.html" class="button-link">
             <button class="button">View Menu</button>
         </a>
@@ -79,11 +80,15 @@
 
   <h2 class="featured-product-title">Featured Matcha</h2>
     <p class="featured-product-subtitle"> Explore the Irresistible Matcha Delights That Have Everyone Talking.</p>
+
   <div class="featured-product">
     <a href ="product.html"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
     <h3 class="product-description"><a href="product.html"> Cream Bun</a></h3>
       <h4 class="product-price"><a href="product.html">$6.99</a></h4>
   </div>
+
+  <a href="menu.html" class="button-link"> <button class="button featured-button">View Menu</button></a>
+  <a href="checkout.html"><img src="image/cart.png" alt="Cart icon" class="cart-icon"></a>
 
   <script>
     const header = document.querySelector("header");
