@@ -300,18 +300,15 @@ header .navbar {
 
 .menu-product .product{
   margin-left: 5vw;
-  overflow: hidden;
 }
 
 .product-cards{
   display: flex;
+  flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
 }
 
-.product{
-  border: solid 1px var(--chestnut);
-}
 
 .product img, .featured-product img{
   transition: transform 0.3s ease;
@@ -329,20 +326,23 @@ header .navbar {
 }
 
 .product, .featured-product {
-  display: inline-block;
   padding: 20px 40px 0px;
   padding-right: 3rem;
   padding-left: 2.5rem;
+  padding-bottom: 3rem;
   border-radius: 16px;
-  margin-right: 30px;
   margin-top: 5rem;
-  /*margin-bottom: 2rem;*/
   text-align: center;
-  height: 26rem;
-  margin-left: 4rem;
-  width: 26%;  
+  margin-left: 2rem;
+  width: 30%;
 
 }
+
+/*
+.product{
+  border: solid 1px var(--chestnut);
+}
+*/
 
 .product-description{
   margin-top: 1rem;
@@ -393,8 +393,10 @@ header .navbar {
 }
 
 .product-image, .product-description, .product-price{
-  border: solid 1px red;
+  margin: 0 auto;
+  padding-left: 0;
 }
+
 
 /* ---------- PRODUCT PAGE ----------*/
 
@@ -1037,6 +1039,10 @@ footer input[type="submit"]:active {
   .checkout-item-text, td.quantitys, td.totals{
     margin-top: -1rem;
   }
+
+  .product{
+    width: 40%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1179,6 +1185,22 @@ footer input[type="submit"]:active {
 
   .checkout-footer{
     margin-top: 0;
+  }
+
+  .product-cards{
+    display: block;
+  }
+
+  .product img{
+    display: block;
+    transition: none;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    transform: scale(1.5);
+  }
+
+  .product img:hover{
+    transform: scale(1.4);
   }
 }
 
