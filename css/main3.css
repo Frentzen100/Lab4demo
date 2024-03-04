@@ -303,6 +303,12 @@ header .navbar {
   overflow: hidden;
 }
 
+.product-cards{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .product{
   border: solid 1px var(--chestnut);
 }
@@ -331,10 +337,11 @@ header .navbar {
   margin-right: 30px;
   margin-top: 5rem;
   /*margin-bottom: 2rem;*/
-  width: 23%;  
   text-align: center;
   height: 26rem;
-  margin-left: 6rem;
+  margin-left: 4rem;
+  width: 26%;  
+
 }
 
 .product-description{
@@ -385,12 +392,14 @@ header .navbar {
   top: 5px;
 }
 
+.product-image, .product-description, .product-price{
+  border: solid 1px red;
+}
+
 /* ---------- PRODUCT PAGE ----------*/
 
 .menu-hero-product{
-
   display: flex;
-
 }
 
 .menu-hero-product h2{
