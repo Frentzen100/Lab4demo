@@ -420,12 +420,21 @@ header .navbar {
   opacity: 1;
 }
 .menu-hero-product .product-description{
-  width: 45%;
+  width: 60%;
   margin-left: 5rem;
   padding-top: 1rem;
   padding: 3rem;
-
 }
+
+.menu-hero-product .product-image {
+  width: 35%;
+}
+
+.main-product-button{
+  margin-top: 2rem;
+}
+
+
 
 .fullscreen{
   position: absolute;
@@ -1019,12 +1028,14 @@ footer input[type="submit"]:active {
 
   .about-quality-detail{
     order: 1;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
+
   }
 
   .about-company-image{
     margin-left: -1.5rem;
+    margin-bottom: 4rem;
   }
 
   .about-quality-image{
@@ -1042,6 +1053,10 @@ footer input[type="submit"]:active {
 
   .product{
     width: 40%;
+  }
+
+  .menu-hero-product h2{
+    font-size: 2.5rem;
   }
 }
 
@@ -1202,6 +1217,27 @@ footer input[type="submit"]:active {
   .product img:hover{
     transform: scale(1.4);
   }
+
+  .menu-hero-product{
+    display: block;
+    margin-top: -6rem;
+  }
+
+  .menu-hero-product .product-image{
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .menu-hero-product .product-description{
+    width: 90%;
+  }
+
+  .menu-hero-product .product-image {
+    width: 40%;
+    height: auto;
+  }
+
+  
 }
 
 @media screen and (min-width: 320px)
