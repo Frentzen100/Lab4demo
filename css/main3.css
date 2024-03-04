@@ -76,6 +76,7 @@ p {
   background-color: var(--candlelight-ivory);
 }
 
+
 /* Button Styling */
 .button {
   padding: 10px 40px;
@@ -170,11 +171,14 @@ header .navbar {
 }
 
 .hero-section .content {
+  /*
     max-width: 1300px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
+    */
+    margin-left: 3rem;
     color: var(--candlelight-ivory);
-    
+    width: 50%;
 }
 
 .hero-section .content h2 {
@@ -200,9 +204,9 @@ header .navbar {
   border: none;
   border-radius: 60px;
   box-shadow: 0 5px var(--harvest-gold);
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   position: relative; 
-  left: 10%;
+  transform: translateX(8rem);
 }
 
 /*
@@ -257,6 +261,10 @@ header .navbar {
   margin-top: 2rem;
 }
 
+.hero-section .image{
+  margin-left: 4rem;
+}
+
 /* Styling for the hamburger navigation */
 #close-menu-btn {
     position: absolute;
@@ -287,6 +295,11 @@ header .navbar {
 
 .featured-product-title{
   font-size: 3rem;
+}
+
+/*Arrow Styling */
+.arrow{
+  margin-left: 1rem;
 }
 
 
@@ -433,8 +446,6 @@ header .navbar {
 .main-product-button{
   margin-top: 2rem;
 }
-
-
 
 .fullscreen{
   position: absolute;
@@ -585,11 +596,6 @@ blockquote {
 
 /*--------------------CHECKOUT PAGE----------------------*/
 
-.cart-and-payment{
-  display: flex;
-}
-
-/*Part 1: Checkout Form */
 
 .cart{
   width: 80%;
@@ -707,11 +713,11 @@ th.quantitys, td.quantity, th.products{
 }
 
 
-/*Part 2: Payment Form */
+/*--------------------PAYMENT PAGE----------------------*/
 
 .payment{
   width: 40%;
-  margin-left: 5rem;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -719,6 +725,7 @@ th.quantitys, td.quantity, th.products{
   padding: 20px 0;
   width: 300px;
   max-width: 100%;
+  margin: 0 auto;
   }
   
   .form-group input {
@@ -823,8 +830,8 @@ input[type="reset"]:active {
 
 .message {
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
 }
 .message h1 {
   font-family: Oswald, sans-serif;
@@ -839,9 +846,13 @@ input[type="reset"]:active {
   margin-top: 10px;
 }
 
-.message .button {
-  margin-top: 10rem;
+#order-message{
+  margin-bottom: 3rem;
 }
+#back-to-menu-button{
+  margin: 0 auto;
+}
+
 
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
@@ -1110,6 +1121,11 @@ footer input[type="submit"]:active {
     color: var(--chestnut);
   }
 
+  .hero-section{
+    display: block;
+    height: auto;
+  }
+
   .hero-section .content {
     text-align: center;
     margin: 0 auto;
@@ -1128,8 +1144,15 @@ footer input[type="submit"]:active {
     padding: 15px 20px;
     margin: 0 auto;
     margin-top: 5rem;
+    margin-left: -17rem;
+    margin-bottom: 2rem;
   }
 
+  .hero-section .image {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
   .footer {
     position: relative;
     bottom: 0;
