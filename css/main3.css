@@ -67,7 +67,8 @@ p {
 }
 
 .element {
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   padding: 30px;
 }
 
@@ -111,7 +112,7 @@ header {
     width: 100%;
     padding: 30px;
     background-color: var(--moody-indigo);
-    z-index: 9999;
+    /* z-index: 9999; */
 }
 
 header .navbar {
@@ -159,27 +160,24 @@ header .navbar {
     background-position: center;
     background-size: cover;
     display: flex;
-    
     align-items: center;
-    /*
-    justify-content: center; 
-    */
     padding: 0 30px;
     margin-bottom: 2rem;
 }
 
 .hero-section .content {
     max-width: 1300px;
-    margin: 0 8rem;
-    width: 40%;
+    margin: 0 auto;
+    width: 100%;
     color: var(--candlelight-ivory);
-    text-align: left; 
+    
 }
 
 .hero-section .content h2 {
     font-size: 3rem;
     line-height: 70px;
     color: var(--candlelight-ivory);
+    margin-top: 2rem;
 }
 
 .hero-section .content p {
@@ -198,8 +196,9 @@ header .navbar {
   border: none;
   border-radius: 60px;
   box-shadow: 0 5px var(--harvest-gold);
-  margin-top: 2rem;
-  margin-left: -30.25rem;
+  margin-top: 5rem;
+  position: relative; 
+  left: 10%;
 }
 
 /*
@@ -247,10 +246,11 @@ header .navbar {
 }
 
 .featured-button{
-  position: none;
-  margin: -1rem auto;
+  position: center;
+  margin: 0 auto;
   text-decoration: none;
   display: block;
+  margin-top: 2rem;
 }
 
 /* Styling for the hamburger navigation */
@@ -408,7 +408,7 @@ header .navbar {
   width: 45%;
   margin-left: 5rem;
   padding-top: 1rem;
-  spacing: 3rem;
+  padding: 3rem;
 
 }
 
@@ -729,6 +729,7 @@ label[for="cvv"]{
 
 .submit-button{
   margin-top: 3rem;
+  text-decoration: none;
 }
 
 input[type="submit"] {
@@ -756,6 +757,29 @@ input[type="reset"]:active {
   top: 5px;
 }
 
+/* Thank You Message */
+
+.message {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+.message h1 {
+  font-family: Oswald, sans-serif;
+  font-size: 3rem;
+  color: var(--moody-indigo);
+}
+
+.message h2 {
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+  color: var(--chestnut);
+  margin-top: 10px;
+}
+
+.message .button {
+  margin-top: 10rem;
+}
 
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
@@ -908,6 +932,8 @@ footer input[type="submit"]:active {
   margin-top: -4rem;
   color: var(--candlelight-ivory);
 }
+
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -962,6 +988,7 @@ footer input[type="submit"]:active {
 
   .hero-section .content {
     text-align: center;
+    margin: 0 auto;
   }
 
   .hero-section .content :is(h2, p) {
@@ -975,6 +1002,8 @@ footer input[type="submit"]:active {
   
   .hero-section .content button {
     padding: 15px 20px;
+    margin: 0 auto;
+    margin-top: 5rem;
   }
 
   .footer {
