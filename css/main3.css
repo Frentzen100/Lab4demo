@@ -567,11 +567,37 @@ blockquote {
 
 /*Part 1: Checkout Form */
 
-
 .cart{
-  width: 40%;
-  margin-left: 2rem;
+  width: 80%;
+  margin: 0 auto;
 }
+
+table{
+  width: 100%;
+}
+
+th:first-child,
+td:first-child {
+  width: 70%; /* Set width of the first column to 60% */
+}
+
+th.totals, td.totals, th.quantitys, td.quantitys {
+  width: 15%; 
+}
+
+
+th.totals, td.totals{
+  text-align: right;
+}
+
+th.quantitys, td.quantity, th.products{
+  text-align: left;
+}
+
+.cart-title{
+  margin-bottom: 2rem;
+}
+
 
 .checkout-navbar{
   border: solid 1px var(--granite-gray);
@@ -582,9 +608,7 @@ blockquote {
   opacity: 1;
 }
 
-#cart{
-  padding-right: 2rem;
-}
+
 .cart-image-nav{
   width: 150px;
   height: 150px;
@@ -593,7 +617,6 @@ blockquote {
 .checkout-item{
   display: flex;
   position: relative;
-  border-bottom-style: solid;
   padding-bottom: 30px;
   padding-top: 30px;
   border-color: var(--granite-gray);
@@ -601,7 +624,13 @@ blockquote {
 }
 
 .checkout-item-text{
-  margin-left: 20px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.checkout-item-description{
+  font-size: 2rem;
+   width: 14rem;
 }
 
 .checkout-item-price, .checkout-item-quantity, .checkout-item-total{
@@ -610,7 +639,6 @@ blockquote {
 
 .checkout-item-price, .checkout-item-quantity, .checkout-item-description{
   margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .checkout-item-total{
@@ -642,6 +670,16 @@ blockquote {
   margin-left: 5rem;
   background-color: var(--gray);
   margin-top: 1rem;
+}
+
+.horizontal-line{
+  border: 0.25px solid red;
+  height: 1px;
+  width: 100%;
+}
+
+.checkout-footer{
+  margin-top: 50rem;
 }
 
 
@@ -936,6 +974,58 @@ footer input[type="submit"]:active {
 
 /* Media Queries */
 
+@media (max-width: 1070px){
+  .about-company, .about-quality{
+    display: block;
+  }
+
+  .about-us-page .hero-section{
+    margin-top: -2.2rem;
+  }
+
+  .about-quality{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-quality-detail, .about-company-detail{
+    text-align: center;
+    order: 1;
+  }
+
+  .about-quality-title, .about-company-title{
+    margin-bottom: 1rem;
+  }
+
+  .about-company-detail, .about-company-image{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-quality-detail{
+    order: 1;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-company-image{
+    margin-left: -1.5rem;
+  }
+
+  .about-quality-image{
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .about-company-image, .about-quality-image{
+    margin-top: 1rem;
+  }
+
+  .checkout-item-text, td.quantitys, td.totals{
+    margin-top: -1rem;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding: 10px;
@@ -1067,7 +1157,15 @@ footer input[type="submit"]:active {
 
   .about-quality-image{
     order: 2;
+  }
 
+  .checkout-item-description{
+    font-size: 1.5rem;
+    width: 6.25rem;
+  }
+
+  .checkout-footer{
+    margin-top: 0;
   }
 }
 

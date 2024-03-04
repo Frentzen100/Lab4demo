@@ -55,6 +55,7 @@
   <br><br><br><br><br><br><br><br>
 
   <section class="cart-and-payment">
+    <!---
     <div class="cart">
       <h2> Your Cart</h2>
 
@@ -73,10 +74,84 @@
         <input type="submit" value="Checkout" class="checkout-button">
       </a>
     </div>
-
   </section>
+-->
 
-  <footer>
+
+<div class="cart">
+
+  <h2 class="cart-title"> Your Cart</h2>
+
+  <table class="cart-content">
+    <tr class="checkout-category">
+      <th class="products" >Product</th>
+      <th class="quantitys"> Quantity</th>
+      <th class="totals" >Total</th>
+    </tr>
+    
+
+    <tr class="checkout-information">
+        <td class="checkout-item products">
+          <a href ="https://mdpr.jp/gourmet/detail/1676903">
+            <picture>
+              <source media="(max-width: 768px)" srcset="image/creambun-x2.png 1x">
+              <img srcset="image/creambun-x1.png 1x" alt="Cream Bun">
+            </picture>
+          </a>
+          <div class="checkout-item-text">
+            <h3 class="checkout-item-description bold"> Cream Bun </h3>
+              <h4 class="checkout-item-price regular "> $6.99</h4> 
+          </div>
+        </td>
+
+        <td class="quantitys">
+          <h4>1</h4> 
+        </td>
+
+        <td class="totals">
+          <h3> $6.98</h3>
+        </td>
+      </div>
+
+    </tr>
+    
+    
+
+    <tr class="checkout-information ">
+      <td class="checkout-item products">
+        <a href ="https://mdpr.jp/gourmet/detail/1676903">
+          <!--
+          <img src="image/creambun.png" class="checkout-item-image image-nav" alt="Cream bun">
+          -->
+          <picture>
+            <source media="(max-width: 768px)" srcset="image/matcharollcake-x2.png 1x">
+            <img srcset="image/matcharollcake-x1.png 1x" alt="Matcha Roll Cake">
+          </picture>
+        </a>
+        <div class="checkout-item-text">
+          <h3 class="checkout-item-description bold"> Matcha Roll Cake </h3>
+            <h4 class="checkout-item-price regular "> $9.99</h4> 
+        </div>
+      </td>
+
+      <td class="quantitys">
+        <h4>2</h4> 
+      </td>
+
+      <td class="totals">
+        <h3> $18.98</h3>
+      </td>
+    </tr>
+
+  </table>
+
+  <h3 class="checkout-total"> <span class="regular">Total</span> $13.98</h3>
+  <a href="payment.html">
+    <input type="submit" value="Checkout" class="checkout-button">
+  </a>
+</div>
+
+  <footer class="checkout-footer">
     <div class="footer-row">
 
        <div class="footer-contact-information">
@@ -124,6 +199,7 @@
     </div>
     <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
   </footer>
+
 </body>
 
 </html>
