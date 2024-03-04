@@ -90,9 +90,13 @@ p {
   border: none;
   border-radius: 60px;
   box-shadow: 0 5px var(--harvest-gold);
+  /*
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  */
+  margin-left: -8rem;
+  margin-top: -2rem;
   text-decoration: none;
 }
 
