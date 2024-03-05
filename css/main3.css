@@ -207,13 +207,16 @@ header .navbar {
   border-radius: 60px;
   box-shadow: 0 5px var(--harvest-gold);
   margin-top: 2.5rem;
-  position: relative; 
-  transform: translateX(8rem);
+  margin-left: 0;
 }
 
 #homepage-hero-button:hover{
   background-color: var(--maize);
   color: var(--chestnut);
+}
+
+#homepage-hero-button:focus{
+  background-color: var(--harvest-gold);
 }
 
 /*
@@ -291,7 +294,9 @@ header .navbar {
 /* Layout for News & Updates:  */
 .image-left, .image-right
 {
-  margin: 1em 0;
+  margin: 0 auto;
+  width: 80%;
+
 }
 
 /*Featured Product Styling*/
@@ -1230,7 +1235,7 @@ footer input[type="submit"]:active {
   }
 
   .about-us-page .hero-section{
-    margin-top: -2.2rem;
+    margin-top: -4.2rem;
   }
 
   .about-quality{
