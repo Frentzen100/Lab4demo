@@ -99,6 +99,7 @@ p {
   margin-left: -8rem;
   margin-top: -2rem;
   text-decoration: none;
+  
 }
 
 .button:hover {background-color: var(--maize);}
@@ -117,7 +118,8 @@ header {
     width: 100%;
     padding: 30px;
     background-color: var(--moody-indigo);
-    /* z-index: 9999; */
+    z-index: 9999; 
+    border-bottom: solid 1px var(--chestnut);
 }
 
 header .navbar {
@@ -209,6 +211,11 @@ header .navbar {
   transform: translateX(8rem);
 }
 
+#homepage-hero-button:hover{
+  background-color: var(--maize);
+  color: var(--chestnut);
+}
+
 /*
 .hero-section .content button {
 
@@ -252,7 +259,7 @@ header .navbar {
   z-index: 100;
   background-color: var(--candlelight-ivory)
 }
-
+/*
 .featured-button{
   position: center;
   margin: 0 auto;
@@ -260,6 +267,7 @@ header .navbar {
   display: block;
   margin-top: 2rem;
 }
+*/
 
 .hero-section .image{
   margin-left: 4rem;
@@ -290,11 +298,16 @@ header .navbar {
 .featured-product-title, .featured-product-subtitle{
    width: 100%;
    text-align: center;
-   
 }
 
 .featured-product-title{
   font-size: 3rem;
+}
+
+#featured-button{
+  position: absolute;
+  left: 55%;
+  width: 200px;
 }
 
 /*Arrow Styling */
@@ -302,6 +315,9 @@ header .navbar {
   margin-left: 1rem;
 }
 
+.round-image{
+  border-radius: 25px;
+}
 
 /* ---------- MENU PAGE ----------*/
 
@@ -503,12 +519,14 @@ blockquote {
 
 /* About Section Styling */
 
-.about-detail{
+  .about-detail{
     padding: 0 5rem;
   }
   
   .about-company, .about-quality{
     display: flex;
+    margin: 0 auto;
+
   }
   
   .about-company-detail, .about-quality-detail{
@@ -524,12 +542,25 @@ blockquote {
      margin-left: 2rem;
   }
 
+  .about-quality{
+     width: 80%;
+     margin-top: 2rem;
+  }
+
+  .about-detail{
+    width: 95%;
+    margin-left: 2rem;
+
+ }
+
 /* ---------- CONTACT PAGE ---------- */
 
 .feedback_container {
   border-radius: 5px;
   background-color: var(--candlelight-ivory);
   padding: 20px;
+  width: 90%;
+  margin: 0 auto;
   margin-top: 8rem;
 }
 
@@ -593,6 +624,12 @@ blockquote {
   top: 5px;
 }
 
+#contactus-button{
+  width: 300px;
+  position: absolute;
+  right: 0;
+  margin-right: 5.8rem;
+}
 
 /*--------------------CHECKOUT PAGE----------------------*/
 
@@ -688,7 +725,10 @@ th.quantitys, td.quantity, th.products{
 }
 
 .checkout-button{
-  float: right;
+   float: right;
+   width: 300px;
+   font-size: 2rem;
+   padding: 1em 1em;
 }
 
 .checkout-item-image{
@@ -1222,7 +1262,7 @@ footer input[type="submit"]:active {
   }
 
   .checkout-footer{
-    margin-top: 0;
+    margin-top: 5rem;
   }
 
   .product-cards{
