@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
 
+  <script src="js/script.js"></script>
+
   <link rel="stylesheet" href="css/main3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
@@ -40,116 +42,90 @@
     </nav>
   </header>
 
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
-
-    <!-- for mobile -->
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
- 
-  </script>
-
   <br><br><br><br><br><br><br><br>
 
   <section class="cart-and-payment">
-    <!---
     <div class="cart">
-      <h2> Your Cart</h2>
 
-      <div class="checkout-item">
-        <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/creambun.svg" class="checkout-item-image image-nav" alt="Cream bun" style="width: 100px"></a>
-        <div class="checkout-item-text">
-          <h3 class="checkout-item-description bold"> Cream Bun </h3>
-            <h4 class="checkout-item-price regular "> $6.99</h4> 
-            <h4 class="checkout-item-quantity regular "> Quantity: 1</h4> 
-        </div>
-        <h3 class="checkout-item-total"> $13.98</h3>
-      </div>
+      <h2 class="cart-title"> Your Cart</h2>
+
+      <table class="cart-content">
+        <tr class="checkout-category">
+          <th class="products" >Product</th>
+          <th class="quantitys"> Quantity</th>
+          <th class="totals" >Total</th>
+        </tr>
+        
+
+        <tr class="checkout-information">
+            <td class="checkout-item products">
+              <a href ="product.html">
+                <picture>
+                  <source media="(max-width: 768px)" srcset="image/creambun-x2.png 1x">
+                  <img srcset="image/creambun-x1.png 1x" alt="Cream Bun">
+                </picture>
+              </a>
+              <div class="checkout-item-text">
+                <h3 class="checkout-item-description bold"> Cream Bun </h3>
+                  <h4 class="checkout-item-price regular "> $6.99</h4> 
+              </div>
+            </td>
+
+            <td class="quantitys">
+              <h4> 
+                <span class="decrease" onclick="decreaseValue1()">-</span>
+                <input type="number" class="number" id="number" value="0" />
+                <span class="increase"  onclick="increaseValue1()">+</span>
+              </h4> 
+            </td>
+
+            <td class="totals">
+              <h3> $6.98</h3>
+            </td>
+          </div>
+
+        </tr>
+        
+        
+
+        <tr class="checkout-information ">
+          <td class="checkout-item products">
+            <a href ="product2.html">
+              <!--
+              <img src="image/creambun.png" class="checkout-item-image image-nav" alt="Cream bun">
+              -->
+              <picture>
+                <source media="(max-width: 768px)" srcset="image/matcharollcake-x2.png 1x">
+                <img srcset="image/matcharollcake-x1.png 1x" alt="Matcha Roll Cake">
+              </picture>
+            </a>
+            <div class="checkout-item-text">
+              <h3 class="checkout-item-description bold"> Matcha Roll Cake </h3>
+                <h4 class="checkout-item-price regular "> $9.99</h4> 
+            </div>
+          </td>
+
+          <td class="quantitys">
+            <h4> 
+              <span class="decrease" onclick="decreaseValue2()">-</span>
+              <input type="number" class="number" id="number1" value="0" />
+              <span class="increase"  onclick="increaseValue2()">+</span>
+            </h4> 
+          </td>
+
+          <td class="totals">
+            <h3> $18.98</h3>
+          </td>
+        </tr>
+
+      </table>
 
       <h3 class="checkout-total"> <span class="regular">Total</span> $13.98</h3>
       <a href="payment.html">
         <input type="submit" value="Checkout" class="checkout-button">
       </a>
     </div>
-  </section>
--->
 
-
-<div class="cart">
-
-  <h2 class="cart-title"> Your Cart</h2>
-
-  <table class="cart-content">
-    <tr class="checkout-category">
-      <th class="products" >Product</th>
-      <th class="quantitys"> Quantity</th>
-      <th class="totals" >Total</th>
-    </tr>
-    
-
-    <tr class="checkout-information">
-        <td class="checkout-item products">
-          <a href ="product.html">
-            <picture>
-              <source media="(max-width: 768px)" srcset="image/creambun-x2.png 1x">
-              <img srcset="image/creambun-x1.png 1x" alt="Cream Bun">
-            </picture>
-          </a>
-          <div class="checkout-item-text">
-            <h3 class="checkout-item-description bold"> Cream Bun </h3>
-              <h4 class="checkout-item-price regular "> $6.99</h4> 
-          </div>
-        </td>
-
-        <td class="quantitys">
-          <h4>1</h4> 
-        </td>
-
-        <td class="totals">
-          <h3> $6.98</h3>
-        </td>
-      </div>
-
-    </tr>
-    
-    
-
-    <tr class="checkout-information ">
-      <td class="checkout-item products">
-        <a href ="product2.html">
-          <!--
-          <img src="image/creambun.png" class="checkout-item-image image-nav" alt="Cream bun">
-          -->
-          <picture>
-            <source media="(max-width: 768px)" srcset="image/matcharollcake-x2.png 1x">
-            <img srcset="image/matcharollcake-x1.png 1x" alt="Matcha Roll Cake">
-          </picture>
-        </a>
-        <div class="checkout-item-text">
-          <h3 class="checkout-item-description bold"> Matcha Roll Cake </h3>
-            <h4 class="checkout-item-price regular "> $9.99</h4> 
-        </div>
-      </td>
-
-      <td class="quantitys">
-        <h4>2</h4> 
-      </td>
-
-      <td class="totals">
-        <h3> $18.98</h3>
-      </td>
-    </tr>
-
-  </table>
-
-  <h3 class="checkout-total"> <span class="regular">Total</span> $13.98</h3>
-  <a href="payment.html">
-    <input type="submit" value="Checkout" class="checkout-button">
-  </a>
-</div>
 
   <footer class="checkout-footer">
     <div class="footer-row">
@@ -199,6 +175,21 @@
     </div>
     <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
   </footer>
+
+  <script>
+
+    
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    <!-- for mobile -->
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+
+ 
+  </script>
 
 </body>
 
