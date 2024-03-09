@@ -139,6 +139,8 @@ a{
 /* ---------- HOME PAGE ----------*/
 
 /* Header Styling */
+
+/*
 header {
     position: fixed;
     top: 0;
@@ -158,11 +160,11 @@ header .navbar {
     max-width: 1300px;
     margin: 0 auto;
     align-items: center;
-
 }
+*/
 
 /* Navbar Styling */
-/*
+/*  DELETEEEEE
 .navbar .logo {
     color: var(--candlelight-ivory);
     font-weight: 600;
@@ -175,6 +177,7 @@ header .navbar {
     color: var(--chestnut);
 }*/
 
+/*
 .navbar .menu-links {
     display: flex;
     list-style: none;
@@ -192,8 +195,9 @@ header .navbar {
 .navbar a:hover {
     color: var(--chestnut);
 }
-
+*/
 /* Hero Section Styling */
+/*
 .hero-section {
     height: 80vh;
     background-color: var(--moody-indigo);
@@ -206,11 +210,7 @@ header .navbar {
 }
 
 .hero-section .content {
-  /*
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-    */
+ 
     margin-left: 3rem;
     color: var(--candlelight-ivory);
     width: 50%;
@@ -251,8 +251,9 @@ header .navbar {
 #homepage-hero-button:focus{
   background-color: var(--harvest-gold);
 }
+*/
 
-/*
+/*  DELETEEEEEEE
 .hero-section .content button {
 
     padding: 10px 40px;
@@ -271,6 +272,7 @@ header .navbar {
 }
 */
 
+/*
 .hero-section .content button:hover {
     background-color: var(--maize);
     color: var(--candlelight-ivory); 
@@ -295,7 +297,8 @@ header .navbar {
   z-index: 100;
   background-color: var(--candlelight-ivory)
 }
-/*
+*/
+/* DELETEEEEEEE
 .featured-button{
   position: center;
   margin: 0 auto;
@@ -305,11 +308,15 @@ header .navbar {
 }
 */
 
+/*
+
 .hero-section .image{
   margin-left: 4rem;
 }
-
+*/
 /* Styling for the hamburger navigation */
+
+/*
 #close-menu-btn {
     position: absolute;
     right: 20px;
@@ -323,16 +330,22 @@ header .navbar {
     cursor: pointer;
     display: none;
 }
+*/
 
 /* Layout for News & Updates:  */
+
+/*
 .image-left, .image-right
 {
   margin: 0 auto;
   width: 80%;
 
 }
+*/
 
 /*Featured Product Styling*/
+
+/*
 .featured-product-title, .featured-product-subtitle{
    width: 100%;
    text-align: center;
@@ -347,8 +360,11 @@ header .navbar {
   left: 55%;
   width: 200px;
 }
+*/
 
 /*Arrow Styling */
+
+/*
 .arrow{
   margin-left: 1rem;
 }
@@ -356,11 +372,12 @@ header .navbar {
 .round-image{
   border-radius: 25px;
 }
+*/
 
 
 /* ---------- MENU PAGE ----------*/
 
-
+/*
 .navbar2 img{
   float: right;
   margin-right: 1rem;
@@ -406,11 +423,6 @@ header .navbar {
 
 }
 
-/*
-.product{
-  border: solid 1px var(--chestnut);
-}
-*/
 
 .product-description{
   margin-top: 1rem;
@@ -464,10 +476,11 @@ header .navbar {
   margin: 0 auto;
   padding-left: 0;
 }
-
+*/
 
 /* ---------- PRODUCT PAGE ----------*/
 
+/*
 .menu-hero-product{
   display: flex;
 }
@@ -513,11 +526,8 @@ header .navbar {
   align-items: center;
   top: 0;
   left: 0;
-  /*
-  left: 35%;
-  top: 28%;
-  */
 }
+*/
 
 
 
@@ -558,6 +568,7 @@ blockquote {
 
 /* About Section Styling */
 
+
    .about-us-content{
       position: relative;
       width: 100%;
@@ -583,33 +594,62 @@ blockquote {
     margin-top: -15rem;
    }
 
-  .about-detail{
+   .about-detail{
     padding: 0 5rem;
   }
-  
-  .about-company, .about-quality{
+   .about-quality, .about-company{
+    width: 90%;
     display: flex;
     margin: 0 auto;
+    margin-top: 2rem;
+   }
 
-  }
-  
+   .about-quality{
+     margin-left: 8rem;
+   }
+
+    .about-company-detail{
+      margin-right: 2rem;
+   }
+   
+   .about-quality-detail{
+      margin-left: 2rem;
+   }
+
+   .about-quality-title, .about-company-title{
+     margin-bottom: 1rem;
+   }
+ 
+   .about-quality-description, .about-company-description{
+    line-height: 1.5;
+   }
+   
+   .about-quality-description{
+    width: 70%;
+   }
+
+   .about-quality-image{
+      padding-top: 0.75rem;
+   }
+
+   .about-company-image{
+    padding-bottom: 2.75rem;
+ }
+
+   /*
   .about-company-detail, .about-quality-detail{
     margin-top: auto;
     margin-bottom: auto;
-  }
-  
-  .about-company-detail{
-     margin-right: 2rem;
-  }
-  
-  .about-quality-detail{
-     margin-left: 2rem;
-     width: 60%;
   }
 
   .about-quality{
      width: 80%;
      margin-top: 2rem;
+  }
+
+  .about-company{
+    border: solid 1px red;
+    width: 95%;
   }
 
   .about-detail{
@@ -620,6 +660,7 @@ blockquote {
    .about-hero-content{
     margin: 0 auto;
    }
+   */
 
    
 
@@ -703,7 +744,7 @@ blockquote {
 
 /*--------------------CHECKOUT PAGE----------------------*/
 
-
+/*
 .cart{
   width: 80%;
   margin: 0 auto;
@@ -715,7 +756,7 @@ table{
 
 th:first-child,
 td:first-child {
-  width: 70%; /* Set width of the first column to 60% */
+  width: 70%;
 }
 
 th.totals, td.totals, th.quantitys, td.quantitys {
@@ -864,13 +905,13 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
+*/
 
 /*--------------------PAYMENT PAGE----------------------*/
-
+/*
 .payment, .delivery, .shipping{
   width: 400px;
   margin-left: 6rem;
@@ -1099,9 +1140,6 @@ input[type="reset"]:active {
   max-width: 800px;
 }
 
-
-/* Radio Buttons Styling */
-/* Source for hover effect on radio buttons: https://briantree.se/styling-html-radio-buttons-a-step-by-step-guide/ */
 .radio-group ul {
   list-style: none;
   margin: 0;
@@ -1158,10 +1196,11 @@ input[type="reset"]:active {
   box-shadow: 0 0 1em 0 rgba(10, 150, 255, 0.75);
   border-color: currentColor;
 }
-
+*/
 
 /* Thank You Message */
 
+/*
 .message {
   text-align: center;
   margin-top: 10rem;
@@ -1186,7 +1225,7 @@ input[type="reset"]:active {
 #back-to-menu-button{
   margin: 0 auto;
 }
-
+*/
 
 /* Footer Styling */
 /* Footer source from: https://www.codingnepalweb.com/create-responsive-footer-html-css-only/ */
@@ -1344,10 +1383,13 @@ footer input[type="submit"]:active {
   color: var(--candlelight-ivory);
 }
 
+#instagram{
+  margin-left: 1rem;
+}
 
 /* Media Queries */
 
-@media (max-width: 1100px){
+@media (max-width: 1080px){
   .about-company, .about-quality{
     display: block;
   }
@@ -1377,98 +1419,23 @@ footer input[type="submit"]:active {
 
   .about-quality-detail{
     order: 1;
-    max-width: 80%;
     margin: 0 auto;
-
+    margin-left: -1rem;
   }
 
-  .about-company-image{
-    margin-left: -1.5rem;
-    margin-bottom: 4rem;
-  }
+  .about-company-image, .about-quality-image{
+    margin-top: 1rem;
+  }  
 
   .about-quality-image{
     order: 2;
     margin: 0 auto;
   }
 
-  .about-company-image, .about-quality-image{
+  .about-quality-description, .about-quality-title{
     margin-top: 1rem;
+    width: 85%;
   }
-
-  .checkout-item-text, td.quantitys, td.totals{
-    margin-top: -1rem;
-  }
-
-  .product{
-    width: 40%;
-  }
-
-  .menu-hero-product h2{
-    font-size: 2.5rem;
-  }
-
-  .payment-form{
-    display: block;
-  }
-  
-  .delivery, .payment, .shipping{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .shipping input[type="submit"]{
-      position: absolute;
-  }
-  .order-summary{
-    margin: 0 auto;
-    width: 90%;
-    margin-top: 2rem;
-  }
-
-  .order-summary h2{
-    margin-top: 0.5rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-
-  .shipping h2, .payment h2, .delivery h2{
-    display: flex;
-    width: 100%;
-    text-align: center;
-  }
-
-  .order-summary #number,   .order-summary #number1{
-    transform: translateX(1.25rem);
-  }
-
-  .payment-information{
-    margin-left: 5rem;
-  }
-
-  .checkout-total{
-    margin-bottom: 1rem;
-  }
-
-  .shipping input[type="submit"]{
-    display: none;
-  }
-
-  #payment-button{
-      display: block;
-      margin: 0 auto;
-      margin-top: 2rem;
-  }
-
-  #payment-button a{
-    text-decoration: none;
-  }
-
-  hr{
-    display: block;
-  }
-
 }
 
 @media (max-width: 768px) {
@@ -1566,20 +1533,6 @@ footer input[type="submit"]:active {
     gap: 1rem;
   }
 
-  .cart-and-payment{
-    display: block;
-  }
-
-  .cart, .payment{
-    width: 80%;
-  }
-
-  .product, .featured-product{
-    width: 90%;
-    margin-left: 0.75rem;
-    height: 30rem;
-  }
-
   .about-company, .about-quality{
     display: block;
   }
@@ -1611,58 +1564,9 @@ footer input[type="submit"]:active {
     order: 2;
   }
 
-  .checkout-item-description{
-    font-size: 1.5rem;
-    width: 6.25rem;
-  }
-
-  .checkout-footer{
-    margin-top: 5rem;
-  }
-
-  .product-cards{
-    display: block;
-  }
-
-  .product img{
-    display: block;
-    transition: none;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    transform: scale(1.5);
-  }
-
-  .product img:hover{
-    transform: scale(1.4);
-  }
-
-  .menu-hero-product{
-    display: block;
-    margin-top: -6rem;
-  }
-
-  .menu-hero-product .product-image{
-    margin: 0 auto;
-    width: 50%;
-  }
-
-  .menu-hero-product .product-description{
-    width: 90%;
-  }
-
-  .menu-hero-product .product-image {
-    width: 40%;
-    height: auto;
-  }
-
   .about-hero-content{
     margin-top: -4.5rem; 
   }
-
-  .payment, .shipping, .delivery{
-    margin-left: 0;
-  }
-
 
 }
 
@@ -1687,4 +1591,3 @@ footer input[type="submit"]:active {
     float: right; 
   }
 }
-
