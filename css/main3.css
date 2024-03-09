@@ -76,6 +76,34 @@ p {
   background-color: var(--candlelight-ivory);
 }
 
+hr{
+  width: 90%;
+  margin: 0 auto;
+  border: solid 1px var(--chestnut);
+  margin-top: 2rem;
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo {
+  width: 130px;
+  height: 195px;
+  position: relative;
+  display: inline-block;
+}
+.logo .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.logo:hover .img-top {
+  display: inline;
+}
 
 /* Button Styling */
 .button {
@@ -119,7 +147,9 @@ header {
     padding: 30px;
     background-color: var(--moody-indigo);
     z-index: 9999; 
-    border-bottom: solid 1px var(--chestnut);
+    border-bottom: solid 2px var(--chestnut);
+    max-height: 125px;
+
 }
 
 header .navbar {
@@ -128,9 +158,11 @@ header .navbar {
     max-width: 1300px;
     margin: 0 auto;
     align-items: center;
+
 }
 
 /* Navbar Styling */
+/*
 .navbar .logo {
     color: var(--candlelight-ivory);
     font-weight: 600;
@@ -141,12 +173,13 @@ header .navbar {
 
 .navbar .logo span {
     color: var(--chestnut);
-}
+}*/
 
 .navbar .menu-links {
     display: flex;
     list-style: none;
     gap: 50px;
+    margin-top: -8rem;
 }
 
 .navbar a {
@@ -323,6 +356,7 @@ header .navbar {
 .round-image{
   border-radius: 25px;
 }
+
 
 /* ---------- MENU PAGE ----------*/
 
@@ -754,7 +788,6 @@ th.quantitys, td.quantity, th.products{
 
 .checkout-total {
   text-align: right;
-  padding-right: 10px;
   font-size: 2rem;
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
@@ -838,9 +871,9 @@ input[type=number] {
 
 /*--------------------PAYMENT PAGE----------------------*/
 
-.payment{
-  width: 40%;
-  margin: 0 auto;
+.payment, .delivery, .shipping{
+  width: 400px;
+  margin-left: 6rem;
 }
 
 .form-group {
@@ -848,7 +881,6 @@ input[type=number] {
   padding: 20px 0;
   width: 300px;
   max-width: 100%;
-  margin: 0 auto;
   }
   
   .form-group input {
@@ -895,16 +927,67 @@ input[type=number] {
   }
 
   
+label[for="first-name"]{
+  transform: translateY(100px);
+}
+
+label[for="last-name"]{
+  transform: translate(170px,100px);
+}
+
+label[for="address"]{
+  transform: translateY(175px);
+}
+
+label[for="city"]{
+  transform: translate(0,240px);
+}
+
+label[for="province"]{
+  transform: translate(110px, 240px);
+}
+
+label[for="postal-code"]{
+  transform: translate(215px, 240px);
+}
+
 label[for="card-number"]{
   transform: translateY(100px);
 }
 
 label[for="expiry-date"]{
-  transform: translateY(170px);
+  transform: translate(0, 170px);
 }
 
 label[for="cvv"]{
-  transform: translateY(245px);
+  transform: translate(170px, 170px);
+}
+
+.form-group input:valid + label[for="first-name"], .form-group input:focus + label[for="first-name"] {
+  margin-top: 4.5rem;
+}
+
+.form-group input:valid + label[for="last-name"], .form-group input:focus + label[for="last-name"] {
+  margin-top: 4.5rem;
+  margin-left: 10.5rem;
+}
+
+.form-group input:valid + label[for="address"], .form-group input:focus + label[for="address"] {
+  margin-top: 9rem;
+}
+
+.form-group input:valid + label[for="city"], .form-group input:focus + label[for="city"] {
+  margin-top: 14rem;
+}
+
+.form-group input:valid + label[for="province"], .form-group input:focus + label[for="province"] {
+  margin-top: 14rem;
+  margin-left: 7rem;
+}
+
+.form-group input:valid + label[for="postal-code"], .form-group input:focus + label[for="postal-code"] {
+  margin-top: 14rem;
+  margin-left: 13.5rem;
 }
 
 .form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] {
@@ -916,12 +999,27 @@ label[for="cvv"]{
 }
 
 .form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"] {
-  margin-top: 13.5rem;
+  margin-top: 9rem;
+  margin-left: 10.5rem;
+}
+
+.form-group-1, .form-group-2, .form-group-6, .form-group-7{
+    width: 45%;
+    display: inline-block;
+}
+
+.form-group-3, .form-group-4, .form-group-5{
+  width: 30%;
+  display: inline-block;
+}
+
+.form-group-A, .form-group-B, .form-group-C{
+  display: flex;
+  justify-content: space-between;
 }
 
 .submit-button{
   margin-top: 3rem;
-  text-decoration: none;
 }
 
 input[type="submit"] {
@@ -939,6 +1037,17 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.shipping input[type="submit"], #payment-button{
+  width: 300px;
+  font-size: 1rem;
+  display: block;
+}
+
+#payment-button{
+  display: none;
+  text-decoration: none;
+}
+
 input[type="submit"]:hover {
   background-color: #4b5f2a;
 }
@@ -948,6 +1057,108 @@ input[type="reset"]:active {
   box-shadow: none;
   top: 5px;
 }
+
+.shipping h2{
+    margin-bottom: 2rem;
+}
+
+
+.order-summary{
+  margin-left: -4rem;
+  background-color: var(--maize);
+  width: 60%;
+
+}
+
+.order-summary #number, .order-summary #number1{
+  margin-left: -0.1rem;
+}
+
+.payment-form{
+  display: flex;
+}
+
+.checkout-price-information {
+  text-align: right;
+  padding-top: 0.75rem;
+}
+
+.subtotal{
+  margin-right: 7.4rem;
+}
+
+.estimated-tax{
+  margin-right: 8rem;
+}
+
+.total{
+  margin-right: 5rem;
+}
+
+.total-information{
+  max-width: 800px;
+}
+
+
+/* Radio Buttons Styling */
+/* Source for hover effect on radio buttons: https://briantree.se/styling-html-radio-buttons-a-step-by-step-guide/ */
+.radio-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.radio-group li {
+  margin: 0.5em 0;  
+}
+
+.radio-group input[type="radio"] {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  overflow: hidden;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+}
+
+.radio-group label {
+  color: var(--gray);
+  font-family: Oswald;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.radio-group label::before {
+  content: '';
+  display: block;
+  height: 1.25em;
+  width: 1.25em;
+  border: solid 1px var(--gray);
+  border-radius: 50%;
+  margin-right: 0.5em;
+  transition: border ease-in 150ms, box-shadow ease-in 150ms;
+  margin-right: 2rem;
+}
+
+.radio-group input[type="radio"]:checked + label,
+.radio-group input[type="radio"]:focus + label {
+  color: var(--moody-indigo);
+}
+
+.radio-group input[type="radio"]:checked + label::before {
+  background: radial-gradient(0.75em circle at center, currentColor 50%, transparent 55%);
+  box-shadow: 0 0 1em 0 val(--moody-indigo);
+  border-color: currentColor;
+}
+
+.radio-group input[type="radio"]:focus + label::before {
+  box-shadow: 0 0 1em 0 rgba(10, 150, 255, 0.75);
+  border-color: currentColor;
+}
+
 
 /* Thank You Message */
 
@@ -994,7 +1205,7 @@ footer .logo {
     font-weight: 600;
     font-size: 3rem;
     text-decoration: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 footer .logo span {
@@ -1012,6 +1223,10 @@ footer .footer-row {
 .footer-row .footer-col h4 {
     color: var(--candlelight-ivory);
     font-size: 1.5rem;
+}
+
+.footer-contact-information .footer-link {
+    margin-top: -8rem;
 }
 
 .footer-col{
@@ -1132,7 +1347,7 @@ footer input[type="submit"]:active {
 
 /* Media Queries */
 
-@media (max-width: 1070px){
+@media (max-width: 1100px){
   .about-company, .about-quality{
     display: block;
   }
@@ -1192,6 +1407,68 @@ footer input[type="submit"]:active {
   .menu-hero-product h2{
     font-size: 2.5rem;
   }
+
+  .payment-form{
+    display: block;
+  }
+  
+  .delivery, .payment, .shipping{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .shipping input[type="submit"]{
+      position: absolute;
+  }
+  .order-summary{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .order-summary h2{
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .shipping h2, .payment h2, .delivery h2{
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  .order-summary #number,   .order-summary #number1{
+    transform: translateX(1.25rem);
+  }
+
+  .payment-information{
+    margin-left: 5rem;
+  }
+
+  .checkout-total{
+    margin-bottom: 1rem;
+  }
+
+  .shipping input[type="submit"]{
+    display: none;
+  }
+
+  #payment-button{
+      display: block;
+      margin: 0 auto;
+      margin-top: 2rem;
+  }
+
+  #payment-button a{
+    text-decoration: none;
+  }
+
+  hr{
+    display: block;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1297,11 +1574,6 @@ footer input[type="submit"]:active {
     width: 80%;
   }
 
-  .payment{
-    margin-top: 2rem;
-    margin-left: 0;
-  }
-
   .product, .featured-product{
     width: 90%;
     margin-left: 0.75rem;
@@ -1386,6 +1658,11 @@ footer input[type="submit"]:active {
   .about-hero-content{
     margin-top: -4.5rem; 
   }
+
+  .payment, .shipping, .delivery{
+    margin-left: 0;
+  }
+
 
 }
 
