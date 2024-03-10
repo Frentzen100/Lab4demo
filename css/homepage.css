@@ -29,9 +29,8 @@ header {
   padding: 30px;
   background-color: var(--moody-indigo);
   z-index: 9999; 
-  border-bottom: solid 2px var(--chestnut);
+  border-bottom: solid 3px var(--harvest-gold);
   max-height: 125px;
-
 }
 
 header .navbar {
@@ -40,7 +39,6 @@ header .navbar {
   max-width: 1300px;
   margin: 0 auto;
   align-items: center;
-
 }
 
 /* Navbar Styling */
@@ -61,7 +59,6 @@ header .navbar {
   display: flex;
   list-style: none;
   gap: 50px;
-  margin-top: -8rem;
 }
 
 .navbar a {
@@ -260,6 +257,9 @@ border-radius: 25px;
   #hamburger-btn {
     display: block;
     color: var(--candlelight-ivory);
+    transform: scale(1.5);
+    margin-top: -7.5rem;
+    margin-right: 2rem;
   }
  
   #close-menu-btn {
@@ -297,6 +297,7 @@ border-radius: 25px;
   .hero-section .content {
     text-align: center;
     margin: 0 auto;
+    padding-top: 7rem;
   }
 
   .hero-section .content :is(h2, p) {
@@ -329,9 +330,18 @@ border-radius: 25px;
     width: 100%;
   }
 
-  .footer .footer-row {
+  .footer .menurow {
     padding: 20px;
     gap: 1rem;
+  }
+
+  .logo{
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+  }
+
+  footer .logo{
+    margin-left: -0.6rem;
   }
 
 }

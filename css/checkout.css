@@ -19,9 +19,24 @@
   --maximum-green: #627C39;
 }
 
+.go-back-button{
+  position: absolute;
+  margin-left: 2rem;
+  margin-top: -3rem;
+  padding-top: 2rem;
+}
+
+.go-back-button h4{
+   font-size: 1.8rem;
+}
+
+.left-arrow{
+  margin-right: 0.8rem;
+}
 .cart{
   width: 80%;
   margin: 0 auto;
+  margin-top: 5rem;
 }
 
 table{
@@ -111,12 +126,7 @@ th.quantitys, td.quantity, th.products{
 .checkout-button{
    float: right;
    width: 300px;
-   font-size: 2rem;
    padding: 1em 1em;
-}
-
-.checkout-item-image{
-  margin-top: 1.75rem;
 }
 
 .vertical-line{
@@ -133,7 +143,7 @@ th.quantitys, td.quantity, th.products{
 }
 
 .checkout-footer{
-  margin-top: 50rem;
+  margin-top: 6rem;
 }
 
 table {
@@ -391,6 +401,7 @@ input[type="reset"]:active {
 
 .payment-form{
   display: flex;
+  margin-top: 5rem;
 }
 
 .checkout-price-information {
@@ -613,6 +624,7 @@ input[type="reset"]:active {
     flex-direction: column;
     padding: 70px 40px 0;
     transition: left 0.2s ease;
+    margin-top: 0;
   }
 
   header.show-mobile-menu .navbar .menu-links {
