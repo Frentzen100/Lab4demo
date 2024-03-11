@@ -399,6 +399,7 @@ input[type="submit"]:hover {
     opacity: 0.5;
 }
 
+
 /*----------------- Text Elements -----------------*/
 /* Text Styling */
  #text_elements h1 {
@@ -459,6 +460,11 @@ input[type="submit"]:hover {
     max-width: 100%;
     display: block;
     align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-img:hover {
+    opacity: 0.5;
 }
 
 .product-card h2 {
@@ -533,8 +539,8 @@ input[type="submit"]:hover {
 }
 
 .product-card .button-link input[type="submit"] {
-    padding: 10px 40px; /* Adjust the padding as needed */
-    font-size: 1.2rem; /* Adjust the font size as needed */
+    padding: 10px 40px; 
+    font-size: 1.2rem; 
     width: 100%;
 }
 
@@ -579,6 +585,99 @@ label[for="cvv"]{
 }
 
 /* Checkout Cart Styling */
+.check-out-section {
+    color: var(--candlelight-ivory);
+    font-family: Oswald, sans-serif;
+}
+.cart{
+    width: 100%;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: var(--moody-indigo);
+}
+
+table {
+    width: 100%;
+}
+
+th:first-child,
+td:first-child {
+  width: 70%;
+}
+
+th.total, td.total, th.quantity, td.quantity {
+    width: 15%; 
+}
+
+th.total, td.total{
+    text-align: right;
+}
+  
+th.quantity, td.quantity, th.product{
+    text-align: left;
+}
+
+.checkout-item {
+    display: flex;
+    position: relative;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-color: var(--spanish-grey);
+    border-width: 0.1rem;
+}
+
+.cart, .payment{
+    width: 80%;
+}
+
+.cart-title{
+    margin-bottom: 2rem;
+    color: var(--candlelight-ivory);
+}
+
+.checkout-item-text{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+  
+.checkout-item-description{
+    font-size: 2rem;
+     width: 14rem;
+    color: var(--candlelight-ivory)
+}
+  
+.checkout-item-price, .checkout-item-quantity, .checkout-item-total{
+    font-weight: 100;
+    color: var(--candlelight-ivory)
+
+}
+
+.checkout-item-price, .checkout-item-quantity, .checkout-item-description{
+    margin-top: 20px;
+    color: var(--candlelight-ivory)
+
+}
+  
+.checkout-item-total{
+    text-align: right;
+    width: 97%;
+    margin-left: 20px;
+    margin-top:  60px;
+    /* position: absolute; */
+    color: (var--canflelight-ivory)
+
+}
+
+.checkout-total {
+    text-align: right;
+    font-size: 2rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.total h3 {
+    color: var(--candlelight-ivory);
+}
 
 /* News + Updates Styling */
 
