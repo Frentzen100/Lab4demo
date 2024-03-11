@@ -1,170 +1,212 @@
+<!------------------- HOMEPAGE ------------------->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="css/main3.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/homepage.css">
-  <link rel="stylesheet" href="css/menu.css">
-  <link rel="stylesheet" href="css/checkout.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+
+    <!-- Hamburger Icon Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <title>Homepage</title>
+    
 </head>
 
-<body class="homepage">
-  
-  <header>   
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#"><img src="image/logo2.png" alt="Logo" class="img-bottom"></a>
-        <a href="#"><img src="image/logo1.png" class="img-top" alt="Logo"></a>
-      </div>
-      <ul class="menu-links">
-          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-          <li><a href='#'>Home</a></li>
-          <li><a href='menu.html'>Menu</a></li>
-          <li><a href='about-us.html'>About Us</a></li>
-          <li><a href='contact.html'>Contact Us</a></li>
-      </ul>
-      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
-    </nav>
-  </header>
+<body>
+    <!------- HEADER ------->
+    <header>
+      <nav class="navbar">
 
-  <section class="hero-section">
-    <div class="content">
-        <h2>Fill Your Matcha Cravings!</h2>
-          <p> Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, 
+        <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
+        <a class="company-name" href="#">Matcha Munchies</a>
+
+        <ul class="nav-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+
+      </nav>
+    </header>
+
+    <!------- HERO SECTION ------->
+    <section class="home-hero-section">
+      <div class="content">
+        <h1>Fill Your Matcha Cravings</h1>
+        <p>Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, 
             a finely ground green tea powder from Japan. At our bakery, we aim to captivate
             your taste buds with a delightful array of matcha-infused baked goods, ranging 
             from pastries, artisanal breads and cakes.
-          </p>
-          <a href="menu.html" class="button-link"> <button class="button" id="homepage-hero-button">View Menu <span class="arrow">&#8594;</span></button></a>
-    </div>
-
-    <div class="image">      
-        <img src="image/halfmatchadonut-x1.png" alt="Half Matcha Bun" id="homepage-hero-image">
-    </div>
-  </section>
-
-  <section class="element">
-    <div class="image-left">
-        <a href="product1.html"><img src="image/updatesimg1.png" alt="First Image Event" id="home-image-left" class="round-image" style="width: 300px"></a>
-        <div>
-      <h2>New Product Release: Mochi Donuts</h2>
-          <p>Indulge in a delectable journey with our latest creation: the Mochi Donut.
-          Crafted with precision and passion, this innovative treat marries the chewy texture of traditional Japanese mochi with the irresistible sweetness of a classic donut.
-           Each bite unveils a symphony of flavors, from the delicate notes of rice flour to the luxurious glaze that coats every curve. </p>
-        </div>
+        </p>
+        <a href="menu.html" class="button-link"><button class="button">View Menu</button></a>
       </div>
-      
-      <div class="image-right">
-        <img src="image/updatesimg2.png"  alt="Second Image Event" class="round-image" style="width: 25%">
-        <div>
-      <h2>Up to 50% on Cake Orders</h2>
-          <p>From classic matcha-infused layers to modern twists on traditional favorites, our cakes are a celebration of culinary excellence. 
-            With savings of up to half off, there's never been a better time to indulge in the harmonious fusion of flavor and artist.</p>
-        </div>
+
+      <div class="hero-image">      
+        <img src="img/half-covered-donut.png" alt="Half Matcha Donut" id="homepage-hero-image">
       </div>
-  </section>
 
-  <section class="element">
-    <h2 class="featured-product-title">Featured Matcha</h2>
-    <p class="featured-product-subtitle"> Explore the Irresistible Matcha Delights That Have Everyone Talking.</p>
+    </section>
 
-  <div class="featured-product">
-    <a href ="product.html"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
-    <h3 class="product-description"><a href="product.html"> Cream Bun</a></h3>
-      <h4 class="product-price"><a href="product.html">$6.99</a></h4>
-  </div>
-
-  <a href="menu.html" class="button-link"> <button class="button" id="featured-button">View Menu  <span class="arrow">&#8594;</span></button></a>
-  <a href="checkout.html"><img src="image/cart.png" alt="Cart icon" class="cart-icon"></a>
-
-  </section>
-  
-  <script>
-    const header = document.querySelector("header");
-    const hamburgerBtn = document.querySelector("#hamburger-btn");
-    const closeMenuBtn = document.querySelector("#close-menu-btn");
-
-    function goToTop() {
-            window.scrollTo(0, 0);
-    }
-
-    <!-- for mobile -->
-    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-
-    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
- 
-  </script>
+    <!------- MAIN SECTION ------->
+    <section class="home-main-section">
+        <h2>News and Updates</h2>
+        <br><br><br>
+        <div class="news-and-updates-container">
+            <div class="news-and-updates-item">
+                <img src="img/updatesimg1.png" alt="Mochi Donuts Update Image">
+            </div>
+            <div class="news-and-updates-item">
+                <h3>New Product Release: Mochi Donuts</h3>
+                <p>Indulge in a delectable journey with our latest creation: the Mochi Donut.
+                    Crafted with precision and passion, this innovative treat marries the chewy 
+                    texture of traditional Japanese mochi with the irresistible sweetness of a 
+                    classic donut. Each bite unveils a symphony of flavors, from the delicate 
+                    notes of rice flour to the luxurious glaze that coats every curve.
+                </p>
+            </div>
+        </div>
+        <div class="news-and-updates-container">
+            <div class="news-and-updates-item">
+                <img src="img/updatesimg2.png" alt="Mochi Donuts Update Image">
+            </div>
+            <div class="news-and-updates-item">
+                <h3>Up to 50% on Cake Orders</h3>
+                <p>From classic matcha-infused layers to modern twists on traditional favorites, 
+                    our cakes are a celebration of culinary excellence. With savings of up to 
+                    half off, there's never been a better time to indulge in the harmonious fusion
+                    of flavor and artist.
+                </p>
+            </div>
+        </div>  
+    </section>
     
-  <!--<section class="footer">-->
-  <footer>
-    <div class="footer-row">
 
-       <div class="footer-contact-information">
-        <div class="logo">
-          <a href="#"><img src="image/logo2.png" alt="Logo"></a>
-          <a href="#"><img src="image/logo1.png" class="img-top" alt="Logo"></a>
+    <!-- source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+    <section class="home-main-section">
+        <h2>Our Featured Products</h2>
+        <p>These are some of the favourite pastries</p>
+        <div class="carousal-container">
+            <div class="product-carousel-view">
+              <button id="prev-btn" class="prev-btn">
+                <img src="img/arrow1.svg" alt="Left Carousal Arrow" width="20" title="chevron-circle-left">
+
+              </button>
+                <div id="item-list" class="item-list">
+                    <div id="item" class="item">
+                        <img src="img/mochi-donut.png" alt="Carousal First Image"/>
+                        <p>caption</p>
+                    </div>
+                    <div id="item" class="item">
+                        <img src="img/cream-bun.png" alt="Carousal First Image"/>
+                        <p>caption</p>
+                    </div>
+                    <div id="item" class="item">
+                        <img src="img/cream-stuffed-biscuit.png" alt="Carousal First Image"/>
+                        <p>caption</p>
+                    </div>
+                    <div id="item" class="item">
+                        <img src="img/red-bean-filled-bread.png" alt="Carousal First Image"/>
+                        <p>caption</p>
+                    </div>
+                    <div id="item" class="item">
+                        <img src="img/sprinkle-donut.png" alt="Carousal First Image"/>
+                        <p>caption</p>
+                    </div>
+                    <div id="item" class="item">
+                        <img src="img/cream-glazed-bun.png" alt="Carousal First Image"/>
+                        <p>caption</p>
+                    </div>
+                </div>
+              <button id="next-btn" class="next-btn">
+                <img src="img/arrow2.svg" alt="Left Carousal Arrow" width="20" title="chevron-circle-left">
+              </button>
+            </div>
         </div>
-        
-        <ul class="footer-link">
-          <li>Location: Vancouver, BC</li>
-          <li>Email: MatchaMochi@gmail.com</li>
-          <li>Contact Number: 772-233-123</li>
-          <li>Hour of Operation: Mon - Sun 10:00 - 20:00</li>
-        </ul>
-        
-        <img src="image/facebook.svg" alt="Facebook Icon">
-        <img src="image/instagram.svg" alt="Instagram Icon" id="instagram">
-      </div>
-
-      <div class="footer-col">
-        <h4>MatchaMunchies</h4>
-        <ul class="footer-links">
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="style-guide.html">Style Guide</a></li>
-          <li><a href="https://github.com/Frentzen100/P02---Style-Guide">Github</a></li>
-          <li><a href="citation.html">Citations</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Help</h4>
-        <ul class="footer-links">
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Services</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Newsletter</h4>
-          <p>Subscribe to our newsletter for more updates, events and exclusive deals! </p>
-        <div class="form-group">
-            <input type="text" required />
-            <label>Email</label>
-            <input type = "submit" value ="Submit" onclick="goToTop()" >
-        </div>
-      </div>
-    </div>
-    <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
-  </footer>
-   
+    </section>
 
 
+    <script src="js/script.js" defer></script>
   
 
-
-
+    <!-- Javascript for the Hamburger menu -->
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
   
- 
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+  
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+
+    <!--<section class="footer">-->
+    <footer>
+        <div class="footer-row">
+
+        <div class="footer-col">
+
+            <div class="company-info">
+                <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
+                <a class="company-name" href="#">Matcha Munchies</a>
+            </div>
+
+            <ul class="footer-links">
+            <li>Location: Vancouver, BC</li>
+            <li>Email: MatchaMochi@gmail.com</li>
+            <li>Contact Number: 772-233-123</li>
+            <li>Hour of Operation: Mon - Sun 10:00 - 20:00</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>MatchaMunchies</h4>
+            <ul class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="style-guide.html">Style Guide</a></li>
+            <li><a href="https://github.com/Frentzen100/P02---Style-Guide">Github</a></li>
+            <li><a href="citation.html">Citations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Help</h4>
+            <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for more updates, events and exclusive deals! </p>
+            <div class="form-group">
+                <input type="text" required />
+                <label>Email</label>
+                <input type = "submit" value ="Submit" onclick="goToTop()" >
+            </div>
+        </div>
+        </div>
+        <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
+    </footer>
+
 </body>
-
 </html>

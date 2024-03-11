@@ -2,665 +2,619 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P02 Styleguide</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+
+    <!-- Hamburger Icon Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+    <title>P02 Styleguide</title>
+    
 </head>
 
-<!-- 	Feedback -->
-<!-- nav links/ buttons size bigger -->
-<!-- 	button for checkout/ or make the product listing more detailed -->
-<!-- 	pay now button is hard to see -->
-<!-- 	citations clearer + with links -->
-
 <body>
-  <header>
-    <h1>COMPANY STYLE GUIDE</h1>
+    <!------- HEADER ------->
+    <header>
+      <nav class="navbar">
 
-    <!----- PAGE NAVIGATION ----->
-    <nav id="page-nav">
-      <ul>
-        <li><a href="#interactive_elements">INTERACTIVE ELEMENTS</a></li>
-        <li><a href="#text_elements">TEXT ELEMENTS</a></li>
-        <li><a href="#combined_elements">COMBINED ELEMENTS</a></li>
-        <li><a href="#brand_ideas">BRAND IDEAS</a></li>
-        <li><a href="#brand_components">BRAND COMPONENTS</a></li>
-        <li><a href="#citations">CITATIONS</a></li>
-      </ul>
-    </nav>
-  </header>
+        <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
+        <a class="company-name" href="#">Matcha Munchies</a>
 
-  
-  <!----- INTERACTIVE ELEMENTS SECTION ----->
+        <ul class="nav-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#interactive_elements">Interactive Elements</a></li>
+          <li><a href="#text_elements">Text Elements</a></li>
+          <li><a href="#">Combined Elements</a></li>
+          <li><a href="#">Brand Ideas</a></li>
+          <li><a href="#">Brand Components</a></li>
+          <li><a href="#">Citations</a></li>
+        </ul>
 
-  <section class="main-sections">
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
-        
-      <!-- In-text Link Sub-Section -->
-      <section class="element">
-        <h3>In-text link</h3>
-  
-        <h4>CSS Selector:</h4>
-        <p>.in-text-link</p>
-  
-        <h4>Sample Code:</h4>
-        <code>&lt;a class="in-text-link" href="#"&gt;Home&lt;/a&gt;</code>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
 
-        <h4>Rendered Element:</h4>
-        <a class="in-text-link" href="#">Home</a>
-      </section>
+      </nav>
+    </header>
 
-        <!-- Navigation Link Sub-Section -->
-      <section class="element">
-        <h3>Navigation link</h3>
-  
-        <h4>CSS Selector:</h4>
-        <p>.button</p>
-  
-        <h4>Sample Code:</h4>
-        <code>&lt;a class="button" href="#"&gt; Default Button &lt;/a&gt;</code>
-
-        <h4>Rendered Element:</h4>
-        <button class="button">Click Me</button>
-      </section>
-
-      <!-- Submit/ Reset Buttons Sub-Section -->
-      <section class="element">
-        <h3>Submit & Reset Buttons</h3>
-  
-        <h4>CSS Selector:</h4>
-        <p>input</p>
-  
-        <h4>Sample Code:</h4>
-        <code> &lt;input type = "submit" value = "Submit" /&gt;</code>
-        <code> &lt;input type = "reset" value = "Reset" /&gt;</code>
-
-        <h4>Rendered Element:</h4>
-        <input type = "submit" value ="Submit" />
-			  <input type = "reset" value = "Reset" />
-      </section>
-
-      <!-- Text Input Field Sub-Section -->
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-
-        <h4>CSS selector: </h4>
-        <p> label, input </p>
-    
-        <h4>Sample code: </h4>
-        <code> &lt;label for = "Input"&gt; Input: &lt;/label&gt; </code>
-        <code> &lt;input type = "text" id = "Input" input = "Input"&gt; </code>
-    
-        <h4>Rendered element: </h4>
-        <div class="form-group">
-          <input type="text" required />
-          <label>Username</label>
-        </div>
-      </section>
-
-      <!-- Radio Buttons w/ Label Sub-Section -->
-      <section class="element">
-        <h3>Radio Buttons with Label</h3>
-
-        <h4>CSS selector:</h4>
-        <p>input[type="radio"]</p>
-
-        <h4>Sample code:</h4>
-        <code> &lt; div class="radio-group" &gt;</code>
-        <code> &lt; ul &gt;</code>
-        <code> &lt; li &gt;</code>
-        <code> &lt;input type = "radio" value="small" name="option" id="small"&gt; </code>
-        <code> &lt;label for = "small"&gt; Small &lt;/label&gt; </code>
-        <code> &lt; /li &gt;</code>
-        <code> &lt; li /&gt;</code>
-        <code> &lt;input type = "radio" value="medium" name="option" id="medium"&gt; </code>
-        <code> &lt;label for = "medium"&gt; Medium &lt;/label&gt; </code>
-        <code> &lt; /li &gt;</code>
-        <code> &lt; li /&gt;</code>
-        <code> &lt;input type = "radio" value="large" name="option" id="large"&gt; </code>
-        <code> &lt;label for = "large"&gt; Large &lt;/label&gt; </code>
-        <code> &lt; /li &gt;</code>
-        <code> &lt; /ul &gt;</code>
-        <code> &lt; /div &gt;</code>
-        
-        <h4>Rendered element:</h4>
-        <div class="radio-group">
-          <ul>
-            <li>
-              <input type="radio" value="small" name="option" id="small"/>
-              <label for="small">Small</label>
-            </li>
-            <li>
-              <input type="radio" value="medium" name="option" id="medium"/>
-              <label for="medium">Medium</label>
-            </li>
-            <li>
-              <input type="radio" value="large" name="option" id="large"/>
-              <label for="large">Large</label>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Image as a Link Sub-Section -->
-      <section class="element">
-        <h3>Image as a Link</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.image-nav, image-nav:hover</p>
-
-        <h4>Sample code:</h4>
-        <code></code>
-        
-        <h4>Rendered element:</h4>
-        <a href="https://ure.pia.co.jp/articles/-/443232?cx_recsClicked=true&cx_recsPosition=sp_photogallery&cx_wid=d6faf3ba962ed798af91b166f41d56e882c0fa74&cx_recsSegment=all&cx_recsMode=contextual&cx_recsSrc=auto"><img src="image/creambun.svg" alt="Cream bun" class="image-nav" style="width: 25%"></a>
-
-
-      </section>
-
-    </section>
-  </section>
-
-  <!------ END OF INTERACTIVE ELEMENTS SECTION ------>
-
-  <!----------- TEXT ELEMENTS SECTION --------------->
-  <section class="main-sections">
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-      <!-- Headings Sub-Section -->
-      <section class="element">
-        <h3>Headings</h3>
-
-        <h4> CSS Selector </h4>
-        <p> h1, h2 ,h3 ,h4 </p>
-
-        <h4> Sample Code </h4>
-        <code>&lt;h1&gt;Signature Whole Cake&lt;/h1&gt;</code>
-        <code>&lt;h2&gt;Now available for pre-order&lt;/h2&gt;</code>
-        <code>&lt;h3&gt;Matcha Roll Cake&lt;/h3&gt;</code>
-        <code>&lt;h4&gt;$7.99&lt;/h4&gt;</code>
-
-        <h4> Rendered Elements </h4>
-        <h1> Signature Whole Cake </h1>
-        <h2> Now available for pre-order</h2>
-        <h3> Matcha Roll Cake</h3>
-        <h4> $7.99</h4>
-
-      </section>
-
-      <!-- Paragraphs Sub-Section -->
-      <section class="element">
-        <h3>Paragraphs</h3>
-
-        <h4>CSS selector: </h4>
-        <p>p</p>
-    
-        <h4>Sample code: </h4>
-        <code>&lt;p&gt;Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
-          Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
-          All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
-          With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".&lt;/p&gt;</code>
-    
-        <h4>Rendered element: </h4>
-        <p>Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
-           Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
-           All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
-           With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".</p>
-
-      </section>
-
-      <!-- Numbered Lists -->
-      <section class="element">
-        <h3>Numbered Lists</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.number, .number::before </p>
-        <h4>Sample code:</h4>
-        <code>&lt;ol&gt;
-          <code>&lt;li class="number"&gt;Cake&lt;/li&gt;</code>
-          <code>&lt;li class="number"&gt;Pastries&lt;/li&gt;</code>
-        &lt;/ol&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <ol>
-          <li class="number">Cake</li>
-          <li class="number">Pastries</li>
-        </ol>
-
-      </section>
-
-    </section>
-  </section>
-  <!----- END OF TEXT ELEMENTS SECTION ----->
-    
-  <!------ COMBINED ELEMENTS SECTION ------->
-  <section class="main-sections">
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-      
-      <!-- Main Navigation Sub-Section -->
-      <section class="element">
-
-        <h3>Main Navigation</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.navbar, .navbar a, .navbar a:hover, .navbar a.active, </p>
-
-        <h4>Sample Code:</h4>
-        <code>&lt;div class="navbar"&gt;</code>
-        <code>&lt;a href="#"&gt; Home &lt;/a&gt;</code>
-        <code>&lt;a href="menu.html"&gt; Menu &lt;/a&gt;</code>
-        <code>&lt;a href="about-us.html"&gt; About Us &lt;/a&gt;</code>
-        <code>&lt;a href="contact.html"&gt; Contact &lt;/a&gt;</code>
-        <code>&lt;/div&gt</code>
-
-        <h4>Rendered element:</h4>
-        <div class="navbar">
-        <a href="#" class="active">Home</a>
-         <a href="menu.html">Menu</a>
-         <a href="about-us.html">About Us</a>
-         <a href="contact.html">Contact</a>
-       </div>
-      </section>
-      
-      <!-- Product Listing Sub-Section -->
-      <section class="element">
-        <h3>Product Listing</h3>
-  
-        <h4>CSS Selector:</h4>
-        <p>.product, .product-description a, .product-price a, .product-description a:hover,  .product-price a:hover, .product-description a:focus,  .product-price a:focus</p>
-  
-        <h4>Sample Code:</h4>
-        <code>&lt;div class="product"&gt;</code>
-        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/creambun.svg.svg" class="image-nav" alt="Cream bun" &gt;&lt;/a&gt;</code>
-        <code>&lt;h3 class="product-description"&gt;&lt;a href ="https://mdpr.jp/gourmet/detail/1676903"&gt; Cream Bun &lt;/a&gt;&lt;/h3&gt;</code>
-        <code>&lt;h4 class="product-price"&gt;&lt;a href ="https://mdpr.jp/gourmet/detail/1676903"&gt; $6.99&lt;/a&gt;&lt;/h4&gt;</code>
-        <code>&lt;/div&gt;</code>
-
-        <code>&lt;div class="product"&gt;</code>
-        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/mochidonuts.svg" class="image-nav" alt="Mochi donut" &gt;&lt;/a&gt;</code>
-        <code>&lt;h3 class="product-description"&gt;&lt;a href =https://mdpr.jp/gourmet/detail/1676903"&gt;Mochi Donut &lt;/a&gt;&lt;/h3&gt;</code>
-        <code>&lt;h4 class="product-price"&gt;&lt;a href ="https://mdpr.jp/gourmet/detail/1676903"&gt; $6.99&lt;/a&gt;&lt;/h4&gt;</code>
-        <code>&lt;/div&gt;</code>
-  
-        <h4>Rendered Element:</h4>
-        <div class="product">
-            <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/creambun.svg" class="image-nav" alt="Cream bun"></a>
-            <h3 class="product-description"><a href="https://mdpr.jp/gourmet/detail/1676903"> Cream Bun</a></h3>
-            <h4 class="product-price"><a href="https://mdpr.jp/gourmet/detail/1676903">$6.99</a></h4>
-        </div>
-
-        <div class="product">
-            <a href ="https://mdpr.jp/gourmet/detail/167690"><img src="image/mochidonuts.svg" class="image-nav" alt="Mochi donut"></a>
-            <h3 class="product-description"> <a href ="https://mdpr.jp/gourmet/detail/1676903">Mochi Donut</a></h3>
-            <h4 class="product-price"> <a href ="https://mdpr.jp/gourmet/detail/1676903">$6.99</a></h4>
-        </div>
-      </section>
-
-      <!-- Payment Method Sub-Section -->
-      <section class="element">
-        <h3>Payment Type</h3>
-  
-        <h4>CSS Selector:</h4>
-        <p>.submit-button, input[type="submit"],input[type="submit"]:hover, input[type="text"], label[for="card-number"], label[for="expiry-date"],
-          label[for="cvv"],.form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] ,
-          .form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"],
-          .form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"], .form-group input:valid,
-          .form-group input:valid + label, .form-group input:focus + label, .form-group input:focus, .form-group label, .form-group input, .form-group 
+    <!------- HERO SECTION ------->
+    <section class="hero-section">
+      <div class="content">
+        <h1>Style Guide</h1>
+        <p>A collection of pre-design elements, graphics and stylings that presents all 
+            of the design decisions for the Matcha Munchies website.
         </p>
-  
-        <h4>Sample Code:</h4>
-        <code>&lt;div class="form-group"&gt;</code>
-        <code>&lt;input type="text" required&gt;</code>
-        <code>&lt;label for="card-holdername"&gt;Cardholder Name&lt;/label&gt;</code>
-        <code>&lt;input type="text" required&gt;</code>
-        <code>&lt;label for="card-number"&gt;Card Number&lt;/label&gt;</code>
-        <code>&lt;input type="text" required&gt;</code>
-        <code>&lt;label for="expiry-date"&gt;Expire Date&lt;/label&gt;</code>
-        <code>&lt;input type="text" required&gt;</code>
-        <code>&lt;label for="cvv"&gt;CVV&lt;/label&gt;</code>
-        <code>&lt;input type="submit" value="Pay now" class="submit-button" &gt;</code>
-        <code>&lt;/div&gt;</code>
-  
-        <h4>Rendered Element:</h4>
-        <div class="form-group">
-            <input type="text" required />
-            <label for="cardholder-name">Cardholder Name</label>
-            <input type="text" class="spacing"  required />
-            <label for="card-number">Card Number</label>
-            <input type="text" class="spacing" required />
-            <label for="expiry-date">Expiry Date (MM/YY)</label>
-            <input type="text" class="spacing" required />
-            <label for="cvv">CVV</label>
-            <input type="submit" value="Pay now" class="submit-button">
-        </div>
-      </section>
-
-      <!-- Checkout Cart Sub-Section -->
-      <section class="element">
-        <h3>Checkout Cart</h3>
-  
-        <h4>CSS selector:</h4>
-        <p> .image-nav, .submit-button, .checkout-item, .checkout-item-text, .checkout-item-description,
-            .checkout-item-price, .checkout-item-quanitity, .checkout-item-total, .checkout-total, .regular,
-            .checkout-button, .checkout-button:hover
-        </p>
-
-        <h4>Sample code:</h4>
-
-        <code>&lt;div class="checkout-item"&gt;</code>
-        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/creambun.svg.svg" class="image-nav" alt="Cream bun" &gt;&lt;/a&gt;</code>
-        <code>&lt;div class="checkout-item-text"&gt;</code>
-        <code>&lt;h4 class="checkout-item-description&gt; Cream Bun&lt;/h4&gt;</code>
-        <code>&lt;h4 class="checkout-item-price&gt; $6.99&lt;/h4&gt;</code>
-        <code>&lt;h4 class="checkout-item-quantity&gt; Quantity: 2&lt;/h4&gt;</code>
-        <code>&lt;/div&gt;</code>
-        <code>&lt;h3 class="checkout-item-total"&gt; $13.98&lt;/h3&gt;</code>
-        <code>&lt;/div&gt;</code>
-
-        <code>&lt;div class="checkout-item"&gt;</code>
-        <code>&lt;a href="https://mdpr.jp/gourmet/detail/1676903"&gt;&lt; img src="image/mochidonuts.svg" class="image-nav" alt="Mochi donut" &gt;&lt;/a&gt;</code>
-        <code>&lt;div class="checkout-item-text"&gt;</code>
-        <code>&lt;h4 class="checkout-item-description"&gt; Mochi Donut&lt;/h4&gt;</code>
-        <code>&lt;h4 class="checkout-item-price"&gt; $6.99&lt;/h4&gt;</code>
-        <code>&lt;h4 class="checkout-item-quantity"&gt; Quantity: 1&lt;/h4&gt;</code>
-        <code>&lt;/div&gt;</code>
-        <code>&lt;h3 class="checkout-item-total"&gt; $6.99&gt;&lt;/h3&gt;</code>
-        <code>&lt;/div&gt;</code>
-
-        <code>&lt;h3 class="checkout-total"&gt; &lt;span class="regular"&gt; Total &lt;/span&gt; $20.97&gt;&lt;/h3&gt;</code>
-        <code>&lt;input type="submit" value="Checkout" class="checkout-button" &gt;</code>
-
-        <h4>Rendered element:</h4>
-        <div class="checkout-item">
-          <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/creambun.svg" class="checkout-item-image image-nav" alt="Cream bun" style="width: 100px"></a>
-          <div class="checkout-item-text">
-            <h4 class="checkout-item-description"> Cream Bun </h4>
-            <h4 class="checkout-item-price"> $6.99</h4> 
-            <h4 class="checkout-item-quantity"> Quantity: 2</h4> 
-          </div>
-          <h3 class="checkout-item-total"> $13.98</h3>
-        </div>
-
-        <div class="checkout-item">
-          <a href ="https://mdpr.jp/gourmet/detail/1676903"><img src="image/mochidonuts.svg" class="checkout-item-image image-nav" alt="Mochi donut" style="width: 100px" ></a>
-          <div class="checkout-item-text">
-            <h4 class="checkout-item-description"> Mochi Donut </h4>
-            <h4 class="checkout-item-price"> $6.99</h4> 
-            <h4 class="checkout-item-quantity"> Quantity: 1</h4> 
-          </div>
-          <h3 class="checkout-item-total">$6.99</h3>
-        </div>
-
-        <h3 class="checkout-total"> <span class="regular">Total</span> $20.97</h3>
-        <input type="submit" value="Checkout" class="checkout-button">
-      </section>
-
-    </section>  
-  </section>
-
-  <!-- END OF COMBINED ELEMENTS SECTION -->
-
-  <!------------ BRAND IDEAS ------------->
-  <section class="main-sections">
-    <section id="brand_ideas">
-      <h2>Brand Ideas</h2>
-      
-      <!-- General Brand Info Sub-Section -->
-      <section class="element">
-          <h3>What does the company do or offer?</h3>
-          <p>Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. Known for its vibrant color, distinctive flavor, and health benefits, Matcha brings a touch of Japanese elegance to every bite of your favourite sweet treats. At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.</p>
-
-          <h3>Who is the company to potential customer?</h3>
-          <p>Our audience comprises those who enjoy the fusion of traditional Japanese flavors with modern culinary delights. Whether you're a matcha enthusiast or someone eager to explore new taste experiences, the next time you're craving pastries, cakes, or freshly made bread, make sure to check out some of Matcha Munchies' products!</p>
-
-          <h3>Why might this company entice someone to purchase a product?</h3>
-          <p>In addition to our enticing range of matcha-flavored baked goods, we take pride in offering a wide variety of options suitable for various food allergies and diets. Our commitment to inclusivity ensures that everyone can savor the delicious taste of Matcha Munchies. Moreover, our thoughtfully crafted baked goods make for perfect gifts, combining the exquisite flavors of matcha with the joy of giving. Whether you're looking for a treat for yourself or a delightful present for someone special, Matcha Munchies is your go-to destination.</p>
-      </section>
-
-      <!-- Company Updates & Events Sub-Section -->
-      <section class="element">
-        <h3>Company Updates & Events</h3>
-        
-        <div class="image-left">
-          <img src="image/updatesimg1.png" alt="First Image Event" style="width: 25%">
-          <div>
-        <h2>New Product Release: Mochi Donuts</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu, massa scelerisque ac, cursus et, sollicitudin a, orci.</p>
-          </div>
-        </div>
-        <!-- Source of image: https://gigazine.net/news/20140703-yukinosita-kyoto/ -->
-        
-        <div class="image-right">
-          <img src="image/updatesimg2.png"  alt="Second Image Event" style="width: 25%">
-          <div>
-        <h2>Up to 50% on Cake Orders</h2>
-            <p>Praesent in mauris eu tortor porttitor accumsan. Duis bibendum. Morbi non erat non ipsum pharetra tempus. Du is iaculis laoreet odio. Vestibulum id ligula porta felis euismod semper. Sed euismod. Maecenas id ante. Nunc pellentesque. Sed vestibulum. Integer in ante. Nunc elementum.</p>
-          </div>
-        </div>
-        <!-- Source of image: https://menu.starbucks.co.jp/4524785488816 -->
-
-      </section>
-
-
-      <!-- Feedback Sub-Section -->
-      <section class="element">
-        <h3>User Feedback Forum</h3>
-
-        <div class="feedback_container">
-
-          <div class="row">
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Kate">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Luong">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="country">Country</label>
-            </div>
-            <div class="col-75">
-              <select id="country" name="country">
-                <option value="canada">Canada</option>
-                <option value="uk">USA</option>
-                <option value="usa">UK</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Subject</label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
-          </div>
-
-          <div class="row">
-            <input type="submit" value="Submit">
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- Company Contact Sub-Section -->
-      <section class="element">
-        <h3>Company Contact</h3>
-        <h4> Location </h4>
-        <p> Vancouver, BC </p>
-        <h4> Contact Info </h4>
-        <p> Email: MatchaMochi@gmail.com </p>
-        <h4> Hours of Operation </h4>
-        <p> Mon - Sat 10:00 - 20:00 </p>
-        <p> Sun 10:00 - 17:00 </p>
-      </section>
-
-
+      </div>
     </section>
-  </section>
-  
-  <!----- END OF BRAND IDEAS SECTION ----->
-    
-  <!---------- BRAND COMPONENTS ---------->
-  <section class="main-sections">
-    <section id="brand_components">
-      <h2>Brand Components</h2>
-      
-      <!-- Font Sub-Section -->
-      <section class="element">
-        <h3>Fonts Selection</h3>
 
-        <table class="typography">
-          <tr>
-            <td><h1>Heading 1</h1></td>
-            <td> 40 px<td>
-            <td> Oswald - Bold </td>
-          </tr>
+    <!------- INTERACTIVE ELEMENTS SECTION ------->
+    <section class="main-sections">
+        <section id="interactive_elements">
+            <h2>Interactive Elements</h2>
 
-          <tr>
-            <td><h2>Heading 2</h2></td>
-            <td> 32 px<td>
-            <td> Oswald - SemiBold </td>
-          </tr>
+            <!-- In-text Link Sub-Section -->
+            <section class="element">
+                <h3>In-text link</h3>
 
-          <tr>
-            <td><h3>Heading 3</h3></td>
-            <td> 24 px<td>
-            <td> Oswald — Regular </td>
-          </tr>
+                <h4>CSS Selector:</h4>
+                <p>.in-text-link</p>
 
-          <tr>
-            <td><h4>Heading 4</h4></td>
-            <td> 20 px<td>
-            <td> Oswald — Regular </td>
-          </tr>
+                <h4>Sample Code:</h4>
+                <code>&lt;p&gt;Check out the newest selection of&lt;a class="in-text-link" href="#"&gt;donuts</code>
 
-          <tr>
-            <td><p class="bold">Body Bold</p></td>
-            <td> 16 px<td>
-            <td> Source Sans Pro — Bold </td>
-          </tr>
+                <h4>Rendered Element:</h4>
+                <p>Gift cards can be <a class="in-text-link" href="#">ordered online</a> for pickup!</p>
+            </section>
 
-          <tr>
-            <td><p>Body</p></td>
-            <td> 16 px<td>
-            <td> Source Sans pro — Regular </td>
-            </tr>
-        </table>
+            <!-- Navigation Link Sub-Section -->
+            <section class="element">
+                <h3>Navigation link</h3>
         
-      </section>
-
-      <!-- Colour Palette Sub-Section -->
-      <section class="element">
-        <h3>Colour Palette</h3>
-        <table class="color-palette">
-          <tr>
-            <th>Color name</th>
-            <th>Color appearance</th>
-            <th>Usage</th>
-          </tr>
-
-          <tr>
-            <td><h4> Moody Indigo  #368AFF</h4></td>
-            <td> <div class="rect rect1"></div> </td>
-            <td> Background</td>
-          </tr>
-
-          <tr>
-            <td><h4> Chestnut  #A44F32</h4></td>
-            <td> <div class="rect rect2"></div> </td>
-            <td> Navigational Text</td>
-          </tr>
-
-          <tr>
-            <td><h4> Granite Gray  #636363</h4></td>
-            <td> <div class="rect rect3"></div> </td>
-            <td> Text color</td>
-          </tr>
-
-          <tr>
-            <td><h4> Xanthous  #E5BC30</h4></td>
-            <td> <div class="rect rect4"></div> </td>
-            <td> CTA button in normal state</td>
-          </tr>
-
-          <tr>
-            <td><h4> Harvest Gold  #E39600</h4></td>
-            <td> <div class="rect rect5"></div> </td>
-            <td> CTA button in hover state</td>
-          </tr>
-
-          <tr>
-            <td><h4> Candlelight Ivory  #FBF4E1</h4></td>
-            <td> <div class="rect rect6"></div> </td>
-            <td> Container</td>
-          </tr>
-
-        </table>
+                <h4>CSS Selector:</h4>
+                <p>.button</p>
         
-      </section>    
+                <h4>Sample Code:</h4>
+                <code>&lt;a href="#" class="button-link"&gt;&lt;button class="button"&gt;View Menu&lt;/button&gt;&lt;a&gt;</code>
 
-      <!-- Icons -->
-      <section class="element">
-        <h3>Icons</h3>
-        <img src="image/facebook.svg" alt="Facebook" class="icon-image" >
-        <img src="image/instagram.svg" alt="Instagram" class="icon-image">
-      </section>
+                <h4>Rendered Element:</h4>
+                <a href="#" class="button-link"><button class="button">View Menu</button></a>
+            </section>
 
-      <!-- Imagery Sub-Section -->
-      <section class="element">
-        <h3>Potential Imagery</h3>
-        <img src="image/creambun.svg" alt="Cream bun" class="product-image">
-        <img src="image/glazedwaffle.svg" alt="Glazed waffle" class="product-image">
-        <img src="image/mochidonuts.svg" alt="Mochi donuts" class="product-image">
-        <img src="image/powdercreambun.svg" alt="Powder Cream bun" class="product-image">
-      </section>
+            <!-- Submit/ Reset Buttons Sub-Section -->
+            <section class="element">
+                <h3>Submit & Reset Buttons</h3>
+        
+                <h4>CSS Selector:</h4>
+                <p>input</p>
+        
+                <!-- fix later -->
+                <h4>Sample Code:</h4>
+                <code> &lt;input type = "submit" value = "Submit" /&gt; <br>
+                       &lt;input type = "reset" value = "Reset" /&gt;
+                </code>
 
+                <h4>Rendered Element:</h4>
+                <div class="buttons-group">
+                    <a href="#" class="button-link">
+                        <input type="submit" value="submit" />
+                    </a>
+                    <a href="#" class="button-link">
+                        <input type="reset" value="reset" />
+                    </a>
+                </div>
+            </section>
+
+            <!-- Text Input Field Sub-Section -->
+            <section class="element">
+                <h3>Text Input Field with Label</h3>
+
+                <h4>CSS selector: </h4>
+                <p> label, input </p>
+                
+                <!-- fix later -->
+                <h4>Sample code: </h4>
+                <code> &lt;label for = "Input"&gt; Input: &lt;/label&gt; <br>
+                       &lt;input type = "text" id = "Input" input = "Input"&gt;
+                </code>
+            
+                <h4>Rendered element: </h4>
+                <div class="form-group">
+                <input type="text" required />
+                <label>Username</label>
+                </div>
+            </section>
+
+            <!-- Radio Buttons w/ Label Sub-Section -->
+            <section class="element">
+                <h3>Radio Buttons with Label</h3>
+
+                <h4>CSS selector:</h4>
+                <p>input[type="radio"]</p>
+
+                <!-- fix later -->
+                <h4>Sample code:</h4>
+                <code></code>
+                
+                <h4>Rendered element:</h4>
+                <div class="radio-group">
+                <ul>
+                    <li>
+                    <input type="radio" value="small" name="option" id="small"/>
+                    <label for="small">Small</label>
+                    </li>
+                    <li>
+                    <input type="radio" value="medium" name="option" id="medium"/>
+                    <label for="medium">Medium</label>
+                    </li>
+                    <li>
+                    <input type="radio" value="large" name="option" id="large"/>
+                    <label for="large">Large</label>
+                    </li>
+                </ul>
+                </div>
+            </section>
+
+            <!-- Image as a Link Sub-Section -->
+            <section class="element">
+                <h3>Image as a Link</h3>
+
+                <h4>CSS selector:</h4>
+                <p>.image-nav, image-nav:hover</p>
+
+                <h4>Sample code:</h4>
+                <code></code>
+                
+                <h4>Rendered element:</h4>
+                <a href="https://ure.pia.co.jp/articles/-/443232?cx_recsClicked=true&cx_recsPosition=sp_photogallery&cx_wid=d6faf3ba962ed798af91b166f41d56e882c0fa74&cx_recsSegment=all&cx_recsMode=contextual&cx_recsSrc=auto"><img src="img/cream-bun.png" alt="Cream bun" class="image-nav" style="width: 25%"></a>
+
+            </section>
+
+        </section>
     </section>
-  </section>
+    <!------- END OF INTERACTIVE ELEMENTS SECTION ------->
 
-  <!-- END OF BRAND COMPONENTS SECTION -->
 
-  <!-------------- CITATIONS ------------>
-  <section class="main-sections">
-    <footer>
-      <section id="citations">
-        <h2>Citations</h2>
-        
-        <ul>
-          <li>Image of cream bun: https://macaro-ni.jp/88223 </li>
-          <li>Image of mochi donut: https://macaro-ni.jp/88223 </li>
-          <li>Image 1 in updates section: https://gigazine.net/news/20140703-yukinosita-kyoto/</li>
-          <li>Image 2 in updates section: https://menu.starbucks.co.jp/4524785488816</li>
-          <li>Facebook icon: https://icons8.com/icons/set/facebook</li>
-          <li>Instagram icon: https://icons8.com/icons/set/instagram</li>
-          <li>Image of matcha croffle: https://chiveburger.tumblr.com/post/121245482590/krispy-kreme-waffnuts-%E3%83%AF%E3%83%95%E3%83%8A%E3%83%83%E3%83%84%E5%AE%87%E6%B2%BB%E6%8A%B9%E8%8C%B6-%E3%83%AF%E3%83%95%E3%83%8A%E3%83%83%E3%83%84%E3%82%A2%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%89</li>
-      </section>
-    </footer>
-  
-  </section>
+    <!------- TEXT ELEMENTS SECTION ------->
+    <section class="main-sections">
+        <section id="text_elements">
+          <h2>Text Elements</h2>
     
- 
-</body>
+          <!-- Headings Sub-Section -->
+          <section class="element">
+            <h3>Headings</h3>
+    
+            <h4> CSS Selector </h4>
+            <p> h1, h2 ,h3 ,h4 </p>
+    
+            <h4> Sample Code </h4>
+            <code></code>
+    
+            <h4> Rendered Elements </h4>
+
+            <h1> Matcha Munchies </h1>
+            <h2> Latest Updates</h2>
+            <h3> Matcha Roll Cake</h3>
+            <h4> $7.99</h4>
+    
+          </section>
+    
+          <!-- Paragraphs Sub-Section -->
+          <section class="element">
+            <h3>Paragraphs</h3>
+    
+            <h4>CSS selector: </h4>
+            <p>p</p>
+            
+            <!-- fix later -->
+            <h4>Sample code: </h4>
+            <code>&lt;p&gt;Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
+              Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
+              All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
+              With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".&lt;/p&gt;</code>
+            
+            <!-- fix later -->
+            <h4>Rendered element: </h4>
+            <p>Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
+               Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
+               All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
+               With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".</p>
+    
+          </section>
+
+          <!-- Numbered Lists Sub-Section -->
+          <section class="element">
+            <h3>Numbered Lists</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.number, .number::before </p>
+            <h4>Sample code:</h4>
+            <code></code>
+
+            <h4>Rendered element:</h4>
+            <ol>
+            <li class="number-list">Cake</li>
+            <li class="number-list">Pastries</li>
+            </ol>
+          </section>
+        </section>
+    </section>
+    <!------- END OF TEXT ELEMENTS SECTION ------->
+
+    <!------- COMBINED ELEMENTS SECTION ------->
+    <section class="main-sections">
+        <section id="combined_elements">
+          <h2>Combined Elements</h2>
+          
+          <!-- Main Navigation Sub-Section -->
+          <section class="element">
+    
+            <h3>Main Navigation</h3>
+    
+            <h4>CSS selector:</h4>
+            <p>.navbar, .navbar a, .navbar a:hover, .navbar a.active, </p>
+    
+            <h4>Sample Code:</h4>
+            <code></code>
+
+            <h4>Rendered element:</h4>
+            <nav class="navbar">
+
+                <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
+                <a class="company-name" href="#">Matcha Munchies</a>
+        
+                <ul class="nav-links">
+                  <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+        
+                <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+        </section>
+        
+        <!-- Product Listing Sub-Section -->
+        <section class="element">
+            <h3>Product Listing</h3>
+    
+            <h4>CSS Selector:</h4>
+            <p>.product, .product-description a, .product-price a, .product-description a:hover,  .product-price a:hover, .product-description a:focus,  .product-price a:focus</p>
+    
+            <h4>Sample Code:</h4>
+            <code></code>
+    
+            <h4>Rendered Element:</h4>
+            <div class="product-listing">
+                <div class="product-card">
+                    <img src="img/cream-bun.png" class="product-img" alt="Cream Bun">
+                    <div class="product-info">
+                        <h2 class="product-description">Cream Bun</h2>
+                        <h3>$6.99</h3>
+                        <div class="quantity-wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <a href="#" class="button-link">
+                            <input type="submit" value="add to cart" />
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- fix later -->
+                <div class="product-card">
+                    <img src="img/mochi-donut.png" class="product-img" alt="Cream Bun">
+                    <div class="product-info">
+                        <h2 class="product-description">Cream Bun</h2>
+                        <h3>$6.99</h3>
+                        <div class="quantity-wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <a href="#" class="button-link">
+                            <input type="submit" value="add to cart" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/mochi-donut.png" class="product-img" alt="Cream Bun">
+                    <div class="product-info">
+                        <h2 class="product-description">Cream Bun</h2>
+                        <h3>$6.99</h3>
+                        <div class="quantity-wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <a href="#" class="button-link">
+                            <input type="submit" value="add to cart" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Payment Method Sub-Section -->
+        <section class="element">
+            <h3>Payment Type</h3>
+    
+            <h4>CSS Selector:</h4>
+            <p>.submit-button, input[type="submit"],input[type="submit"]:hover, input[type="text"], label[for="card-number"], label[for="expiry-date"],
+            label[for="cvv"],.form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] ,
+            .form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"],
+            .form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"], .form-group input:valid,
+            .form-group input:valid + label, .form-group input:focus + label, .form-group input:focus, .form-group label, .form-group input, .form-group 
+            </p>
+    
+            <h4>Sample Code:</h4>
+            <code></code>
+    
+            <h4>Rendered Element:</h4>
+            <div class="payment-group">
+                <div class="form-group">
+                    <input type="text" required />
+                    <label for="cardholder-name">Cardholder Name</label>
+                    <input type="text" class="spacing"  required />
+                    <label for="card-number">Card Number</label>
+                    <input type="text" class="spacing" required />
+                    <label for="expiry-date">Expiry Date (MM/YY)</label>
+                    <input type="text" class="spacing" required />
+                    <label for="cvv">CVV</label>
+                </div>
+                <a href="#" class="button-link"><button class="button">Place Order</button></a>
+            </div>
+        </section>
+
+        <section class="element">
+            <h3>Checkout Cart</h3>
+      
+            <h4>CSS selector:</h4>
+            <p> .image-nav, .submit-button, .checkout-item, .checkout-item-text, .checkout-item-description,
+                .checkout-item-price, .checkout-item-quanitity, .checkout-item-total, .checkout-total, .regular,
+                .checkout-button, .checkout-button:hover
+            </p>
+    
+            <h4>Sample code:</h4>
+            <code></code>
+    
+            <h4>Rendered element:</h4>
+        </section>
+        </section> 
+    </section>   
+    <!------- END OF COMBINED ELEMENTS SECTION ------->
+
+    <!------- BRANDING SECTION ------->
+    <section class="main-sections">
+        <section id="brand_ideas">
+            <h2>Brand Ideas</h2>
+            
+            <!-- General Brand Info Sub-Section -->
+            <section class="element">
+                <h3>About Matcha Munchies</h3>
+                <br>
+                <h3>What does the company do or offer?</h3>
+                <p>Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. Known for its vibrant color, distinctive flavor, and health benefits, Matcha brings a touch of Japanese elegance to every bite of your favourite sweet treats. At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.</p>
+      
+                <h3>Who is the company to potential customer?</h3>
+                <p>Our audience comprises those who enjoy the fusion of traditional Japanese flavors with modern culinary delights. Whether you're a matcha enthusiast or someone eager to explore new taste experiences, the next time you're craving pastries, cakes, or freshly made bread, make sure to check out some of Matcha Munchies' products!</p>
+      
+                <h3>Why might this company entice someone to purchase a product?</h3>
+                <p>In addition to our enticing range of matcha-flavored baked goods, we take pride in offering a wide variety of options suitable for various food allergies and diets. Our commitment to inclusivity ensures that everyone can savor the delicious taste of Matcha Munchies. Moreover, our thoughtfully crafted baked goods make for perfect gifts, combining the exquisite flavors of matcha with the joy of giving. Whether you're looking for a treat for yourself or a delightful present for someone special, Matcha Munchies is your go-to destination.</p>
+            </section>
+
+            <!-- Company Updates & Events Sub-Section -->
+            <section class="element">
+                <h3>Company Updates & Events</h3>
+            </section>
+
+            <!-- Feedback Sub-Section -->
+            <section class="element">
+                <h3>User Feedback Form</h3>
+
+                <div class="feedback_container">
+
+                <div class="row">
+                    <div class="col-25">
+                    <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Kate">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                    <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Luong">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                    <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        <option value="uk">USA</option>
+                        <option value="usa">UK</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                    <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+
+                <!-- fix later -->
+                <div class="row">
+                    <a href="#" class="button-link">
+                        <input type="submit" value="submit" />
+                    </a>
+                </div>
+
+                </div>
+
+            </section>
+
+            <!-- Company Contact Sub-Section -->
+            <section class="element">
+                <h3>Company Contact</h3>
+                <h4> Location </h4>
+                <p> Vancouver, BC </p>
+                <h4> Contact Info </h4>
+                <p> Email: MatchaMochi@gmail.com </p>
+                <h4> Hours of Operation </h4>
+                <p> Mon - Sat 10:00 - 20:00 </p>
+                <p> Sun 10:00 - 17:00 </p>
+            </section>
+        </section>
+    </section>
+    <!------- END OF BRANDING SECTION ------->
+
+    <!------- BRANDING COMPONENTS SECTION ------->
+    <section class="main-sections">
+        <section id="brand_components">
+            <h2>Brand Components</h2>
+
+            <!-- Font Sub-Section -->
+            <section class="element">
+                <h3>Fonts Selection</h3>
+
+                <table class="typography">
+                <tr>
+                    <td><h1>Heading 1</h1></td>
+                    <td> 40 px<td>
+                    <td> Oswald - Bold </td>
+                </tr>
+
+                <tr>
+                    <td><h2>Heading 2</h2></td>
+                    <td> 32 px<td>
+                    <td> Oswald - SemiBold </td>
+                </tr>
+
+                <tr>
+                    <td><h3>Heading 3</h3></td>
+                    <td> 24 px<td>
+                    <td> Oswald — Regular </td>
+                </tr>
+
+                <tr>
+                    <td><h4>Heading 4</h4></td>
+                    <td> 20 px<td>
+                    <td> Oswald — Regular </td>
+                </tr>
+
+                <tr>
+                    <td><p class="bold">Body Bold</p></td>
+                    <td> 16 px<td>
+                    <td> Source Sans Pro — Bold </td>
+                </tr>
+
+                <tr>
+                    <td><p>Body</p></td>
+                    <td> 16 px<td>
+                    <td> Source Sans pro — Regular </td>
+                    </tr>
+                </table>
+                
+            </section>
+        </section>
+    </section>
+
+
+    <!-- Source for increment and decrement button -->
+    <script>
+        function initializeQuantity(productCard) {
+            const plus = productCard.querySelector(".plus");
+            const minus = productCard.querySelector(".minus");
+            const num = productCard.querySelector(".num");
+
+            let a = 0;
+
+            plus.addEventListener("click", () => {
+                a++;
+                num.innerText = a;
+            });
+
+            minus.addEventListener("click", () => {
+                if (a > 0) {
+                    a--;
+                    num.innerText = a;
+                }
+            });
+        }
+
+        // Initialize quantity functionality for each product card
+        const productCards = document.querySelectorAll(".product-card");
+        productCards.forEach((card) => {
+            initializeQuantity(card);
+        });
+    </script>
+
+    <!-- Javascript for the Hamburger menu -->
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+    <!-- Javascript for calculating the space between sections and header -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const headerHeight = document.querySelector("header").offsetHeight;
+            const scrollOffset = 80; // Adjust this value as needed
+            const links = document.querySelectorAll(".nav-links a");
+
+            links.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        const targetPosition = targetElement.offsetTop - headerHeight - scrollOffset;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+  </body>
+
 
 </html>
