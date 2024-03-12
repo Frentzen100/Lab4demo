@@ -1,7 +1,3 @@
-* {
-    /* outline: var(--chestnut) solid 3px; */
-}
-
 
 .menu-main-section {
     margin-bottom: 2rem;
@@ -13,175 +9,21 @@
     background-color: var(--moody-indigo);
     margin-top: 10rem;
     margin-left: auto;
-    border-top-width: 0.5rem;
-    border-top-style: solid;
-    border-top-color:var(--candlelight-ivory);
-    border-bottom-width: 0.5rem;
-    border-bottom-style: solid;
-    border-bottom-color:var(--candlelight-ivory);
 }
 
 .menu-main-section h2, p {
     color: var(--candlelight-ivory);
     margin-bottom: 2rem;
     text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-/* footer */
-footer {
-    font-family: Oswald, sans-serif;
-    position: absolute;
-    background: var(--moody-indigo);
-    margin-top: 2rem;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;  
-  }
-
-.company-info {
-    display: flex;
-    align-items: center;
+.product-listing {
+    border-top-style: solid;
+    border-top-width: 0.2rem;
+    border-top-color:var(--candlelight-ivory);
+    border-bottom-width: 0.2rem;
+    border-bottom-style: solid;
+    border-bottom-color:var(--candlelight-ivory);
 }
-
-.company-info .logo {
-    width: 10%;
-    margin-right: 0.5rem; /* Add margin for spacing between logo and company name */
-}
-
-.company-info .company-name {
-    text-decoration: none;
-    color: var(--candlelight-ivory);
-    font-weight: 600;
-    font-family: Oswald, sans-serif;
-    font-size: 2rem;
-}
-  
-  footer .footer-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 3.5rem;
-      padding: 60px;
-  }
-  
-  .footer-row .footer-col h4 {
-      color: var(--candlelight-ivory);
-      font-size: 1.5rem;
-  }
-  
-  .footer-col{
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-col .footer-links { 
-      margin-top: 30px;
-      color: var(--candlelight-ivory);
-  }
-  
-  .footer-col .footer-links li, .footer-contact-information li{
-      list-style: none;
-      margin-bottom: 10px;
-  }
-  
-  .footer-contact-information li{
-    color: var(--candlelight-ivory);
-  }
-  
-  .footer-col .footer-links li a {
-      text-decoration: none;
-      color: var(--maize);
-      transition: color 0.3s ease;
-  }
-  
-  .footer-col .footer-links li a:hover {
-    color: var(--chestnut);
-  }
-  
-  .footer-col p {
-    margin: 20px 0;
-    color: var(--maize);
-    max-width: 300px;
-  }
-  
-  .footer .form-group {
-      position: relative;
-      padding: 20px 0;
-      width: 300px;
-      max-width: 100%;
-  }
-      
-  footer .form-group input {
-      border: none;
-      border-bottom: 2px solid var(--maize);
-      background-color: var(--moody-indigo);
-      color: #333;
-      display: block;
-      font-size: 16px;
-      padding: 10px 0;
-      padding-top: 20px;
-      width: 100%;
-  }
-  
-  footer .form-group label {
-      color: var(--candlelight-ivory);
-      opacity: 0.6;
-      font-family: Oswald;
-      font-size: 1rem;
-      font-weight: 100;
-      position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      transform: translateY(30px);
-  }
-      
-  footer .form-group input:valid,
-      .form-group input:focus {
-      outline: none;
-  }
-      
-  footer .form-group input:valid + label, 
-  footer .form-group input:focus + label {
-      color: var(--candlelight-ivory);
-      opacity: 1;
-      font-size: 1.5rem;
-      transform: translateY(0);
-  }
-      
-  footer .form-group label {
-      transition: all 0.2s ease-in-out;
-  }
-  
-  footer input[type="submit"] {
-      font-family: Oswald;
-      font-size: 1rem;
-      background-color: var(--maximum-green);
-      box-shadow: 1px 4px 0 #3A4A21;
-      border-radius: 4rem;
-      color: white;
-      padding: 1em 1em;
-      position: relative;
-      text-decoration: none;
-      text-transform: uppercase;
-      border: none; 
-      cursor: pointer;
-      margin-top: 2rem;
-    }
-  
-  footer input[type="submit"]:hover {
-      background-color: #4b5f2a;
-  }
-    
-  footer input[type="submit"]:active {
-      box-shadow: none;
-      top: 5px;
-  }
-  
-  .copyright{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color: var(--candlelight-ivory);
-  }

@@ -10,7 +10,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
 
     <!-- Hamburger Icon Link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -28,13 +28,13 @@
         <a class="company-name" href="#">Matcha Munchies</a>
 
         <ul class="nav-links">
-          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
           <li><a href="#interactive_elements">Interactive Elements</a></li>
           <li><a href="#text_elements">Text Elements</a></li>
-          <li><a href="#">Combined Elements</a></li>
-          <li><a href="#">Brand Ideas</a></li>
-          <li><a href="#">Brand Components</a></li>
-          <li><a href="#">Citations</a></li>
+          <li><a href="#combined_elements">Combined Elements</a></li>
+          <li><a href="#brand_ideas">Brand Ideas</a></li>
+          <li><a href="#brand_components">Brand Components</a></li>
+          <li><a href="#citations">Citations</a></li>
         </ul>
 
         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
@@ -138,7 +138,23 @@
 
                 <!-- fix later -->
                 <h4>Sample code:</h4>
-                <code></code>
+                <h4>Sample code:</h4>
+                <code> &lt; div class="radio-group" &gt;</code>
+                <code> &lt; ul &gt;</code>
+                <code> &lt; li &gt;</code>
+                <code> &lt;input type = "radio" value="small" name="option" id="small"&gt; </code>
+                <code> &lt;label for = "small"&gt; Small &lt;/label&gt; </code>
+                <code> &lt; /li &gt;</code>
+                <code> &lt; li /&gt;</code>
+                <code> &lt;input type = "radio" value="medium" name="option" id="medium"&gt; </code>
+                <code> &lt;label for = "medium"&gt; Medium &lt;/label&gt; </code>
+                <code> &lt; /li &gt;</code>
+                <code> &lt; li /&gt;</code>
+                <code> &lt;input type = "radio" value="large" name="option" id="large"&gt; </code>
+                <code> &lt;label for = "large"&gt; Large &lt;/label&gt; </code>
+                <code> &lt; /li &gt;</code>
+                <code> &lt; /ul &gt;</code>
+                <code> &lt; /div &gt;</code>
                 
                 <h4>Rendered element:</h4>
                 <div class="radio-group">
@@ -167,7 +183,9 @@
                 <p>.image-nav, image-nav:hover</p>
 
                 <h4>Sample code:</h4>
-                <code></code>
+                <code> &lt; div class="product" &gt;</code>
+                <code>&lt;a href="product1.html"&gt;&lt; img src="image/mochidonut-x1.png" alt="Mochi Donut" &gt;&lt;/a&gt;</code>
+                <code> &lt; /div &gt;</code>
                 
                 <h4>Rendered element:</h4>
                 <a href="https://ure.pia.co.jp/articles/-/443232?cx_recsClicked=true&cx_recsPosition=sp_photogallery&cx_wid=d6faf3ba962ed798af91b166f41d56e882c0fa74&cx_recsSegment=all&cx_recsMode=contextual&cx_recsSrc=auto"><img src="img/cream-bun.png" alt="Cream bun" class="image-nav" style="width: 25%"></a>
@@ -192,7 +210,10 @@
             <p> h1, h2 ,h3 ,h4 </p>
     
             <h4> Sample Code </h4>
-            <code></code>
+            <code>&lt;h1&gt;Matcha Munchies&lt;/h1&gt;</code>
+            <code>&lt;h2&gt;Latest Updates&lt;/h2&gt;</code>
+            <code>&lt;h3&gt;Matcha Roll Cake&lt;/h3&gt;</code>
+            <code>&lt;h4&gt;$7.99&lt;/h4&gt;</code>
     
             <h4> Rendered Elements </h4>
 
@@ -210,14 +231,12 @@
             <h4>CSS selector: </h4>
             <p>p</p>
             
-            <!-- fix later -->
             <h4>Sample code: </h4>
             <code>&lt;p&gt;Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
               Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
               All Matcha leaves served at Matcha Munchies are sourced from Kyoto, renowned as the premier Matcha production hub, ensuring an authentic Japanese flavor and promoting wellness. 
               With a mission to share the essence of Japanese culture worldwide, Matcha Munchies is dedicated to highlighting the significance of "Matcha".&lt;/p&gt;</code>
             
-            <!-- fix later -->
             <h4>Rendered element: </h4>
             <p>Founded twelve years ago in Tokyo, Matcha Munchies stands out as a trailblazer in Japanese cafes, showcasing the versatile use of Matcha green powdered tea. 
                Often likened to the Starbucks of Japan, Matcha Munchies has garnered recognition as the top brand among Japanese cafes.
@@ -233,7 +252,10 @@
             <h4>CSS selector:</h4>
             <p>.number, .number::before </p>
             <h4>Sample code:</h4>
-            <code></code>
+            <code>&lt;ol&gt;</code>
+            <code>&lt;li class="number"&gt;Cake&lt;/li&gt;</code>
+            <code>&lt;li class="number"&gt;Pastries&lt;/li&gt;</code>
+            <code>&lt;/ol&gt;</code>
 
             <h4>Rendered element:</h4>
             <ol>
@@ -259,7 +281,18 @@
             <p>.navbar, .navbar a, .navbar a:hover, .navbar a.active, </p>
     
             <h4>Sample Code:</h4>
-            <code></code>
+            <code>&lt;nav class="navbar"&gt;</code>
+            <code>&lt;div class="logo"&gt;</code>
+            <code>&lt;a href="#"&gt; img src="image/logo2.png" alt="Logo" class="img-bottom"&lt;/a&gt;</code>
+            <code>&lt;a href="#"&gt; img src="image/logo1.png" class="img-top" alt="Logo" &lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;ul class="menu-links"&gt;</code>
+            <code>&lt;li&gt;&lt;a href="#"&gt; Home &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="menu.html"&gt; Menu &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="about-us.html"&gt; About Us &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;li&gt;&lt;a href="contact.html"&gt; Contact Us &lt;/a&gt;&lt;/li&gt;</code>
+            <code>&lt;/ul&gt;</code>
+            <code>&lt;/nav&gt;</code>
 
             <h4>Rendered element:</h4>
             <nav class="navbar">
@@ -287,45 +320,28 @@
             <p>.product, .product-description a, .product-price a, .product-description a:hover,  .product-price a:hover, .product-description a:focus,  .product-price a:focus</p>
     
             <h4>Sample Code:</h4>
-            <code></code>
+            <code>&lt;div class="proudct-listing"&gt;</code>
+            <code>&lt;div class="proudct-card"&gt;</code>
+            <code>&lt;img src="img/cream-bun.png" class="product-img" alt="Cream Bun"&gt;</code>
+            <code>&lt;div class="product-info"&gt;</code>
+            <code>&lt;h2 class="product-description"&gt;Cream Bun&lt;/h2&gt;</code>
+            <code>&lt;h3 class="product-description"&gt;46.99&lt;/h3&gt;</code>
+            <code>&lt;div class="quantity-wrapper"&gt;</code>
+            <code>&lt;span class="minus"&gt;-&lt;/span&gt;</code>
+            <code>&lt;span class="num"&gt;0&lt;/span&gt;</code>
+            <code>&lt;span class="plus"&gt;+&lt;/span&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;a href="#" class="button-link&gt;</code>
+            <code>&lt;input type="submit" value="add to cart"&gt;</code>
+            <code>&lt;/s&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;/div&gt;</code>
+       
     
             <h4>Rendered Element:</h4>
             <div class="product-listing">
                 <div class="product-card">
                     <img src="img/cream-bun.png" class="product-img" alt="Cream Bun">
-                    <div class="product-info">
-                        <h2 class="product-description">Cream Bun</h2>
-                        <h3>$6.99</h3>
-                        <div class="quantity-wrapper">
-                            <span class="minus">-</span>
-                            <span class="num">0</span>
-                            <span class="plus">+</span>
-                        </div>
-                        <a href="#" class="button-link">
-                            <input type="submit" value="add to cart" />
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- fix later -->
-                <div class="product-card">
-                    <img src="img/mochi-donut.png" class="product-img" alt="Cream Bun">
-                    <div class="product-info">
-                        <h2 class="product-description">Cream Bun</h2>
-                        <h3>$6.99</h3>
-                        <div class="quantity-wrapper">
-                            <span class="minus">-</span>
-                            <span class="num">0</span>
-                            <span class="plus">+</span>
-                        </div>
-                        <a href="#" class="button-link">
-                            <input type="submit" value="add to cart" />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="img/mochi-donut.png" class="product-img" alt="Cream Bun">
                     <div class="product-info">
                         <h2 class="product-description">Cream Bun</h2>
                         <h3>$6.99</h3>
@@ -356,7 +372,17 @@
             </p>
     
             <h4>Sample Code:</h4>
-            <code></code>
+            <code>&lt;div class="form-group"&gt;</code>
+            <code>&lt;input type="text" required&gt;</code>
+            <code>&lt;label for="card-holdername"&gt;Cardholder Name&lt;/label&gt;</code>
+            <code>&lt;input type="text" required&gt;</code>
+            <code>&lt;label for="card-number"&gt;Card Number&lt;/label&gt;</code>
+            <code>&lt;input type="text" required&gt;</code>
+            <code>&lt;label for="expiry-date"&gt;Expire Date&lt;/label&gt;</code>
+            <code>&lt;input type="text" required&gt;</code>
+            <code>&lt;label for="cvv"&gt;CVV&lt;/label&gt;</code>
+            <code>&lt;input type="submit" value="Pay now" class="submit-button" &gt;</code>
+            <code>&lt;/div&gt;</code>
     
             <h4>Rendered Element:</h4>
             <div class="payment-group">
@@ -384,44 +410,94 @@
             </p>
     
             <h4>Sample code:</h4>
-            <code></code>
+            <code>&lt;div class="cart"&gt;</code>
+            <code>&lt;h2 class="cart-title"&gt; Your Cart&lt;/h2&gt;</code>
+            <code>&lt;table class="cart-content"&gt;</code>
+            <code>&lt;tr class="checkout-category"&gt;</code>
+            <code>&lt;th class="products"&gt; Product&lt;/th&gt;</code>
+            <code>&lt;th class="quantitys"&gt; Quantity&lt;/th&gt;</code>
+            <code>&lt;th class="totals"&gt; Total&lt;/th&gt;</code>
+            <code>&lt;/tr&gt;</code>
+            <code>&lt;tr class="checkout-information"&gt;</code>
+            <code>&lt;td class="checkout-item products"&gt;</code>
+            <code>&lt;a href="product.html"&gt;</code>
+            <code>&lt;picture&gt;</code>
+            <code>&lt;source media="(max-width: 768px)" srcset="image/creambun-x2.png 1x"&gt;</code>
+            <code>&lt;img srcset="image/creambun-x1.png 1x" alt="Cream Bun""&gt;</code>
+            <code>&lt;/picture&gt;</code>
+            <code>&lt;/a&gt;</code>
+            <code>&lt;div class="checkout-item-text"&gt;</code>
+            <code>&lt;h3 class="checkout-item-description bold"&gt; Cream Bun&lt;/h3&gt;</code>
+            <code>&lt;h4 class="checkout-item-price regular"&gt; $6.99&lt;/h4&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;/td&gt;</code>
+            <code>&lt;td class="quantitys"&gt;</code>
+            <code>&lt;h4&gt;</code>
+            <code>&lt;span class="decrease" onclick="decreaseValue1()"&gt;-&lt;/span&gt;</code>
+            <code>&lt;input type="number" class="number" id="number" value="0" /&gt;</code>
+            <code>&lt;span class="increase" onclick="increaseValue1()"&gt;+&lt;/span&gt;</code>
+            <code>&lt;/h4&gt;</code>
+            <code>&lt;/td&gt;</code>
+            <code>&lt;td class="totals"&gt;</code>
+            <code>&lt;h3&gt; $6.98&lt;/h3&gt;</code>
+            <code>&lt;/td&gt;</code>
+            <code>&lt;/div&gt;</code>
+            <code>&lt;/tr&gt;</code>
+            <code>&lt;/table&gt;</code>
+            <code>&lt;h3 class="checkout-total"&gt;&lt;span class="regular"&gt;Total&lt;/span&gt;$13.98$ &lt; h3 &gt;</code>
+            <code>&lt;a href="payment.html" id="checkout-button-text"&gt;</code>
+            <code>&lt;input type="submit" value="Checkout" class="checkout-button"&gt;</code>
+            <code>&lt;/a&gt;</code>
+            <code>&lt;/div&gt;</code>
     
             <h4>Rendered element:</h4>
-            <section class="check-out-section">
+        
+            <section class="cart-main-section">
                 <div class="cart">
-                    <h2 class="cart-title">Your Cart</h2>
-
-                    <table class="cart-content">
-                        <tr class="checkout-category">
-                            <th class="product">Product</th>
-                            <th class="quantity">Quantity</th>
-                            <th class="total">Total</th>
-                        </tr>
-
-                        <tr class="checkout-information">
-                            <td class="checkout-item products">
-                                <a href="#"> 
-                                    <img src="img/mochi-donut.png" class="product-img" alt="Cream Bun">
-                                </a>
-                                <div class="checkout-items-text">
-                                    <h3 class="checkout-item-description bold"> Cream Bun </h3>
-                                    <h4 class="checkout-item-price regular"> $6.99 </h4>
-                                </div>
-                            </td>
-
-                            <td class="quantity">
-                                <div class="quantity-wrapper">
-                                    <span class="minus">-</span>
-                                    <span class="num">0</span>
-                                    <span class="plus">+</span>
-                                </div>
-                            </td>
-
-                            <td class="total">
-                                <h3>$20.00</h3>
-                            </td>                    
-                        </tr>
-                    </table>
+            
+                  <h2 class="cart-title"> Your Cart</h2>
+            
+                  <table class="cart-content">
+                    <tr class="checkout-category">
+                      <th class="products" >Product</th>
+                      <th class="quantitys"> Quantity</th>
+                      <th class="totals" >Total</th>
+                    </tr>
+                    
+            
+                    <tr class="checkout-information">
+                        <td class="checkout-item products">
+                          <a href ="product.html">
+                            <picture>
+                              <source media="(max-width: 768px)" srcset="img/creambun-x2.png 1x">
+                              <img srcset="img/creambun-x1.png 1x" alt="Cream Bun">
+                            </picture>
+                          </a>
+                          <div class="checkout-item-text">
+                            <h3 class="checkout-item-description bold"> Cream Bun </h3>
+                              <h4 class="checkout-item-price regular "> $6.99</h4> 
+                          </div>
+                        </td>
+            
+                        <td class="quantitys">
+                            <div class="quantity-wrapper">
+                                <span class="minus">-</span>
+                                <span class="num">0</span>
+                                <span class="plus">+</span>
+                            </div>
+                        </td>
+            
+                        <td class="totals">
+                          <h3> $6.98</h3>
+                        </td>
+                      </div>
+            
+                    </tr>
+            
+                  </table>
+            
+                  <h3 class="checkout-total"> <span class="regular">Total</span> $13.98</h3>
+                  <a href="#" class="button-link"><button class="button">Checkout</button></a>
                 </div>
             </section>
 
@@ -580,6 +656,95 @@
             </section>
         </section>
     </section>
+
+    <!-- Colour Palette Sub-Section -->
+    <section class="element">
+        <h3>Colour Palette</h3>
+        <table class="color-palette">
+          <tr>
+            <th>Color name</th>
+            <th>Color appearance</th>
+            <th>Usage</th>
+          </tr>
+
+          <tr>
+            <td><h4> Moody Indigo  #368AFF</h4></td>
+            <td> <div class="rect rect1"></div> </td>
+            <td> Background</td>
+          </tr>
+
+          <tr>
+            <td><h4> Chestnut  #A44F32</h4></td>
+            <td> <div class="rect rect2"></div> </td>
+            <td> Navigational Text</td>
+          </tr>
+
+          <tr>
+            <td><h4> Granite Gray  #636363</h4></td>
+            <td> <div class="rect rect3"></div> </td>
+            <td> Text color</td>
+          </tr>
+
+          <tr>
+            <td><h4> Xanthous  #E5BC30</h4></td>
+            <td> <div class="rect rect4"></div> </td>
+            <td> CTA button in normal state</td>
+          </tr>
+
+          <tr>
+            <td><h4> Harvest Gold  #E39600</h4></td>
+            <td> <div class="rect rect5"></div> </td>
+            <td> CTA button in hover state</td>
+          </tr>
+
+          <tr>
+            <td><h4> Candlelight Ivory  #FBF4E1</h4></td>
+            <td> <div class="rect rect6"></div> </td>
+            <td> Container</td>
+          </tr>
+
+        </table>
+        
+      </section>    
+
+
+      <!-- Imagery Sub-Section -->
+      <section class="element">
+        <h3>Potential Imagery</h3>
+        <img src="img/cream-bun.png" alt="Cream bun" class="product-image">
+        <img src="img/mochi-donut.png" alt="Mochi Donut" class="product-image">
+        <img src="img/cream-glazed-bun.png" alt="Cream Glazed Bun" class="product-image">
+      </section>
+
+    </section>
+
+
+    <section class="main-sections">
+          <section id="citations">
+            <h2>Citations</h2>
+            
+            <ul>
+                <li> Cake Images: https://sevenleavestea.com/menu/category/cake/</li>
+                <li> Oswald Font: https://fonts.googleapis.com/css?family=Oswald</li>
+                <li> Icon Image: https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0</li>
+                <li> Quantity Wrapper Inspiration: https://codepen.io/mtbroomell/pen/yNwwdv</li>
+                <li> Hover Effect: https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php</li>  
+                <li> Cake Image: https://gigazine.net/news/20140703-yukinosita-kyoto/</li>
+                <li> Icon Image: https://fonts.google.com/icons</li>
+                <li> Responsive Image Inspiration: https://www.codingnepalweb.com/create-responsive-coffee-website-html-css/</li>
+                <li> Cafe Image: https://www.chiangmaicitylife.com/clg/food-drink/coffeeshops-tearooms/magokoro-teahouse-and-matcha-cafe/</li>
+                <li> Pastry Image: https://chef.studio/matcha-choux-au-craquelin/</li>
+                <li>Image of cream bun: https://macaro-ni.jp/88223 </li>
+                <li>Image of mochi donut: https://macaro-ni.jp/88223 </li>
+                <li>Image 1 in updates section: https://gigazine.net/news/20140703-yukinosita-kyoto/</li>
+                <li>Image 2 in updates section: https://menu.starbucks.co.jp/4524785488816</li>
+                <li>Facebook icon: https://icons8.com/icons/set/facebook</li>
+                <li>Instagram icon: https://icons8.com/icons/set/instagram</li>
+                <li>Image of matcha croffle: https://chiveburger.tumblr.com/post/121245482590/krispy-kreme-waffnuts-%E3%83%AF%E3%83%95%E3%83%8A%E3%83%83%E3%83%84%E5%AE%87%E6%B2%BB%E6%8A%B9%E8%8C%B6-%E3%83%AF%E3%83%95%E3%83%8A%E3%83%83%E3%83%84%E3%82%A2%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%89</li>
+            </ul>
+          </section>
+      
+      </section>
 
 
     <!-- Source for increment and decrement button -->

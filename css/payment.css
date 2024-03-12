@@ -1,0 +1,215 @@
+.payment-form{
+    border: solid 5px white;
+    margin: 0 auto;
+    width: 420px;
+    background-color: var(--candlelight-ivory);
+    padding: 2rem 0;
+    padding-bottom: 7rem;
+    border-radius: 50px;
+}
+
+.payment, .delivery, .shipping{
+    width: 400px;
+    margin-left: -3rem;
+  }
+  
+  .payment, .shipping{
+    margin-top: 3rem;
+  }
+  
+  .form-group {
+    position: relative;
+    padding: 20px 0;
+    width: 300px;
+    max-width: 100%;
+    }
+    
+    .form-group input {
+    border: none;
+    border-bottom: 2px solid var(--chestnut);
+    background-color: #FBF4E1;
+    color: #333;
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    
+    }
+    
+    .form-group label {
+    color: #A44F32;
+    opacity: 0.6;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translateY(30px);
+    }
+    
+    .form-group input:valid,
+    .form-group input:focus {
+    outline: none;
+    }
+    
+    .form-group input:valid + label,
+    .form-group input:focus + label {
+    color: #A44F32;
+    opacity: 1;
+    font-size: 14px;
+    transform: translateY(0);
+    }
+    
+    .form-group label {
+    transition: all 0.2s ease-in-out;
+    }
+  
+    
+  label[for="first-name"]{
+    transform: translateY(100px);
+  }
+  
+  label[for="last-name"]{
+    transform: translate(170px,100px);
+  }
+  
+  label[for="address"]{
+    transform: translateY(175px);
+  }
+  
+  label[for="city"]{
+    transform: translate(0,240px);
+  }
+  
+  label[for="province"]{
+    transform: translate(110px, 240px);
+  }
+  
+  label[for="postal-code"]{
+    transform: translate(215px, 240px);
+  }
+  
+  label[for="card-number"]{
+    transform: translateY(100px);
+  }
+  
+  label[for="expiry-date"]{
+    transform: translate(0, 170px);
+  }
+  
+  label[for="cvv"]{
+    transform: translate(170px, 170px);
+  }
+  
+  .form-group input:valid + label[for="first-name"], .form-group input:focus + label[for="first-name"] {
+    margin-top: 4.5rem;
+  }
+  
+  .form-group input:valid + label[for="last-name"], .form-group input:focus + label[for="last-name"] {
+    margin-top: 4.5rem;
+    margin-left: 10.5rem;
+  }
+  
+  .form-group input:valid + label[for="address"], .form-group input:focus + label[for="address"] {
+    margin-top: 9rem;
+  }
+  
+  .form-group input:valid + label[for="city"], .form-group input:focus + label[for="city"] {
+    margin-top: 14rem;
+  }
+  
+  .form-group input:valid + label[for="province"], .form-group input:focus + label[for="province"] {
+    margin-top: 14rem;
+    margin-left: 7rem;
+  }
+  
+  .form-group input:valid + label[for="postal-code"], .form-group input:focus + label[for="postal-code"] {
+    margin-top: 14rem;
+    margin-left: 13.5rem;
+  }
+  
+  .form-group input:valid + label[for="card-number"], .form-group input:focus + label[for="card-number"] {
+    margin-top: 4.5rem;
+  }
+  
+  .form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"] {
+    margin-top: 9rem;
+  }
+  
+  .form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"] {
+    margin-top: 9rem;
+    margin-left: 10.5rem;
+  }
+  
+  .form-group-1, .form-group-2, .form-group-6, .form-group-7{
+      width: 45%;
+      display: inline-block;
+  }
+  
+  .form-group-3, .form-group-4, .form-group-5{
+    width: 30%;
+    display: inline-block;
+  }
+  
+  .form-group-A, .form-group-B, .form-group-C{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit-button{
+    margin-top: 3rem;
+  }
+  
+  input[type="submit"] {
+    font-family: Oswald;
+    font-size: 0.7rem;
+    background-color: var(--maximum-green);
+    box-shadow: 1px 4px 0 #3A4A21;
+    border-radius: 4rem;
+    color: white;
+    padding: 1em 2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none; 
+    cursor: pointer;
+  }
+  
+  
+  input[type="submit"]:hover {
+    background-color: #4b5f2a;
+  }
+  
+  input[type="submit"]:active,
+  input[type="reset"]:active {
+    box-shadow: none;
+    top: 5px;
+  }
+
+  .shipping h2, .payment h2, .delivery h2{
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  .order-summary #number,   .order-summary #number1{
+    transform: translateX(1.25rem);
+  }
+
+  .payment-information{
+    margin-left: 5rem;
+  }
+
+  .shipping input[type="submit"]{
+    display: none;
+  }
+
+  .payment-form button{
+    margin-top: 2rem;
+  }
+
+ 
+ 

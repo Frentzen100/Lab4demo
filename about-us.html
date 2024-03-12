@@ -1,127 +1,141 @@
 <!------------------- HOMEPAGE ------------------->
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about-us.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/about-us.css">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
 
-    <!-- Hamburger Icon Link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        <!-- Hamburger Icon Link -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 
-    <title>About-Us</title>
-    
-</head>
+        <title>About-Us</title>
+        
+    </head>
 
-<body>
-    <!------- HEADER ------->
-    <header>
-      <nav class="navbar">
+    <body>
+        <!------- HEADER ------->
+        <header>
+            <nav class="navbar">
 
-        <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
-        <a class="company-name" href="#">Matcha Munchies</a>
-
-        <ul class="nav-links">
-          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-
-        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
-
-      </nav>
-    </header>
-    <br><br><br><br><br>
-
-    <!------- HERO SECTION ------->
-
-
-    <!------- MAIN SECTION ------->
-    <section class="about-main-section">
-        <h2>hjd</h2>
-        <h3>fbjb</h3>
-    </section>
-
-    
-
-
-    <!-- Javascript for the Hamburger menu -->
-    <script>
-        const header = document.querySelector("header");
-        const hamburgerBtn = document.querySelector("#hamburger-btn");
-        const closeMenuBtn = document.querySelector("#close-menu-btn");
-  
-        // Toggle mobile menu on hamburger button click
-        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-  
-        // Close mobile menu on close button click
-        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
-    </script>
-
-
-    <!--<section class="footer">-->
-    <footer>
-        <div class="footer-row">
-
-        <div class="footer-col">
-
-            <div class="company-info">
                 <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
                 <a class="company-name" href="#">Matcha Munchies</a>
+
+                <ul class="nav-links">
+                    <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+
+                <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+
+            </nav>
+        </header>
+        <!------- HERO SECTION ------->
+
+
+        <!------- MAIN SECTION ------->
+        <section class="about-main-section">
+            <div class="cafe-information-container">
+                <div class="cafe-information-item">
+                    <img src="img/cafe.png" alt="Cafe Image">
+                </div>
+                <div class="cafe-information-item">
+                    <h3>About Matcha Munchies</h3>
+                        <p>Matcha Munchies is a popular restaurant where we celebrate the amazing world of Matcha, a finely ground green tea powder from Japan. 
+                            Known for its vibrant color, distinctive flavor, and health benefits, Matcha brings a touch of Japanese elegance to every bite of your favourite sweet treats. 
+                            At our bakery, we aim to captivate your taste buds with a delightful array of matcha-infused baked goods, ranging from pastries, artisanal breads and cakes.</p>
+                </div>
             </div>
+            <div class="cafe-information-container">
+                <div class="cafe-information-item">
+                    <img src="img/cake.png" alt="Matcha Cake Image">
+                </div>
+                <div class="cafe-information-item">
+                    <h3>Quality</h3>
+                        <p>Since 2013, our focus has been on providing the utmost quality pastries, carefully selecting only those that meet our personal standards of excellence. 
+                        We're committed to offering pastries made from single ingredients and sourced from a single origin, ensuring authenticity in every bite.
+                            Our dedication to quality extends to sourcing non-GMO, preservative-free, and heavy metal-free ingredients from our JAS-organic certified farm and our family's long-standing pastry manufacturing facility, ensuring that each pastry delivers unparalleled flavor and quality.</p>
+                </div>
+            </div>  
+        </section>
 
-            <ul class="footer-links">
-            <li>Location: Vancouver, BC</li>
-            <li>Email: MatchaMochi@gmail.com</li>
-            <li>Contact Number: 772-233-123</li>
-            <li>Hour of Operation: Mon - Sun 10:00 - 20:00</li>
-            </ul>
-        </div>
+        
 
-        <div class="footer-col">
-            <h4>MatchaMunchies</h4>
-            <ul class="footer-links">
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="style-guide.html">Style Guide</a></li>
-            <li><a href="https://github.com/Frentzen100/P02---Style-Guide">Github</a></li>
-            <li><a href="citation.html">Citations</a></li>
-            </ul>
-        </div>
 
-        <div class="footer-col">
-            <h4>Help</h4>
-            <ul class="footer-links">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
+        <!-- Javascript for the Hamburger menu -->
+        <script>
+            const header = document.querySelector("header");
+            const hamburgerBtn = document.querySelector("#hamburger-btn");
+            const closeMenuBtn = document.querySelector("#close-menu-btn");
+    
+            // Toggle mobile menu on hamburger button click
+            hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+    
+            // Close mobile menu on close button click
+            closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+        </script>
 
-        <div class="footer-col">
-            <h4>Newsletter</h4>
-            <p>Subscribe to our newsletter for more updates, events and exclusive deals! </p>
-            <div class="form-group">
-                <input type="text" required />
-                <label>Email</label>
-                <input type = "submit" value ="Submit" onclick="goToTop()" >
+
+        <!--<section class="footer">-->
+        <footer>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <div class="company-info">
+                        <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
+                        <a class="company-name" href="#">Matcha Munchies</a>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li>Location: Vancouver, BC</li>
+                        <li>Email: MatchaMochi@gmail.com</li>
+                        <li>Contact Number: 772-233-123</li>
+                        <li>Hour of Operation: Mon - Sun 10:00 - 20:00</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>MatchaMunchies</h4>
+                    <ul class="footer-links">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="style-guide.html">Style Guide</a></li>
+                        <li><a href="https://github.com/Frentzen100/P02---Style-Guide">Github</a></li>
+                        <li><a href="citation.html">Citations</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter for more updates, events and exclusive deals! </p>
+                    <div class="form-group">
+                        <input type="text" required />
+                        <label>Email</label>
+                        <input type = "submit" value ="Submit" onclick="goToTop()" >
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
-        <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
-    </footer>
-
-</body>
+            <span class="copyright">&copy;  2021 Matcha Munchies All Rights Reserved. </span>
+        </footer>
+    </body>
 </html>

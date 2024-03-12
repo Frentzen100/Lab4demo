@@ -12,7 +12,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
 
     <!-- Hamburger Icon Link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -30,7 +30,7 @@
         <a class="company-name" href="index.html">Matcha Munchies</a>
 
         <ul class="nav-links">
-          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><span id="close-menu-btn" class="material-symbols-outlined">close</span></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about-us.html">About Us</a></li>
@@ -42,40 +42,37 @@
       </nav>
     </header>
 
-    <!------- HERO SECTION ------->
-    <section class="home-hero-section">
-      <div class="content">
-        <h1>Fill Your Matcha Cravings</h1>
-        <p>Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, 
-            a finely ground green tea powder from Japan. At our bakery, we aim to captivate
-            your taste buds with a delightful array of matcha-infused baked goods, ranging 
-            from pastries, artisanal breads and cakes.
-        </p>
-        <a href="menu.html" class="button-link"><button class="button">View Menu</button></a>
-      </div>
+     <!------- HERO SECTION ------->
+     <section class="home-hero-section">
+        <div class="content">
+            <h1>Fill Your Matcha Cravings</h1>
+                <p>Welcome to Matcha Munchies, where we celebrate the amazing world of Matcha, 
+                    a finely ground green tea powder from Japan. At our bakery, we aim to captivate
+                    your taste buds with a delightful array of matcha-infused baked goods, ranging 
+                    from pastries, artisanal breads and cakes.</p>
+            <a href="menu.html" class="button-link"><button class="button">View Menu</button></a>
+        </div>
 
-      <div class="hero-image">      
-        <img src="img/half-covered-donut.png" alt="Half Matcha Donut" id="homepage-hero-image">
-      </div>
-
+        <div class="hero-image">      
+            <img src="img/half-covered-donut.png" alt="Half Matcha Donut" id="homepage-hero-image">
+        </div>
     </section>
 
     <!------- MAIN SECTION ------->
-    <section class="home-main-section">
-        <h2>News and Updates</h2>
-        <br><br><br>
+    <section class="home-main-section" id="first-home-main-section">
+        <div class="news-and-update-title">
+            <h2>News and Updates</h2>
+                <p>Check out the latest news that are happening at Matcha Munchies</p>
+        </div>
         <div class="news-and-updates-container">
             <div class="news-and-updates-item">
                 <img src="img/updatesimg1.png" alt="Mochi Donuts Update Image">
             </div>
             <div class="news-and-updates-item">
                 <h3>New Product Release: Mochi Donuts</h3>
-                <p>Indulge in a delectable journey with our latest creation: the Mochi Donut.
-                    Crafted with precision and passion, this innovative treat marries the chewy 
-                    texture of traditional Japanese mochi with the irresistible sweetness of a 
-                    classic donut. Each bite unveils a symphony of flavors, from the delicate 
-                    notes of rice flour to the luxurious glaze that coats every curve.
-                </p>
+                <p>Indulge in a delectable journey with our latest creation: <a class="in-text-link" href="#">Mochi Donut</a>.
+                        Crafted with precision and passion, this innovative treat marries the chewy 
+                        texture of traditional Japanese mochi.</p>
             </div>
         </div>
         <div class="news-and-updates-container">
@@ -84,63 +81,100 @@
             </div>
             <div class="news-and-updates-item">
                 <h3>Up to 50% on Cake Orders</h3>
-                <p>From classic matcha-infused layers to modern twists on traditional favorites, 
-                    our cakes are a celebration of culinary excellence. With savings of up to 
-                    half off, there's never been a better time to indulge in the harmonious fusion
-                    of flavor and artist.
-                </p>
+                    <p>From classic matcha-infused layers to modern twists on traditional favorites, 
+                        our cakes are a celebration of culinary excellence.</p>
             </div>
         </div>  
-    </section>
-    
-
-    <!-- source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
-    <section class="home-main-section">
-        <h2>Our Featured Products</h2>
-        <p>These are some of the favourite pastries</p>
-        <div class="carousal-container">
-            <div class="product-carousel-view">
-              <button id="prev-btn" class="prev-btn">
-                <img src="img/arrow1.svg" alt="Left Carousal Arrow" width="20" title="chevron-circle-left">
-
-              </button>
-                <div id="item-list" class="item-list">
-                    <div id="item" class="item">
-                        <a href="product2.html" class="image-nav">
-                            <img src="img/mochi-donut.png" alt="Carousal First Image"/>
-                        </a>
-                        <p>caption</p>
-                    </div>
-                    <div id="item" class="item">
-                        <a href="product1.html" class="image-nav">
-                            <img src="img/cream-bun.png" alt="Carousal First Image"/>
-                        </a>
-                        <p>caption</p>
-                    </div>
-                    <div id="item" class="item">
-                        <img src="img/cream-stuffed-biscuit.png" alt="Carousal First Image"/>
-                        <p>caption</p>
-                    </div>
-                    <div id="item" class="item">
-                        <img src="img/red-bean-filled-bread.png" alt="Carousal First Image"/>
-                        <p>caption</p>
-                    </div>
-                    <div id="item" class="item">
-                        <img src="img/sprinkle-donut.png" alt="Carousal First Image"/>
-                        <p>caption</p>
-                    </div>
-                    <div id="item" class="item">
-                        <img src="img/cream-glazed-bun.png" alt="Carousal First Image"/>
-                        <p>caption</p>
-                    </div>
-                </div>
-              <button id="next-btn" class="next-btn">
-                <img src="img/arrow2.svg" alt="Left Carousal Arrow" width="20" title="chevron-circle-left">
-              </button>
+        <div class="news-and-updates-container">
+            <div class="news-and-updates-item">
+                <img src="img/cake.png" alt="Cake Image">
+            </div>
+            <div class="news-and-updates-item">
+                <h3>New Event: Cake Eating Contest</h3>
+                    <p>Indulge your sweet tooth and join us for an unforgettable experience at our newest event: the Cake Eating Contest! </p>
             </div>
         </div>
     </section>
+    
+      <!-- IMAGE CAROUSAL SECTION -->
+    <!-- source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+    <section class="home-main-section">
+        <hr>
+        <div class="feature-products-title">
+            <h2>Our Featured Products</h2>
+                <p>Discover the true delights that have won the hearts (and taste buds) of our beloved customers. 
+                    These irresistable treats are the epitome of what our bakery is all about — quality, flavour 
+                    and pure indulgence!</p>
+        </div>
+        <div class="carousal-container">
+            <div class="product-carousel-view">
+            <button id="prev-btn" class="prev-btn">
+                <img src="img/arrow1.svg" alt="Left Carousal Arrow" width="20" title="chevron-circle-left">
+            </button>
+                <div id="item-list" class="item-list">
+                    <div class="item">
+                        <img src="img/mochi-donut.png" alt="Carousal First Image"/>
+                        <h4>Mochi Donut</h4>
+                    </div>
+                    <div class="item">
+                        <img src="img/cream-bun.png" alt="Carousal Second Image"/>
+                        <h4>Cream Bun</h4>
+                    </div>
+                    <div class="item">
+                        <img src="img/cream-stuffed-biscuit.png" alt="Carousal Third Image"/>
+                        <h4>Cream Stuffed Buscuit</h4>
+                    </div>
+                    <div class="item">
+                        <img src="img/red-bean-filled-bread.png" alt="Carousal Fourth Image"/>
+                        <h4>Red Bean Filled Bread</h4>
+                    </div>
+                    <div class="item">
+                        <img src="img/sprinkle-donut.png" alt="Carousal Fifth Image"/>
+                        <h4>Sprinkle Donut</h4>
+                    </div>
+                    <div class="item">
+                        <img src="img/cream-glazed-bun.png" alt="Carousal Sixth Image"/>
+                        <h4>Cream Glazed Bun</h4>
+                    </div>
+                </div>
+            <button id="next-btn" class="next-btn">
+                <img src="img/arrow2.svg" alt="Left Carousal Arrow" width="20" title="chevron-circle-left">
+            </button>
+            </div>
+            <a href="menu.html" class="button-link"><button class="button">View More Products</button></a>
+        </div>
+        <hr>
+    </section>
 
+
+    <section class="home-main-section">
+        <div class="testimonial-title">
+            <h2>Testimonial</h2>
+                <p>Hear What Our Guests Have to Say</p>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial-item">
+                <img src="img/user1.png" alt="User 1">
+            </div>
+            <div class="testimonial-item" id="person1-profile">
+                <p>"I stumbled upon this matcha cafe while exploring the city, and I'm so glad I did! 
+                    The serene atmosphere combined with the aromatic scent of freshly brewed matcha instantly drew me in."</p>
+                    <h4>TIM LINTON</h4>
+                    <h4>Accountant</h4>
+            </div>
+        </div>
+        <div class="testimonial-container">
+            <div class="testimonial-item">
+                <img src="img/user2.png" alt="User 2">
+            </div>
+            <div class="testimonial-item">
+                <p>"Their matcha-infused pastries are a delight, and their ceremonial matcha bun ceremony is an experience not to be missed.
+                    Highly recommend this gem of a cafe to anyone looking for a true taste of Japanese matcha culture"</p>
+                    <h4>RICHARD PORT</h4>
+                    <h4>Software Developer</h4>
+            </div>
+        </div>
+    </section>
 
     <script src="js/script.js" defer></script>
   
@@ -167,7 +201,7 @@
 
             <div class="company-info">
                 <img class="logo" src="img/logo.png" alt="This is a logo of Matcha Munchies">
-                <a class="company-name" href="#">Matcha Munchies</a>
+                <a class="company-name" href="index.html">Matcha Munchies</a>
             </div>
 
             <ul class="footer-links">
@@ -201,7 +235,7 @@
 
         <div class="footer-col">
             <h4>Newsletter</h4>
-            <p>Subscribe to our newsletter for more updates, events and exclusive deals! </p>
+                <p>Subscribe to our newsletter for more updates, events and exclusive deals! </p>
             <div class="form-group">
                 <input type="text" required />
                 <label>Email</label>

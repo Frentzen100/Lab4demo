@@ -1,4 +1,3 @@
-
 .contact-main-section {
     margin-bottom: 2rem;
     padding: 3rem;
@@ -14,18 +13,27 @@
 .contact-main-section h3 {
     margin-bottom: 2rem;
     text-align: center;
-
+    font-size: 2rem;
 }
 
 .contact-main-section h4 {
     margin-bottom: 1rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
     text-align: center;
-
+    font-size: 1.3rem;
 }
 
 .contact-main-section p {
     margin-bottom: 6rem;
+    margin-top: 1rem;
     text-align: center;
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 
+/*----------------- Contact Form Styling -----------------*/
+.feedback_container {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }

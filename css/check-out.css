@@ -1,0 +1,51 @@
+
+@media (max-width: 1100px){
+
+  .checkout-item-text, td.quantitys, td.totals{
+    margin-top: -1rem;
+  }
+
+  .checkout-total{
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .cart{
+    width: 80%;
+  }
+
+  .checkout-item-description{
+    font-size: 1.5rem;
+    width: 6.25rem;
+  }
+
+  .checkout-footer{
+    margin-top: 5rem;
+  }
+
+  .cart-main-section{
+    margin-left: -3rem;
+    width: 120%;
+  }
+
+
+  .quantity-wrapper{
+     width: 90%;
+     margin-left: -0.1rem;
+     margin-top: 1rem;
+  }
+
+  th.quantitys{
+    padding-right: 1.5rem;
+  }
+
+  .checkout-item-text{
+    margin-left: 2rem;
+  }
+
+}
+
+
