@@ -484,10 +484,10 @@ input[type="submit"]:hover {
     margin-bottom: 4rem;
 }
   
-.product-description {
+/* .product-description {
     min-width: 100%;
     transform: translateX(-3rem);
-}
+} */
 
 .quantity-wrapper {
     display: flex;

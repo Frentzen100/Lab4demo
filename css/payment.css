@@ -114,7 +114,7 @@
   }
   
   .form-group input:valid + label[for="address"], .form-group input:focus + label[for="address"] {
-    margin-top: 9rem;
+    margin-top: 10rem;
   }
   
   .form-group input:valid + label[for="city"], .form-group input:focus + label[for="city"] {
@@ -136,11 +136,11 @@
   }
   
   .form-group input:valid + label[for="expiry-date"], .form-group input:focus + label[for="expiry-date"] {
-    margin-top: 9rem;
+    margin-top: 10rem;
   }
   
   .form-group input:valid + label[for="cvv"], .form-group input:focus + label[for="cvv"] {
-    margin-top: 9rem;
+    margin-top: 10rem;
     margin-left: 10.5rem;
   }
   

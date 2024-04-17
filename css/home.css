@@ -427,8 +427,7 @@ button{
 
     hr:last-of-type{
         margin-bottom: -3rem;
-      }
-
+    }
 }
 
 
@@ -494,7 +493,6 @@ button{
     
     .testimonial-item img{
         margin-left: 8rem;
-        transform: translateY(2rem);
         min-width: 125px;
      }
      
