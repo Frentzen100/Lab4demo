@@ -485,7 +485,8 @@ input[type="submit"]:hover {
 }
   
 .product-description {
-    max-width: 100%;
+    min-width: 100%;
+    transform: translateX(-3rem);
 }
 
 .quantity-wrapper {
@@ -1121,7 +1122,7 @@ table {
         color: var(--chestnut);
     }
 
-    .navbar .nav-links {
+    .nav-links {
         position: fixed;
         top: 0;
         left: -250px;
