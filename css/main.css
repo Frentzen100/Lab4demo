@@ -135,6 +135,10 @@ header {
     text-decoration: none;
 }
 
+#active{
+    color: var(--chestnut);
+}
+
 /* Hamburger Button Styling */
 #close-menu-btn {
     position: absolute;

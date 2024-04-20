@@ -44,14 +44,51 @@ HOME PAGE STYLING CSS
     color: var(--candlelight-ivory)
 }
 
+.content h1, .content p {
+    /* Apply the animation */
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .home-hero-section .button {
     margin-left: auto;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.home-hero-section .button-link .button {
+    animation: slideInFromBottom 1s ease-out forwards;
 }
 
 .hero-image {
     flex-basis: 20%; 
     margin-top: 10rem;
     max-width: 1300px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /*----------------- Main Section Styling -----------------*/
@@ -118,10 +155,6 @@ HOME PAGE STYLING CSS
     text-align: center;
 }
 .news-and-updates-container img {
-    /*
-    width: 80%;
-    height: auto;
-    */
     width: 250px;
     height: 200px;
     border-radius: 20px;
@@ -226,42 +259,75 @@ button{
     height: 100%; /* Allow the height to adjust proportionally */
   }
 
-  .testimonial-container{
-    display: flex;
-    width: 90%;
-  }
-
-  .testimonial-item{
-    width: 80%;
-    margin-bottom: 2rem;
-  }
 
   .testimonial-title{
     width: 100%;
     margin-top: -5rem;
   }
 
-  .testimonial-container p{
-    text-align: left;
-    margin-bottom: -3rem;
-    width: 100%;
+  .testimonial-title p{
+    padding-bottom: 3rem;
   }
 
-  .testimonial-container h4{
-    transform: translateY(5rem);
+.testimonial-container{
+    display: flex;
+    justify-content: center; /* Horizontally centers the child items */
+    align-items: center; /* Vertically centers the child items */
+    width: 90%;
+    margin: auto;
+    margin-left: 0;
   }
 
-  .testimonial-container h4:first-of-type{
+  .testimonial-item {
+    text-align: center; /* Horizontally centers inline content like images */
+}
+
+
+.testimonial-container:nth-of-type(3) {
+    flex-direction: row-reverse; 
+} 
+
+.testimonial-container img{
+    width: 200px;
+    height: auto;
+    vertical-align: middle; /* Helps with vertical alignment if the line-height or height of the container is set */
+}
+
+.testimonial-container h4:first-of-type{
     font-size: 1.8rem;
     font-weight: 800;
+  } 
+
+  .testimonial-container .testimonial-item:first-of-type{
+    width: 30%;
   }
-  
-  .testimonial-container img{
-    width: 40%;
-    height: auto;
-    margin-left: 15rem;
-    padding-top: 2rem;
+
+  .testimonial-container .testimonial-item:last-of-type{
+    width: 70%;
+    text-align: left;
   }
+
+  .testimonial-container p{
+    text-align: left;
+  }
+
+  .testimonial-item{
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+ 
+  .testimonial-container:last-of-type{
+   transform: translateX(5rem);
+   padding-top: 2rem;
+  }
+ 
+  .testimonial-container:nth-of-type(3) .testimonial-item:last-of-type{
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+ 
+
 
   hr{
     width: 75%;
@@ -332,26 +398,30 @@ button{
 
     .testimonial-container {
         display: block;
-        margin: 0 auto;
+        margin: auto;
         text-align: center;
         margin-bottom: 4rem;
         border-radius: 20px;
      }
 
+     .testimonial-item{
+        margin: auto;
+     }
+
      .testimonial-item img {
-        width: 200px;
-        margin-bottom: -4rem;
-        padding-right: 4rem;
+        margin: auto;
+        transform: translateX(-2rem);
      }
 
      .testimonial-item p, .testimonial-item h4 {
+        margin-top: 0.5rem;
         text-align: center;
-        margin-left: 2rem;
+        width: 100%;
      }
 
-     .testimonial-item h4 {
-        margin-left: 4rem;
-     }
+     .testimonial-container:last-of-type{
+    transform: translateX(0);
+    }
 
     hr:last-of-type{
         margin-top: -4rem;
@@ -420,11 +490,6 @@ button{
         height: 400px;
     }
 
-    .testimonial-container img{
-        margin-left: 12rem;
-        margin-top: 1.5rem;
-    }
-
     hr:last-of-type{
         margin-bottom: -3rem;
     }
@@ -490,10 +555,4 @@ button{
         height: 240px;
     }
 
-    
-    .testimonial-item img{
-        margin-left: 8rem;
-        min-width: 125px;
-     }
-     
 }

@@ -29,12 +29,6 @@
     margin-top: 3rem;
 }
 
-
-/* .product-image img {
-    max-height: 40%;
-    max-width: 40%;
-} */
-
 .product-description {
     padding: 0 20px;
     margin-left: 10rem;
@@ -42,7 +36,7 @@
     width: 60%;
 }
 
-#cproduct-description {
+#product-description {
     border: solid 5px green;
     padding: 0 20px;
     text-align: left;
@@ -75,6 +69,14 @@
     gap: 1rem;
 }
 
+.product-main-section .button-link input[type="submit"] {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+}
 
 /* Media queries for smaller screens */
 @media (max-width: 768px) {

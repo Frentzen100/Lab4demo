@@ -77,13 +77,13 @@
             <td class="quantitys">
                 <div class="quantity-wrapper">
                     <span class="minus">-</span>
-                    <span class="num">0</span>
+                    <span class="num">1</span>
                     <span class="plus">+</span>
                 </div>
             </td>
 
             <td class="totals">
-              <h3> $6.98</h3>
+              <h3> $6.99</h3>
             </td>
         </tr> 
 
@@ -104,67 +104,67 @@
           <td class="quantitys">
             <div class="quantity-wrapper">
                 <span class="minus">-</span>
-                <span class="num">0</span>
+                <span class="num">1</span>
                 <span class="plus">+</span>
             </div>
           </td>
 
           <td class="totals">
-            <h3> $18.98</h3>
+            <h3> $9.99</h3>
           </td>
         </tr>
 
       </table>
 
-      <h3 class="checkout-total"> <span class="regular">Total</span> $24.98</h3>
+      <h3 class="checkout-total"> <span class="regular">Total</span> $16.98</h3>
       <a href="payment.html" id="checkout-button-text">
         <input type="submit" value="Checkout" class="checkout-button">
       </a>
     </div>
 </section>
 
-     <!-- Source for increment and decrement button -->
-    <script>
-        function initializeQuantity(productCard) {
-            const plus = productCard.querySelector(".plus");
-            const minus = productCard.querySelector(".minus");
-            const num = productCard.querySelector(".num");
-
-            let a = 0;
-
-            plus.addEventListener("click", () => {
-                a++;
-                num.innerText = a;
-            });
-
-            minus.addEventListener("click", () => {
-                if (a > 0) {
-                    a--;
-                    num.innerText = a;
-                }
-            });
-        }
-
-        // Initialize quantity functionality for each product card
-        const productCards = document.querySelectorAll(".product-card");
-        productCards.forEach((card) => {
-            initializeQuantity(card);
-        });
-    </script>
-
-
     <!-- Javascript for the Hamburger menu -->
     <script>
-        const header = document.querySelector("header");
-        const hamburgerBtn = document.querySelector("#hamburger-btn");
-        const closeMenuBtn = document.querySelector("#close-menu-btn");
-  
-        // Toggle mobile menu on hamburger button click
-        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
-  
-        // Close mobile menu on close button click
-        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+        document.addEventListener('DOMContentLoaded', function() {
+        // Function to update the total price for each item and the cart total
+        function updatePrice() {
+            let total = 0; // Initialize the total sum
+            const rows = document.querySelectorAll('.checkout-information'); // Get all rows
+
+            rows.forEach(row => {
+                const priceText = row.querySelector('.checkout-item-price').textContent; // Get the price text
+                const pricePerItem = parseFloat(priceText.replace('$', '')); // Convert price to number
+                const quantity = parseInt(row.querySelector('.num').textContent); // Get the quantity
+                const totalPrice = pricePerItem * quantity; // Calculate total for the row
+                row.querySelector('.totals h3').textContent = `$${totalPrice.toFixed(2)}`; // Update row total
+                total += totalPrice; // Add row total to overall total
+            });
+
+            // Update the cart total in the <h3> element
+            document.querySelector('.checkout-total').textContent = `Total $${total.toFixed(2)}`;
+        }
+
+        // Attach event listeners to each plus and minus button
+        document.querySelectorAll('.checkout-information').forEach(row => {
+            const minus = row.querySelector('.minus');
+            const plus = row.querySelector('.plus');
+            const num = row.querySelector('.num');
+
+            minus.addEventListener('click', function() {
+                if (parseInt(num.textContent) > 1) { // Prevent quantity from going below zero
+                    num.textContent = parseInt(num.textContent) - 1;
+                    updatePrice(); // Update prices after decrement
+                }
+            });
+
+            plus.addEventListener('click', function() {
+                num.textContent = parseInt(num.textContent) + 1;
+                updatePrice(); // Update prices after increment
+            });
+        });
+    });
     </script>
+
 
 
     <!--<section class="footer">-->

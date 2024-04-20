@@ -3,7 +3,7 @@
     margin-bottom: 2rem;
     padding: 3rem;
     padding-bottom: 9rem;
-    padding-top: rem;
+    padding-top: 9 rem;
     max-width: 100%;
     margin: 0 auto;
     background-color: var(--moody-indigo);
@@ -11,12 +11,16 @@
     margin-left: auto;
 }
 
-.menu-main-section h2, p {
+.menu-main-section h2, .menu-main-section p {
     color: var(--candlelight-ivory);
-    margin-bottom: 2rem;
     text-align: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.menu-main-section p{
+    margin-bottom: 3rem;
 }
 
 .product-listing {
@@ -26,4 +30,9 @@
     border-bottom-width: 0.2rem;
     border-bottom-style: solid;
     border-bottom-color:var(--candlelight-ivory);
+}
+
+.product-card img{
+    min-height: 180px;
+    margin-top: 0;
 }
